@@ -3,7 +3,6 @@ WA Amateur Radio News (WAARN) is the amateur radio club that produces **NewsWest
 ## What we do
 
 - **NewsWest, every Sunday of the year:** news from WA's clubs and amateurs, on air across the state and relayed interstate, and online as a podcast.
-- **The WIA National News** on the VK6 broadcast network, ahead of NewsWest each Sunday.
 - **PerthTech:** our [technical day](/perthtech/) for amateur radio operators.
 - **Training:** courses like NewsHound 101, which teaches amateurs to write, record and edit news items for broadcast.
 - **vk6.net:** this website.
