@@ -9,14 +9,83 @@
   };
   const SPEEDS = [1, 1.25, 1.5, 2, 0.75];
 
-  // Chapter times in the show notes: jump the page's main player to that point.
-  document.addEventListener('click', (e) => {
-    const t = e.target.closest('[data-at]');
-    const audio = document.querySelector('[data-player] audio');
-    if (!t || !audio) return;
-    const go = () => { audio.currentTime = Number(t.dataset.at); audio.play().catch(() => {}); };
+  const mainAudio = () => document.querySelector('[data-player] audio');
+  // Jump the page's main player to a time (seconds) and play.
+  const playFrom = (at) => {
+    const audio = mainAudio();
+    if (!audio) return;
+    const go = () => { audio.currentTime = at; audio.play().catch(() => {}); };
     if (audio.readyState >= 1) go(); else { audio.addEventListener('loadedmetadata', go, { once: true }); audio.load(); }
+  };
+
+  // Copy a segment's share link; plain-HTTP pages have no clipboard API, so fall back to a hidden text box.
+  const copy = async (text) => {
+    try { await navigator.clipboard.writeText(text); return true; } catch {}
+    const box = Object.assign(document.createElement('textarea'), { value: text });
+    box.style.cssText = 'position:fixed;opacity:0';
+    document.body.append(box);
+    box.select();
+    const ok = document.execCommand('copy');
+    box.remove();
+    return ok;
+  };
+
+  // Show notes: a copy-link button copies that segment's link; anywhere else on a timed line jumps the player.
+  document.addEventListener('click', async (e) => {
+    const share = e.target.closest('[data-share]');
+    if (share) {
+      const url = new URL(share.dataset.share, location.href).href;
+      const ok = await copy(url);
+      share.classList.add(ok ? 'copied' : 'failed');
+      share.setAttribute('aria-label', ok ? 'Link copied' : 'Copy failed');
+      share.title = ok ? 'Link copied' : url;
+      if (!ok) window.prompt('Copy this link:', url);
+      setTimeout(() => { share.classList.remove('copied', 'failed'); share.setAttribute('aria-label', 'Copy a link to this segment'); share.title = 'Copy a link to this segment'; }, 2000);
+      return;
+    }
+    const t = e.target.closest('[data-at]');
+    if (t) playFrom(Number(t.dataset.at));
   });
+
+  // Highlight the show-notes line for the part of the episode that's playing.
+  const markCurrent = (audio) => {
+    const lines = [...document.querySelectorAll('.lead-notes li[data-at]')];
+    let current = null;
+    for (const li of lines) if (Number(li.dataset.at) <= audio.currentTime + 0.5) current = li;
+    lines.forEach((li) => li.classList.toggle('current', li === current && audio.currentTime > 0));
+  };
+
+  // A link with ?t=6:06 (or ?t=366): cue the player there, highlight the segment and offer to play
+  // (browsers don't let a page start audio before the visitor clicks).
+  const parseTime = (s) => {
+    if (!s) return null;
+    if (/^\d+(\.\d+)?$/.test(s)) return Number(s);
+    if (/^\d+(:\d{1,2}){1,2}$/.test(s)) return s.split(':').reduce((a, p) => a * 60 + Number(p), 0);
+    const m = s.match(/^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$/);
+    return m && m[0] ? (Number(m[1] || 0) * 3600 + Number(m[2] || 0) * 60 + Number(m[3] || 0)) : null;
+  };
+  const cueFromUrl = () => {
+    const at = parseTime(new URLSearchParams(location.search).get('t'));
+    const panel = document.querySelector('[data-player]');
+    if (at === null || !panel) return;
+    const lines = [...document.querySelectorAll('.lead-notes li[data-at]')];
+    const line = lines.filter((li) => Number(li.dataset.at) <= at + 0.5).pop();
+    line?.classList.add('cued');
+    const topic = line ? line.textContent.replace(/^\s*\d+(:\d\d)+\s*/, '').trim() : '';
+    const cue = document.createElement('button');
+    cue.type = 'button';
+    cue.className = 'pp-cue';
+    cue.innerHTML = '<span aria-hidden="true">▶</span> ';
+    cue.append(`Play from ${fmt(at)}${topic ? `: ${topic}` : ''}`);
+    cue.addEventListener('click', () => { playFrom(at); cue.remove(); line?.classList.remove('cued'); });
+    panel.querySelector('.pp-main').append(cue);
+    // If they use the player's own play button instead, still start at the linked time.
+    const audio = mainAudio();
+    audio?.addEventListener('play', () => {
+      if (cue.isConnected && audio.currentTime < 1) { cue.remove(); line?.classList.remove('cued'); playFrom(at); }
+    }, { once: true });
+    (line || panel).scrollIntoView({ block: 'center' });
+  };
 
   document.querySelectorAll('[data-player]').forEach((panel) => {
     const audio = panel.querySelector('audio');
@@ -58,7 +127,9 @@
     });
     ['play', 'pause', 'ended'].forEach((e) => audio.addEventListener(e, sync));
     ['timeupdate', 'loadedmetadata', 'durationchange', 'emptied'].forEach((e) => audio.addEventListener(e, tick));
+    ['timeupdate', 'emptied'].forEach((e) => audio.addEventListener(e, () => markCurrent(audio)));
     // Another page script may swap the episode (Listen page): keep the chosen speed.
     audio.addEventListener('loadstart', () => { audio.playbackRate = SPEEDS.includes(Number(speed.textContent.replace('×', ''))) ? Number(speed.textContent.replace('×', '')) : 1; tick(); });
   });
+  cueFromUrl();
 })();

@@ -45,7 +45,7 @@ export default function (config) {
     dir: { input: 'src', includes: '_includes', data: '_data', output: '_site' },
     // Set by the GitHub Pages workflow when the site is served from a sub-path (before the custom domain).
     pathPrefix: process.env.PATH_PREFIX || '/',
-    templateFormats: ['njk', 'md'],
+    templateFormats: ['njk', 'md', '11ty.js'],
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
   };

@@ -1,7 +1,11 @@
+{#- Show notes. With notesSeek, each timed line jumps the page's player there and has a copy-link
+    button for that segment's share page (/episodes/<date>/at/<seconds>/, see episode-at.11ty.js). -#}
 {%- if ep.items.length %}
 <ul class="notes">
   {%- for it in ep.items %}
-  <li{% if notesSeek and (it.start or it.start === 0) %} class="seekable" data-at="{{ it.start }}"{% endif %}>{% if it.start or it.start === 0 %}{% if notesSeek %}<button type="button" class="t" data-at="{{ it.start }}" aria-label="Play from {{ it.start | clock }}">{{ it.start | clock }}</button>{% else %}<span class="t">{{ it.start | clock }}</span>{% endif %} {% endif %}{% if it.segment %}<strong>{{ it.segment }}:</strong> {% endif %}{{ it.topic }}
+  {%- set timed = it.start or it.start === 0 %}
+  <li{% if notesSeek and timed %} class="seekable" data-at="{{ it.start }}"{% endif %}>{% if timed %}{% if notesSeek %}<button type="button" class="t" data-at="{{ it.start }}" aria-label="Play from {{ it.start | clock }}">{{ it.start | clock }}</button>{% else %}<span class="t">{{ it.start | clock }}</span>{% endif %} {% endif %}{% if it.segment %}<strong>{{ it.segment }}:</strong> {% endif %}{{ it.topic }}
+    {%- if notesSeek and timed %} <button type="button" class="share" data-share="{{ ('/episodes/' + ep.slug + '/at/' + it.start + '/') | url }}" aria-label="Copy a link to this segment" title="Copy a link to this segment"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/></svg></button>{% endif %}
     {%- if it.notes and it.notes.length %}<ul>{% for n in it.notes %}<li>{{ n }}</li>{% endfor %}</ul>{% endif %}
   </li>
   {%- endfor %}
