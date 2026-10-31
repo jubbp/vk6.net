@@ -99,6 +99,16 @@
     { "path": "/contests/", "title": "Contest calendar", "to": "https://calendar.google.com/calendar/embed?src=vk6.net_3m0e57jjodqmve03d09hi3gkmo%40group.calendar.google.com&ctz=Australia%2FPerth" }
   ],
 
+  "perthtechPhotos": {
+    "credit": "Photos: Caroline Trenfield (2024) and PerthTech 2022 attendees.",
+    "photos": [
+      { "src": "/assets/img/perthtech/2024-room.jpg", "alt": "The audience in the hall at PerthTech 2024, with the NewsWest banner at the front", "caption": "PerthTech 2024 at the Gidgegannup Recreation Club", "w": 1400, "h": 795 },
+      { "src": "/assets/img/perthtech/2024-welcome.jpg", "alt": "A presenter with a microphone in front of the Welcome to PerthTech 2024 slide", "caption": "Welcome to PerthTech 2024", "w": 1400, "h": 1101 },
+      { "src": "/assets/img/perthtech/2022-presidents.jpg", "alt": "The WIA and RASA presidents on stage with microphones at PerthTech 2022", "caption": "The WIA and RASA presidents, 2022", "w": 807, "h": 630 },
+      { "src": "/assets/img/perthtech/2022-parks-talk.jpg", "alt": "A presenter explaining who takes part in parks activations: activators, hunters and SWLs", "caption": "Parks activations: activators, hunters and SWLs, 2022", "w": 1280, "h": 960 }
+    ]
+  },
+
   "nav": [
     { "label": "Listen", "url": "/news/listen/" },
     { "label": "The News", "url": "/news/", "children": [

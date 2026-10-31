@@ -303,6 +303,16 @@ td.freq { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
 .form-embed { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; }
 .form-embed iframe { display: block; width: 100%; height: 900px; border: 0; }
 
+/* Photo gallery */
+.gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 28px 0 32px; max-width: 900px; }
+.gallery-item { margin: 0; }
+.gallery-item.wide { grid-column: 1 / -1; }
+.gallery-item img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; background: var(--line); }
+.gallery-item.wide img { aspect-ratio: 16 / 8; }
+.gallery figcaption { font-size: 0.84rem; color: var(--muted); margin-top: 6px; line-height: 1.4; }
+.gallery-credit { grid-column: 1 / -1; font-size: 0.78rem; color: var(--muted); margin: 0; }
+@media (max-width: 640px) { .gallery { grid-template-columns: 1fr 1fr; } .gallery-item:not(.wide):last-of-type { grid-column: 1 / -1; } }
+
 /* Support page */
 .tiers { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin: 20px 0 12px; }
 .tier { display: flex; flex-direction: column; background: var(--paper); }

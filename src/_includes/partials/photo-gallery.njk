@@ -1,0 +1,10 @@
+{#- Expects: gallery { credit, photos[] } -#}
+<section class="gallery" aria-label="Photos">
+  {%- for ph in gallery.photos %}
+  <figure class="gallery-item{% if loop.first %} wide{% endif %}">
+    <img src="{{ ph.src | url }}" alt="{{ ph.alt }}" width="{{ ph.w }}" height="{{ ph.h }}" loading="lazy">
+    <figcaption>{{ ph.caption }}</figcaption>
+  </figure>
+  {%- endfor %}
+  <p class="gallery-credit">{{ gallery.credit }}</p>
+</section>

@@ -6,5 +6,8 @@ lede: A day of technical and practical presentations for amateur radio operators
 permalink: /perthtech/
 description: PerthTech, the technical day for amateur radio operators run by WA Amateur Radio News.
 ---
-{{ pages.perthtech.html | safe }}
+{%- set parts = pages.perthtech.html | splitAtH2 %}
+{{ parts[0] | safe }}
+{%- set gallery = settings.perthtechPhotos %}{% include "partials/photo-gallery.njk" %}
+{{ parts[1] | safe }}
 <p><a class="button" href="{{ '/support/' | url }}">Support the next PerthTech</a></p>

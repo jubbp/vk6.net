@@ -12,6 +12,8 @@ export default function (config) {
   config.addFilter('absolute', (path, base) => new URL(path, base).href);
   config.addFilter('json', (value) => JSON.stringify(value).replace(/</g, '\\u003c'));
   config.addFilter('clock', (sec) => { sec = Math.floor(Number(sec) || 0); const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), x = String(sec % 60).padStart(2, '0'); return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; });
+  // Split rendered page text at its first <h2>, so something can sit between the intro and the rest.
+  config.addFilter('splitAtH2', (html) => { const i = html.indexOf('<h2'); return i < 0 ? [html, ''] : [html.slice(0, i), html.slice(i)]; });
   config.addFilter('megabytes', (bytes) => (bytes ? `${(bytes / 1048576).toFixed(1)} MB` : ''));
   config.addFilter('byYear', (episodes) => {
     const years = [];
