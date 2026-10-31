@@ -27,7 +27,11 @@ permalink: /support/
         <p class="amount">{{ t.amount }}</p>
         <ul>{% for b in t.benefits %}<li>{{ b }}</li>{% endfor %}</ul>
         {%- if t.note %}<p class="small muted">{{ t.note }}</p>{% endif %}
-        <p><a class="button{% if not loop.first %} ghost{% endif %}" href="{{ joinHref }}">{% if t.amount == "Talk to us" %}Get in touch{% else %}Become a {{ t.name | lower }}{% endif %}</a></p>
+        {%- if sup.joinUrl %}{% set tierHref = sup.joinUrl %}
+        {%- elif t.amount == "Talk to us" %}{% set tierHref = settings.email | mailto("Sponsoring WAARN", "Hi WAARN,\n\nWe're interested in sponsoring WA Amateur Radio News.\n\nBusiness name:\nContact name and phone:\nWhat we have in mind (PerthTech, the website, something else):\n\nThanks,\n") %}
+        {%- else %}{% set tierHref = settings.email | mailto("Becoming a WAARN " + t.name, "Hi WAARN,\n\nI'd like to become a " + t.name + " (" + t.amount + ").\n\nName:\nCallsign:\n" + ("Club:\n" if t.for == "Clubs and groups" else "") + "\nHappy for my " + ("club's name" if t.for == "Clubs and groups" else "name and callsign") + " to appear on the supporters list on vk6.net? Yes / No\n\nPlease send me the payment details.\n\nThanks,\n") %}
+        {%- endif %}
+        <p><a class="button{% if not loop.first %} ghost{% endif %}" href="{{ tierHref }}">{% if t.amount == "Talk to us" %}Get in touch{% else %}Become a {{ t.name | lower }}{% endif %}</a></p>
       </li>
       {%- endfor %}
     </ul>

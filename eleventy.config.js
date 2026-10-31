@@ -14,6 +14,8 @@ export default function (config) {
   config.addFilter('clock', (sec) => { sec = Math.floor(Number(sec) || 0); const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), x = String(sec % 60).padStart(2, '0'); return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; });
   // Split rendered page text just before some text (e.g. a heading), so something can sit between the parts.
   config.addFilter('splitBefore', (html, text) => { const i = html.indexOf(text); return i < 0 ? [html, ''] : [html.slice(0, i), html.slice(i)]; });
+  // mailto: link with a subject and starter text (line breaks as CRLF, which every mail program accepts).
+  config.addFilter('mailto', (email, subject, body) => `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body).replace(/%0A/g, '%0D%0A')}`);
   config.addFilter('megabytes', (bytes) => (bytes ? `${(bytes / 1048576).toFixed(1)} MB` : ''));
   config.addFilter('byYear', (episodes) => {
     const years = [];
