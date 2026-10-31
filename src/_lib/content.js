@@ -39,5 +39,8 @@ export function renderMarkdown(text) {
 
 // Read on every build so the preview server picks up edits to content/settings.json.
 export function loadSettings() {
-  return JSON.parse(readFileSync(new URL('settings.json', CONTENT), 'utf8'));
+  const settings = JSON.parse(readFileSync(new URL('settings.json', CONTENT), 'utf8'));
+  // While in preview the site is served at previewUrl (newsite.vk6.net); links and previews point there.
+  if (settings.preview && settings.previewUrl) settings.url = settings.previewUrl;
+  return settings;
 }
