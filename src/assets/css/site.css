@@ -213,6 +213,9 @@ code { font-family: var(--mono); font-size: 0.88em; background: var(--wash); bor
 .notes { padding-left: 1.1em; }
 .notes li { margin-bottom: 0.4em; }
 .notes li::marker { color: var(--accent); }
+.notes .t { font: 500 0.82rem var(--mono); color: var(--muted); margin-right: 4px; }
+.notes button.t { background: none; border: 1px solid var(--line); border-radius: 4px; padding: 1px 6px; color: var(--link); cursor: pointer; }
+.notes button.t:hover { border-color: var(--link); }
 
 /* Tiles: an editorial index, not boxes */
 .tiles { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); column-gap: 32px; }

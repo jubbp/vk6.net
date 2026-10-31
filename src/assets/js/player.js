@@ -9,6 +9,15 @@
   };
   const SPEEDS = [1, 1.25, 1.5, 2, 0.75];
 
+  // Chapter times in the show notes: jump the page's main player to that point.
+  document.addEventListener('click', (e) => {
+    const t = e.target.closest('[data-at]');
+    const audio = document.querySelector('[data-player] audio');
+    if (!t || !audio) return;
+    const go = () => { audio.currentTime = Number(t.dataset.at); audio.play().catch(() => {}); };
+    if (audio.readyState >= 1) go(); else { audio.addEventListener('loadedmetadata', go, { once: true }); audio.load(); }
+  });
+
   document.querySelectorAll('[data-player]').forEach((panel) => {
     const audio = panel.querySelector('audio');
     const ui = panel.querySelector('.pp-controls');

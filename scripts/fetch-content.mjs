@@ -5,6 +5,7 @@
 // A failed fetch only warns: the build falls back to the copies in content/.
 
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import { XMLParser } from 'fast-xml-parser';
 
 const root = new URL('../content/', import.meta.url);
@@ -82,10 +83,11 @@ async function fromOldHost(base) {
 function notesFromDoc(md) {
   const date = (md.match(/NewsWest,\s+\w+\s+(\d{1,2})\s+(\w+)\s+(\d{4})/) || []);
   const producer = (md.match(/Produced by ([^.]+)\./) || [])[1] || '';
-  const items = [...md.matchAll(/^\*\*\d{1,2}:\d{2}\s+(.+?)\*\*\s*$/gm)].map((m) => {
-    const t = m[1].trim();
+  const items = [...md.matchAll(/^\*\*(\d{1,2}):(\d{2})\s+(.+?)\*\*\s*$/gm)].map((m) => {
+    const start = Number(m[1]) * 60 + Number(m[2]);
+    const t = m[3].trim();
     const who = t.match(/^(.*?)\s*\(([^)]+)\)$/);
-    return who ? { segment: who[2], topic: who[1], notes: [] } : { segment: '', topic: t, notes: [] };
+    return who ? { segment: who[2], topic: who[1], start, notes: [] } : { segment: '', topic: t, start, notes: [] };
   });
   return { day: date[1], month: date[2], year: date[3], producer, items };
 }
@@ -94,6 +96,17 @@ await step('episodes', async () => {
   let episodes;
   if (src.oldHost) {
     episodes = await fromOldHost(src.oldHost);
+    // Local demo: chapter titles from the private transcription trial (date, seconds, title, presenter).
+    const tsv = src.segmentTitlesLocal && new URL(`../${src.segmentTitlesLocal}`, root);
+    if (tsv && existsSync(tsv)) {
+      const byDate = {};
+      for (const line of (await readFile(tsv, 'utf8')).split('\n')) {
+        const [d, sec, title, who] = line.split('\t');
+        if (!/^\d{8}$/.test(d || '') || !title) continue;
+        (byDate[`${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`] ??= []).push({ segment: (who || '').trim(), topic: title.trim(), start: Number(sec) || 0, notes: [] });
+      }
+      for (const e of episodes) if (byDate[e.date]) e.items = byDate[e.date].sort((a, b) => a.start - b.start);
+    }
     try {
       const n = notesFromDoc(await get(`https://docs.google.com/document/d/${src.weeklyNotesDoc}/export?format=md`));
       const ep = episodes.find((e) => e.title === `NewsWest, ${n.day} ${n.month} ${n.year}`);

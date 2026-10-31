@@ -17,7 +17,7 @@ jsonld:
     <h1>Amateur radio news for Western Australia.</h1>
     <p class="lede">News from the clubs, contests, nets and people of VK6, every Sunday on the repeaters and HF, and any time online or in your podcast app. Made by the volunteers of {{ settings.club }}.</p>
     {%- if latest %}
-    {%- set ep = latest %}{% set playerLabel = "This week on NewsWest" %}
+    {%- set ep = latest %}{% set playerLabel = "This week on NewsWest" %}{% set notesSeek = true %}
     {% include "partials/player.njk" %}
     <div class="lead-notes">
       <h2 class="section-title">In this episode</h2>
