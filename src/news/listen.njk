@@ -42,26 +42,28 @@ eleventyComputed:
   <div class="archive-head">
     <h2 id="archive-heading">All episodes</h2>
     <form class="archive-tools" role="search" onsubmit="return false">
-      <label class="sr-only" for="q">Search the show notes</label>
+      <label class="sr-only" for="q">Search every episode's show notes</label>
       <input id="q" type="search" placeholder="Search: a club, callsign or topic" autocomplete="off" data-search>
-      <label class="sr-only" for="year">Year</label>
-      <select id="year" data-year>
-        <option value="">All years</option>
-        {%- for y in episodes | years %}<option>{{ y }}</option>{% endfor %}
-      </select>
     </form>
   </div>
   <p class="small muted" aria-live="polite" data-count>{{ episodes.length }} episodes</p>
-  <ol class="episode-list">
-    {%- for ep in episodes %}
-    <li data-search="{{ ep.search }}" data-year="{{ ep.year }}">
-      <button type="button" class="play" data-play data-audio="{{ ep.audio }}" data-title="{{ ep.longDate }}" data-link="{{ ('/episodes/' + ep.slug + '/') | url }}" aria-label="Play {{ ep.title }}"><span aria-hidden="true">▶</span></button>
-      <div>
-        <h3><a href="{{ ('/episodes/' + ep.slug + '/') | url }}">{{ ep.title }}</a></h3>
-        <div class="ep-notes">{% include "partials/episode-notes.njk" %}</div>
-      </div>
-    </li>
-    {%- endfor %}
-  </ol>
-  <p class="small muted">Older material: <a href="{{ settings.podcast.audioHost }}">audio.vk6.net</a> has every file, including text editions and video broadcasts.</p>
+  {%- for y in episodes | byYear %}
+  <details class="year" data-year-group {% if loop.first %}open{% endif %}>
+    <summary><span class="year-label">{{ y.year }}</span> <span class="year-count" data-year-count>{{ y.episodes.length }} episodes</span></summary>
+    <ol class="episode-list">
+      {%- for ep in y.episodes %}
+      <li data-search="{{ ep.search }}">
+        <button type="button" class="play" data-play data-audio="{{ ep.audio }}" data-title="{{ ep.longDate }}" data-link="{{ ('/episodes/' + ep.slug + '/') | url }}" aria-label="Play {{ ep.title }}"><span aria-hidden="true">▶</span></button>
+        <div class="ep-row">
+          <h3><a href="{{ ('/episodes/' + ep.slug + '/') | url }}">{{ ep.longDate }}</a></h3>
+          {%- if ep.items.length %}<p class="ep-topics">{% for it in ep.items %}{{ it.topic }}{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+          <div class="ep-notes" hidden>{% include "partials/episode-notes.njk" %}</div>
+        </div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </details>
+  {%- endfor %}
+  <p class="no-results" data-none hidden>No episodes match that search. Try a callsign, a club name or a single word.</p>
+  <p class="small muted archive-foot">Older material: <a href="{{ settings.podcast.audioHost }}">audio.vk6.net</a> has every file, including text editions and video broadcasts.</p>
 </section>

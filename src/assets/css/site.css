@@ -244,13 +244,23 @@ code { font-family: var(--mono); font-size: 0.88em; background: var(--wash); bor
 .archive-tools { display: flex; gap: 10px; flex-wrap: wrap; flex: 1 1 460px; justify-content: flex-end; }
 .archive-tools input, .archive-tools select { font: inherit; font-size: 0.95rem; padding: 9px 13px; border-radius: 6px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
 .archive-tools input { flex: 1 1 260px; max-width: 420px; }
-.episode-list { list-style: none; padding: 0; margin: 8px 0 0; }
-.episode-list > li { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); }
-.episode-list h3 { font-size: 1.2rem; margin-bottom: 6px; }
+.year { border-bottom: 1px solid var(--line); }
+.year > summary { display: flex; align-items: baseline; gap: 12px; padding: 14px 0; cursor: pointer; list-style: none; }
+.year > summary::-webkit-details-marker { display: none; }
+.year > summary::before { content: ""; width: 7px; height: 7px; border: solid var(--muted); border-width: 0 2px 2px 0; transform: rotate(-45deg); transition: transform .15s; align-self: center; margin-right: 4px; }
+.year[open] > summary::before { transform: rotate(45deg); }
+.year-label { font: 700 1.3rem var(--display); }
+.year-count { color: var(--muted); font-size: 0.9rem; }
+.archive-foot { margin-top: 18px; }
+.no-results { padding: 18px 0; color: var(--ink-2); }
+.episode-list { list-style: none; padding: 0; margin: 0 0 8px; }
+.episode-list > li { display: grid; grid-template-columns: 40px 1fr; gap: 14px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+.episode-list h3 { font-size: 1.02rem; margin: 0; }
+.ep-topics { margin: 2px 0 0; font-size: 0.88rem; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .episode-list h3 a { color: inherit; text-decoration: none; }
 .episode-list h3 a:hover { color: var(--link); text-decoration: underline; }
 .episode-list .notes { font-size: 0.94rem; margin-bottom: 0.3em; }
-.play { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--paper); color: var(--accent); font-size: 0.85rem; cursor: pointer; }
+.play { width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: var(--paper); color: var(--accent); font-size: 0.85rem; cursor: pointer; }
 .play:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 .pager { display: flex; justify-content: space-between; margin-top: 28px; font-weight: 600; }
 .transcript { margin-top: 20px; }

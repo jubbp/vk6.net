@@ -20,22 +20,33 @@
     document.querySelector('[data-player]').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }));
 
+  // Search every year; open the years with matches and hide the rest.
   const q = document.querySelector('[data-search]');
-  const year = document.querySelector('[data-year]');
   const count = document.querySelector('[data-count]');
-  const items = [...document.querySelectorAll('.episode-list > li')];
+  const groups = [...document.querySelectorAll('[data-year-group]')];
+  const initialOpen = groups.map((g) => g.open);
   function filter() {
     const words = q.value.toLowerCase().split(/\s+/).filter(Boolean);
-    let n = 0;
-    for (const li of items) {
-      const show = (!year.value || li.dataset.year === year.value) && words.every((w) => li.dataset.search.includes(w));
-      li.hidden = !show;
-      if (show) n++;
-    }
-    count.textContent = `${n} episode${n === 1 ? '' : 's'}${words.length || year.value ? ' found' : ''}`;
+    let total = 0;
+    groups.forEach((g, i) => {
+      const items = [...g.querySelectorAll('.episode-list > li')];
+      let n = 0;
+      for (const li of items) {
+        const text = li.dataset.search;
+        const squashed = text.replace(/\s+/g, '');
+        const show = words.every((w) => text.includes(w) || squashed.includes(w));
+        li.hidden = !show;
+        if (show) n++;
+      }
+      total += n;
+      g.hidden = n === 0;
+      g.open = words.length ? n > 0 : initialOpen[i];
+      g.querySelector('[data-year-count]').textContent = words.length ? `${n} found` : `${items.length} episodes`;
+    });
+    count.textContent = words.length ? `${total} episode${total === 1 ? '' : 's'} found` : `${total} episodes`;
+    document.querySelector('[data-none]').hidden = total > 0;
   }
   q?.addEventListener('input', filter);
-  year?.addEventListener('change', filter);
   const initial = new URLSearchParams(location.search).get('q');
   if (initial && q) { q.value = initial; filter(); }
 })();

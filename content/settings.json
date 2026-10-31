@@ -67,8 +67,8 @@
   "sources": {
     "_episodes_comment": "Demo: episodes listed from the current audio host (HTTP only, so they only play on an HTTP preview). Blank oldHost = use episodesJson/feed.",
     "oldHost": "http://audio.vk6.net/",
-    "_chapters_comment": "Chapter titles (date, seconds, title, presenter) from the transcription trial's segment index. Prefers the live copy in ../audio.vk6.net if present, else content/chapters.tsv.",
-    "chaptersLocal": "../audio.vk6.net/transcription-trial/segment-titles.tsv",
+    "_chapters_comment": "Chapter titles (date, seconds, title, presenter) from the transcription trial's full segment index, refreshed with scripts/update-chapters.mjs. Blank chaptersLocal = use content/chapters.tsv.",
+    "chaptersLocal": "",
     "chapters": "chapters.tsv",
     "episodesJson": "https://storage.googleapis.com/vk6arn-audio-test/data/episodes.json",
     "feed": "https://storage.googleapis.com/vk6arn-audio-test/feed.xml",

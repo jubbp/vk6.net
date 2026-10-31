@@ -13,6 +13,14 @@ export default function (config) {
   config.addFilter('json', (value) => JSON.stringify(value).replace(/</g, '\\u003c'));
   config.addFilter('clock', (sec) => { sec = Math.floor(Number(sec) || 0); const h = Math.floor(sec / 3600), m = Math.floor((sec % 3600) / 60), x = String(sec % 60).padStart(2, '0'); return h ? `${h}:${String(m).padStart(2, '0')}:${x}` : `${m}:${x}`; });
   config.addFilter('megabytes', (bytes) => (bytes ? `${(bytes / 1048576).toFixed(1)} MB` : ''));
+  config.addFilter('byYear', (episodes) => {
+    const years = [];
+    for (const e of episodes) {
+      if (years.at(-1)?.year !== e.year) years.push({ year: e.year, episodes: [] });
+      years.at(-1).episodes.push(e);
+    }
+    return years;
+  });
   config.addFilter('years', (episodes) => [...new Set(episodes.map((e) => e.year))]);
   config.addFilter('byGroup', (events, group) => events.filter((e) => e.group === group));
   config.addFilter('byMonth', (events) => {
