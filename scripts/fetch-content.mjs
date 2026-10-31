@@ -96,8 +96,10 @@ await step('episodes', async () => {
   let episodes;
   if (src.oldHost) {
     episodes = await fromOldHost(src.oldHost);
-    // Local demo: chapter titles from the private transcription trial (date, seconds, title, presenter).
-    const tsv = src.segmentTitlesLocal && new URL(`../${src.segmentTitlesLocal}`, root);
+    // Chapter titles from the transcription trial's segment index (date, seconds, title, presenter):
+    // the working copy next door if present, otherwise the copy kept in content/.
+    const local = src.chaptersLocal && new URL(`../${src.chaptersLocal}`, root);
+    const tsv = local && existsSync(local) ? local : src.chapters && new URL(src.chapters, root);
     if (tsv && existsSync(tsv)) {
       const byDate = {};
       for (const line of (await readFile(tsv, 'utf8')).split('\n')) {
