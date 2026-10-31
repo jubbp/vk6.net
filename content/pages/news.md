@@ -4,7 +4,7 @@ The National News and NewsWest are repeated from 19:00 WST (11:00 UTC) on Sunday
 
 ## Callbacks
 
-Please listen on air and give your callsign at the end of the broadcast as a callback. It tells the NewsWest team how many people are listening, and the numbers are reported to the WIA. If you can't call in on air, [log your callback online](/callbacks/).
+Please listen on air and give your callsign at the end of the broadcast as a callback. It tells the NewsWest team how many people are listening, and the numbers are reported to the WIA. If you can't call in on air, [register your callback online](/callbacks/).
 
 ## Can't listen on air?
 

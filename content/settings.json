@@ -100,7 +100,7 @@
       { "label": "About the broadcast", "url": "/news/" },
       { "label": "Broadcast schedule", "url": "/news/broadcasts/" },
       { "label": "Coverage map", "url": "/news/coverage/" },
-      { "label": "Send a callback", "url": "/callbacks/" },
+      { "label": "Register your callback", "url": "/callbacks/" },
       { "label": "Submit your news", "url": "/news/contact/" },
       { "label": "Scripts to record", "url": "/news/scripts/" },
       { "label": "Relay NewsWest", "url": "/news/relay/" }

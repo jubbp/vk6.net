@@ -40,35 +40,5 @@ jsonld:
   </div>
   <aside class="lead-side">
     {% include "partials/callbacks-card.njk" %}
-    {% include "partials/subscribe-card.njk" %}
   </aside>
 </div>
-
-<section class="wrap section">
-  <h2 class="section-title">Get involved</h2>
-  <ul class="tiles">
-    <li><a href="{{ '/news/contact/' | url }}"><strong>Submit your news</strong><span>Audio or text, by noon Friday</span></a></li>
-    <li><a href="{{ '/news/relay/' | url }}"><strong>Relay NewsWest</strong><span>Put the news on air in your area</span></a></li>
-    <li><a href="{{ '/perthtech/' | url }}"><strong>PerthTech</strong><span>Our technical day for amateurs</span></a></li>
-    <li><a href="{{ '/support/' | url }}"><strong>Support our work</strong><span>Become a WAARN Supporter</span></a></li>
-    <li><a href="{{ '/becoming-an-amateur/' | url }}"><strong>Get licensed</strong><span>Training clubs and free guides</span></a></li>
-    <li><a href="{{ '/clubs/' | url }}"><strong>VK6 clubs</strong><span>Find a club near you</span></a></li>
-    <li><a href="{{ '/news/coverage/' | url }}"><strong>Coverage map</strong><span>Every transmitter and repeater</span></a></li>
-    <li><a href="{{ '/subscribe/' | url }}"><strong>Subscribe</strong><span>Podcast or weekly email</span></a></li>
-  </ul>
-</section>
-
-<section class="wrap section thanks">
-  <div class="prose">{{ pages.home.html | safe }}</div>
-</section>
-
-{%- if clubNews.length %}
-<section class="wrap section" aria-labelledby="cn-heading">
-  <h2 class="section-title" id="cn-heading">Club news</h2>
-  <ul class="post-list">
-    {%- for post in clubNews | limit(3) %}
-    <li><a href="{{ ('/club-news/' + post.slug + '/') | url }}"><time datetime="{{ post.date }}">{{ post.date }}</time><strong>{{ post.title }}</strong><span>{{ post.excerpt }}</span></a></li>
-    {%- endfor %}
-  </ul>
-</section>
-{%- endif %}
