@@ -27,12 +27,12 @@ eleventyComputed:
 </header>
 <div class="wrap page-body has-aside">
   <div>
-    <section class="card player">
-      <audio controls preload="none" src="{{ ep.audio }}">Your browser can't play audio here: <a href="{{ ep.audio }}">download the episode</a>.</audio>
-      <h2>In this episode</h2>
+    {%- set playerLabel = "NewsWest" %}
+    {% include "partials/player.njk" %}
+    <div class="lead-notes">
+      <h2 class="section-title">In this episode</h2>
       {% include "partials/episode-notes.njk" %}
-      <p class="card-links"><a href="{{ ep.audio }}" download>Download MP3{% if ep.bytes %} ({{ ep.bytes | megabytes }}){% endif %}</a></p>
-    </section>
+    </div>
     {%- if ep.transcript %}
     <section class="card transcript">
       <h2>Transcript</h2>

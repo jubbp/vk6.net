@@ -1,0 +1,20 @@
+{#- Audio-app style player. Expects: ep (episode), playerLabel. Works without JavaScript (native controls). -#}
+<section class="player-panel" data-player aria-label="Player: {{ ep.title }}">
+  <div class="pp-art" aria-hidden="true"><img src="{{ '/assets/img/waarn-logo-200.png' | url }}" alt="" width="200" height="148"></div>
+  <div class="pp-main">
+    <p class="pp-kicker" data-np-label>{{ playerLabel or "Latest episode" }}</p>
+    <h2 class="pp-title"><a data-np-link href="{{ ('/episodes/' + ep.slug + '/') | url }}">{{ ep.longDate }}</a></h2>
+    <audio controls preload="none" src="{{ ep.audio }}" data-np-audio>Your browser can't play audio here: <a href="{{ ep.audio }}">download the episode</a>.</audio>
+    <div class="pp-controls" hidden>
+      <button type="button" class="pp-skip" data-skip="-15" aria-label="Back 15 seconds">−15</button>
+      <button type="button" class="pp-play" data-toggle aria-label="Play"><span class="pp-icon" aria-hidden="true"></span></button>
+      <button type="button" class="pp-skip" data-skip="30" aria-label="Forward 30 seconds">+30</button>
+      <div class="pp-track">
+        <input type="range" min="0" max="1000" value="0" step="1" data-seek aria-label="Position">
+        <div class="pp-times"><span data-current>0:00</span><span data-duration>--:--</span></div>
+      </div>
+      <button type="button" class="pp-speed" data-speed aria-label="Playback speed">1×</button>
+    </div>
+    <p class="pp-links"><a data-np-download href="{{ ep.audio }}" download>Download MP3</a></p>
+  </div>
+</section>

@@ -14,6 +14,7 @@ NewsWest audio, show notes and, in future, transcripts are published permanently
 
 - Google (Google Cloud for audio hosting; Google Workspace for email, forms, documents and calendars)
 - GitHub (hosting this website)
+- Google Fonts (the typefaces on this website; your browser fetches them from Google)
 - Namecheap (the vk6.net domain)
 - OpenStreetMap (map tiles on the coverage map; your browser requests them directly)
 
