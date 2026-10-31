@@ -1,0 +1,22 @@
+{
+  "name": "vk6-net-website",
+  "private": true,
+  "description": "vk6.net: website of WA Amateur Radio News Inc (VK6ARN), home of NewsWest",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-content.mjs",
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "all": "npm run fetch && npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "csv-parse": "^7.0.3",
+    "fast-xml-parser": "^5.11.2",
+    "leaflet": "^1.9.4",
+    "markdown-it": "^15.0.3"
+  }
+}

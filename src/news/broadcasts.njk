@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: Broadcast schedule
+description: Every transmitter, repeater and relay that carries NewsWest in Western Australia and interstate.
+permalink: /news/broadcasts/
+---
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">NewsWest on air</p>
+    <h1>Broadcast schedule</h1>
+    <div class="lede">{{ pages.broadcasts.html | safe }}</div>
+  </div>
+</header>
+<div class="wrap">
+  <p class="card-links"><a class="button" href="{{ '/news/coverage/' | url }}">See it on a map</a> <a class="button ghost" href="{{ '/news/relay/' | url }}">Relay NewsWest</a></p>
+  {%- for g in broadcasts.groups %}
+  <section class="schedule-group">
+    <h2>{{ g.day }}{% if g.time and g.time != "Ongoing" %} <span class="time">{{ g.time }}</span>{% endif %}</h2>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="{{ g.label }}">
+      <table>
+        <thead><tr><th scope="col">Frequency</th><th scope="col">Station</th><th scope="col">Location</th><th scope="col">Type</th><th scope="col">Run by</th><th scope="col">Notes</th></tr></thead>
+        <tbody>
+          {%- for r in g.rows %}
+          <tr><td class="freq">{{ r.freq }}</td><td>{{ r.call }}</td><td>{{ r.location }}</td><td>{{ r.type }}</td><td>{{ r.sponsor }}</td><td>{{ r.note }}</td></tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {%- endfor %}
+  <p class="small muted">Frequencies in MHz unless shown otherwise. From the NewsWest broadcast list, kept by the News Team.</p>
+</div>

@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+title: Page not found
+lede: That page isn't here. It may have moved when vk6.net was rebuilt.
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+<ul>
+  <li><a href="{{ '/' | url }}">Home</a></li>
+  <li><a href="{{ '/news/listen/' | url }}">Listen to NewsWest</a></li>
+  <li><a href="{{ '/news/broadcasts/' | url }}">Broadcast schedule</a></li>
+  <li><a href="{{ '/perthtech/' | url }}">PerthTech</a></li>
+</ul>
+<p>Looking for something specific? Email <a href="mailto:{{ settings.email }}">{{ settings.email }}</a>.</p>

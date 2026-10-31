@@ -1,0 +1,77 @@
+---
+layout: layouts/base.njk
+bodyClass: home
+jsonld:
+  "@context": https://schema.org
+  "@type": Organization
+  name: WA Amateur Radio News Inc
+  alternateName: [WA Amateur Radio News, WAARN]
+  url: https://www.vk6.net/
+  email: newswest@vk6.net
+  foundingDate: "2015-01"
+---
+{%- set latest = episodes[0] %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ settings.show }} · from {{ settings.club }} · since 1931</p>
+      <h1>Amateur radio news for Western Australia, every Sunday.</h1>
+      <p class="lede">NewsWest brings you the clubs, contests, nets and people of VK6: on air across the state, online and as a podcast.</p>
+      <p class="hero-actions">
+        <a class="button" href="{{ '/news/listen/' | url }}">Listen now</a>
+        <a class="button ghost-light" href="{{ '/news/broadcasts/' | url }}">Find it on air</a>
+      </p>
+    </div>
+    <div class="hero-logo">
+      <span class="waves" aria-hidden="true"><i></i><i></i><i></i></span>
+      <img src="{{ '/assets/img/waarn-logo.png' | url }}" alt="WA Amateur Radio News logo: a transmitting tower between headphones and a microphone, with the words WA Amateur Radio News, VK6 NewsWest" width="480" height="356">
+    </div>
+  </div>
+</section>
+
+<div class="wrap home-grid">
+  <div class="home-col">
+  {%- if latest %}
+  <section class="card latest" aria-labelledby="latest-heading">
+    <p class="eyebrow">Latest episode</p>
+    <h2 id="latest-heading"><a href="{{ ('/episodes/' + latest.slug + '/') | url }}">{{ latest.title }}</a></h2>
+    <audio controls preload="none" src="{{ latest.audio }}">Your browser can't play audio here: <a href="{{ latest.audio }}">download the episode</a>.</audio>
+    {%- set ep = latest %}{% include "partials/episode-notes.njk" %}
+    <p class="card-links"><a href="{{ '/news/listen/' | url }}">All episodes and search</a> · <a href="{{ latest.audio }}" download>Download MP3</a></p>
+  </section>
+  {%- endif %}
+  {% include "partials/callbacks-card.njk" %}
+  </div>
+
+  <div class="home-col">
+  {% include "partials/next-broadcast.njk" %}
+
+  </div>
+</div>
+
+<section class="band">
+  <div class="wrap">
+    <div class="intro prose">{{ pages.home.html | safe }}</div>
+    <ul class="tiles">
+      <li><a href="{{ '/news/contact/' | url }}"><strong>Submit your news</strong><span>Audio or text, by noon Friday</span></a></li>
+      <li><a href="{{ '/news/relay/' | url }}"><strong>Relay NewsWest</strong><span>Put the news on air in your area</span></a></li>
+      <li><a href="{{ '/news/coverage/' | url }}"><strong>Coverage map</strong><span>Every transmitter and repeater</span></a></li>
+      <li><a href="{{ '/becoming-an-amateur/' | url }}"><strong>Get licensed</strong><span>Training clubs and free guides</span></a></li>
+      <li><a href="{{ '/clubs/' | url }}"><strong>VK6 clubs</strong><span>Find a club near you</span></a></li>
+      <li><a href="{{ '/subscribe/' | url }}"><strong>Subscribe</strong><span>Podcast or weekly email</span></a></li>
+      <li><a href="{{ '/perthtech/' | url }}"><strong>PerthTech</strong><span>Our technical day for amateurs</span></a></li>
+      <li><a href="{{ '/support/' | url }}"><strong>Support our work</strong><span>Become a WAARN Supporter</span></a></li>
+    </ul>
+  </div>
+</section>
+
+{%- if clubNews.length %}
+<section class="wrap club-news-home" aria-labelledby="cn-heading">
+  <h2 id="cn-heading">Club news</h2>
+  <ul class="post-list">
+    {%- for post in clubNews | limit(3) %}
+    <li><a href="{{ ('/club-news/' + post.slug + '/') | url }}"><time datetime="{{ post.date }}">{{ post.date }}</time><strong>{{ post.title }}</strong><span>{{ post.excerpt }}</span></a></li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}

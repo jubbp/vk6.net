@@ -1,0 +1,84 @@
+Type,Day,Time,Frequency,Call Sign,Location,Callbacks,Sponsor,Note,Confirmed
+Transmission,Sunday,06:00,1.848,VK6GX,"Gidgegannup, WA",Phil VK6GX,Self,Only during Summer,2-Feb-2017
+Transmission,Sunday,06:00,1.848,VK6JI,Greenwood WA,Brian VK6LO,Self,Backup for 160m,13-Feb-2017
+,,,,,,,,,
+Transmission,Sunday,07:00,1.848,VK6GX,"Gidgegannup, WA",Phil VK6GX,Self,,2-Feb-2017
+Transmission,Sunday,07:00,3.620,VK6JI,Greenwood WA,Chris VK6JI,Self,,29-Oct-2017
+,,,,,,,,,
+Transmission,Sunday,08:00,1.848,VK6GX,"Gidgegannup, WA",Phil VK6GX,Self,Only during Winter,2-Feb-2017
+Transmission,Sunday,08:00,7.088,VK6JI,Greenwood WA,Chris VK6JI,Self,,13-Feb-2017
+,,,,,,,,,
+Relay,Sunday,09:00,3.582,VK6ANC,"Whiteman Park, WA",Eddie VK6YA,Northern Corridor Radio Group,,2-Feb-2017
+Transmission,Sunday,09:00,14.130,VK6ANC,"Whiteman Park, WA",Eddie VK6YA,Northern Corridor Radio Group,,29-Mar-2020
+Link,Sunday,09:00,29.680,VK6RHF,"Martin, WA",Online at vk6.net,NewsWest,This is a WARG repeater,
+Link,Sunday,09:00,53.800,VK6RAP,"Roleystone, WA",Online at vk6.net,NewsWest,This is a WARG repeater,
+Link,Sunday,09:00,146.625,VK6RNC,"Cullacabardee, WA",Online at vk6.net,Northern Corridor Radio Group,,5-Feb-2017
+Transmission,Sunday,09:00,146.700,VK6RAP,"Roleystone, WA",Mark VK6USB,NewsWest,This is a WARG repeater,
+Link,Sunday,09:00,146.900,VK6RMW,"Mount William, WA",Mac VK6MM,NewsWest,This is a WARG repeater,2-Feb-2017
+Link,Sunday,09:00,147.250,VK6RMS,"Mount Saddleback, WA",Peter VK6AH & Trevor VK6YJ,NewsWest,This is a WARG repeater,2-Feb-2017
+Link,Sunday,09:00,147.350,VK6RBN,"Busselton, WA",Online at vk6.net,NewsWest,This is a WARG repeater,
+Link,Sunday,09:00,439.800,VK6RAP,"Roleystone, WA",Peter VK6AH & Trevor VK6YJ,NewsWest,This is a WARG repeater,2-Feb-2017
+,,,,,,,,,
+Link,Sunday,09:00,439.95,,"Mount Barker, WA",Rob VK6LD or Online at Online at vk6.net,SOUTHERN ELECTRONICS GROUP,Deadspots Arround several suburbs in Albany townsite,16-Nov-2023
+Link,Sunday,09:00,438.025,,Albany WA,Rob VK6LD or Online at Online at vk6.net,SOUTHERN ELECTRONICS GROUP,unconfirmed,16-Nov-2023
+,,,,,,,,,
+Link,Sunday,09:00,439.15,VK6FCRC,Spencer Park WA,Online at Online at vk6.net,VK6FCRC,low power clear node,20-Apr-2024
+,,,,,,,,,
+Link,Sunday,09:00,CB Channel 1,PER01,Wanneroo,Online at vk6.net,Northside Radio Association,On a scanner key  in   476.425,31-Jul-2023
+Link,Sunday,09:00,CB Channel 3,ALB03       ,Albany WA,Online at vk6.net,Northside Radio Association,On a scanner key  in   476.475,31-Jul-2023
+Link,Sunday,09:00,CB Chanel 4,PER04,Millendon,Online at vk6.net,Northside Radio Association,On a scanner key  in     476.500,31-Jul-2023
+Link,Sunday,09:00,CB Channel 7,MTJ07,"Mandurah, WA",Online at vk6.net,Northside Radio Association,On a scanner key  in      476.575,31-Jul-2023
+Link,Sunday,09:00,CB Channel 46,ROC46,"Rockingham, WA",Online at vk6.net,Northside Radio Association,On a scanner key  in 476.5625,31-Jul-2023
+Transmission,Sunday,10:00,146.750,VK2RWG,"Wagga Wagga, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+Link,Sunday,10:00,146.775,VK2RBE,"Bethungra, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+Link,Sunday,10:00,146.800,VK2RTD,"Tumut, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+Link,Sunday,10:00,146.825,VK2RGA,"Galore, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+Link,Sunday,10:00,146.850,VK2RGF,"Griffith, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+,,,,,,,,,
+Transmission,Sunday,10:30 CST,438.725,VK8RKT,"Katherine, NT",Automaticly recorded off-air,Mike VK8MA,Also via IRLP 6800,12-Feb-2023
+,,,,,,,,,
+Transmission,Sunday,19:00,3.620,VK6SJ,Carramar WA,VK6SJ,Self,Via remote Tx,3-Feb-2023
+Link,Sunday,19:00,29.680,VK6RHF,"Martin, WA",Online at vk6.net,NewsWest,This is a WARG repeater,
+Link,Sunday,19:00,53.800,VK6RAP,"Roleystone, WA",Eddie VK6YA,NewsWest,This is a WARG repeater,2-Feb-2017
+Link,Sunday,19:00,146.625,VK6RNC,"Cullacabardee, WA",Online at vk6.net,Northern Corridor Radio Group,,5-Feb-2017
+Transmission,Sunday,19:00,146.700,VK6RAP,"Roleystone, WA",Mark VK6USB,NewsWest,This is a WARG repeater,
+Link,Sunday,19:00,146.900,VK6RMW,"Mount William, WA",,NewsWest,This is a WARG repeater,
+Link,Sunday,19:00,147.250,VK6RMS,"Mount Saddleback, WA",Peter VK6AH & Trevor VK6YJ,NewsWest,This is a WARG repeater,2-Feb-2017
+Link,Sunday,19:00,147.350,VK6RBN,"Busselton, WA",Online at vk6.net,NewsWest,This is a WARG repeater,
+Link,Sunday,19:00,439.800,VK6RAP,"Roleystone, WA",Peter VK6AH & Trevor VK6YJ,NewsWest,This is a WARG repeater,2-Feb-2017
+,,,,,,,,,
+Link,Sunday,19:00,CB Channel 1,PER01,Wanneroo,Online at vk6.net,Northside Radio Association,On a scanner key  in     476.425,31-Jul-2023
+Link,Sunday,19:00,CB Channel 3,ALB03       ,Albany WA,Online at vk6.net,Northside Radio Association,On a scanner key  in   476.475,31-Jul-2023
+Link,Sunday,19:00,CB Chanel 4,PER04,Millendon,Online at vk6.net,Northside Radio Association,On a scanner key  in   476.500,31-Jul-2023
+Link,Sunday,19:00,CB Channel 7,MTJ07,"Mandurah, WA",Online at vk6.net,Northside Radio Association,On a scanner key  in   476.575,31-Jul-2023
+Link,Sunday,19:00,CB Channel 46,ROC46,"Rockingham, WA",Online at vk6.net,Northside Radio Association,On a scanner key  in  476.5625,31-Jul-2023
+,,,,,,,,,
+Link,Monday,20:00,439.775,VK7RDR,"Dazzler Range, TAS",Tony VK7AX,NWTR & TVG,,6-Feb-2017
+Link,Monday,20:00,438.700,VK7RAK,"Gagebrook, TAS",Tony VK7AX,NWTR & TVG,,6-Feb-2017
+Link,Monday,20:00,446.500,VK7AX,"Ulverstone, TAS",Tony VK7AX,Self,DATV,6-Feb-2017
+Link,Monday,20:00,batc.tv,,online,Tony VK7AX,Self,http://www.batc.tv/streams/7ax,6-Feb-2017
+,,,,,,,,,
+Transmission,Tuesday,19:30,146.750,VK2RWG,"Wagga Wagga, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+Link,Tuesday,19:30,146.775,VK2RBE,"Bethungra, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+Link,Tuesday,19:30,146.800,VK2RTD,"Tumut, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+Link,Tuesday,19:30,146.825,VK2RGA,"Galore, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+Link,Tuesday,19:30,146.850,VK2RGF,"Griffith, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,2-Feb-2017
+,,,,,,,,,
+Transmission,Daily,10:00,77.400,VK6WFM,"Greenwood, WA",Online at vk6.net,Self,http://www.77400.fm/,12-Feb-2017
+,,,,,,,,,
+Transmission,Daily,18:00,77.400,VK6WFM,"Greenwood, WA",Online at vk6.net,Self,http://www.77400.fm/,12-Feb-2017
+,,,,,,,,,
+Beacon,Daily,Ongoing,145.575,VK6RIB,"Wireless Hill, WA",Online at vk6.net,Ham College,,30-Mar-2017
+,,,,,,,,,
+On Demand,On Demand,Ongoing,146.750,VK4RDD,"Toowoomba, QLD",Online at vk6.net,David Kavanagh - VK4DAK,"Use via DTMF code ""#006""",2-Feb-2017
+,,,,,,,,,
+Inactive,Sunday,09:00,"1,294.700",VK6UU,"Gooseberry Hill, WA",Will VK6UU,Self,Discontinued,13-Feb-2017
+Inactive,Tuesday,19:30,438.025,VK2RTW,"Wagga Wagga, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,3-Feb-2017
+Inactive,Sunday,10:00,438.025,VK2RTW,"Wagga Wagga, NSW",Automaticly recorded off-air,Wagga Amateur Radio Club,Also via IRLP 6260,3-Feb-2017
+Inactive,Sunday,09:00,146.825,VK6RAA,"Mount Barker, WA",Online at vk6.net,Southern Electronics Group,,3-Feb-2017
+Inactive,Sunday,09:00,147.150,VK6RMJ,"Manjimup, WA",Online at vk6.net,Southern Electronics Group,,3-Feb-2017
+Inactive,Sunday,19:00,146.825,VK6RAA,"Mount Barker, WA",Online at vk6.net,Southern Electronics Group,,3-Feb-2017
+Inactive,Sunday,19:00,147.150,VK6RMJ,"Manjimup, WA",Online at vk6.net,Southern Electronics Group,,3-Feb-2017
+Inactive,Sunday,,CB Channel 1,PER01,"Wanneroo, WA",Online at vk6.net,Northside Radio Association,,13-Feb-2017
+Inactive,Sunday,,CB Channel 4,PER04,"Millendon, WA",Online at vk6.net,Northside Radio Association,,13-Feb-2017
+Inactive,,,CB Channel 8,PER08,"Perth City, WA",#N/A,Northside Radio Association,,13-Feb-2017

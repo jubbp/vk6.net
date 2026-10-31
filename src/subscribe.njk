@@ -1,0 +1,15 @@
+---
+layout: layouts/page.njk
+title: Subscribe
+eyebrow: Listen
+lede: Get NewsWest automatically every week.
+permalink: /subscribe/
+---
+{{ pages.subscribe.html | safe }}
+{% include "partials/subscribe-buttons.njk" %}
+<p class="small">Podcast feed address: <code>{{ settings.podcast.feed }}</code></p>
+{%- if settings.forms.emailSignup %}
+<p><a class="button" href="{{ settings.forms.emailSignup }}">Sign up for the weekly email</a></p>
+{%- else %}
+<p class="notice">The weekly email is being set up. In the meantime, <a href="mailto:{{ settings.email }}?subject=Weekly%20NewsWest%20email">email us</a> and we'll add you when it starts.</p>
+{%- endif %}

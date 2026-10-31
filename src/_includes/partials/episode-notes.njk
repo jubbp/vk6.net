@@ -1,0 +1,12 @@
+{%- if ep.items.length %}
+<ul class="notes">
+  {%- for it in ep.items %}
+  <li>{% if it.segment %}<strong>{{ it.segment }}:</strong> {% endif %}{{ it.topic }}
+    {%- if it.notes and it.notes.length %}<ul>{% for n in it.notes %}<li>{{ n }}</li>{% endfor %}</ul>{% endif %}
+  </li>
+  {%- endfor %}
+</ul>
+{%- elif ep.summary %}
+<p>{{ ep.summary }}</p>
+{%- endif %}
+{%- if ep.producer %}<p class="small muted">Produced by {{ ep.producer }}.</p>{% endif %}

@@ -1,0 +1,9 @@
+<section class="card deadlines" aria-labelledby="deadlines-heading">
+  <h2 id="deadlines-heading">Deadlines</h2>
+  <dl>
+    {%- for d in settings.deadlines %}
+    <div><dt>{{ d.what }}</dt><dd>{{ d.when }}</dd></div>
+    {%- endfor %}
+  </dl>
+  <p class="small">Audio as {{ settings.audio.format }}. Send everything to <a href="mailto:{{ settings.email }}">{{ settings.email }}</a>.</p>
+</section>

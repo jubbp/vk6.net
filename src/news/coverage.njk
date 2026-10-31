@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: Coverage map
+description: Map of every transmitter and repeater that carries NewsWest.
+permalink: /news/coverage/
+styles: [/assets/vendor/leaflet/leaflet.css]
+scripts: [/assets/vendor/leaflet/leaflet.js, /assets/js/coverage.js]
+---
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">NewsWest on air</p>
+    <h1>Coverage map</h1>
+    <div class="lede">{{ pages.coverage.html | safe }}</div>
+  </div>
+</header>
+<div class="wrap">
+  <div id="map" class="map" role="region" aria-label="Map of NewsWest transmitters"></div>
+  <script type="application/json" id="map-data">{{ broadcasts.places | json | safe }}</script>
+  <h2>Places</h2>
+  <ul class="place-list">
+    {%- for p in broadcasts.places %}
+    <li><strong>{{ p.location }}</strong><ul>{% for s in p.services %}<li>{{ s }}</li>{% endfor %}</ul></li>
+    {%- endfor %}
+  </ul>
+  <p class="small muted">Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>
+</div>

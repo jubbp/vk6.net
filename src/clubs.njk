@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: VK6 clubs
+description: Amateur radio clubs and groups in Western Australia, including clubs that offer licence training.
+permalink: /clubs/
+---
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><a href="{{ '/becoming-an-amateur/' | url }}">Get licensed</a></p>
+    <h1>VK6 clubs</h1>
+    <div class="lede">{{ pages.clubs.html | safe }}</div>
+  </div>
+</header>
+<div class="wrap">
+  <ul class="club-grid">
+    {%- for c in clubs %}
+    <li class="card">
+      <h2>{% if c.Website %}<a href="{{ c.Website }}">{{ c.Name }}</a>{% else %}{{ c.Name }}{% endif %}</h2>
+      <p class="muted">{{ c.Area }}</p>
+      {%- if c.Training == "Yes" %}<p><span class="tag tag-red">Licence training</span></p>{% endif %}
+      {%- if c.Meets %}<p><strong>Meets:</strong> {{ c.Meets }}</p>{% endif %}
+      {%- if c.Notes %}<p>{{ c.Notes }}</p>{% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</div>

@@ -1,0 +1,15 @@
+---
+layout: layouts/page.njk
+pagination:
+  data: clubNews
+  size: 1
+  alias: post
+permalink: "/club-news/{{ post.slug }}/"
+ogType: article
+eleventyComputed:
+  title: "{{ post.title }}"
+  eyebrow: "Club news · {{ post.date }}"
+  description: "{{ post.excerpt }}"
+---
+{{ post.html | safe }}
+<p><a href="{{ '/club-news/' | url }}">← All club news</a></p>

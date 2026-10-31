@@ -1,0 +1,12 @@
+---
+layout: layouts/page.njk
+title: Club news
+eyebrow: About
+lede: Announcements from WA Amateur Radio News.
+permalink: /club-news/
+---
+<ul class="post-list">
+  {%- for post in clubNews %}
+  <li><a href="{{ ('/club-news/' + post.slug + '/') | url }}"><time datetime="{{ post.date }}">{{ post.date }}</time><strong>{{ post.title }}</strong><span>{{ post.excerpt }}</span></a></li>
+  {%- endfor %}
+</ul>

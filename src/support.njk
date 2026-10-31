@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+title: Support us
+description: Become a WAARN Supporter and help keep NewsWest on air and bring back PerthTech.
+permalink: /support/
+---
+{%- set sup = settings.supporters %}
+{%- set joinHref = sup.joinUrl or ("mailto:" + settings.email + "?subject=" + ("Becoming a " + sup.name | replace("s", "", 1)) | urlencode) %}
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">{{ sup.name }}</p>
+    <h1>Support our work</h1>
+    <p class="lede">Help keep NewsWest on air every week, and help us bring back PerthTech.</p>
+  </div>
+</header>
+
+<div class="wrap page-body">
+  <div class="prose">{{ pages.support.html | safe }}</div>
+
+  <section aria-labelledby="tiers-heading">
+    <h2 id="tiers-heading">Ways to support</h2>
+    <ul class="tiers">
+      {%- for t in sup.tiers %}
+      <li class="card tier{% if loop.first %} featured{% endif %}">
+        <p class="eyebrow">{{ t.for }}</p>
+        <h3>{{ t.name }}</h3>
+        <p class="amount">{{ t.amount }}</p>
+        <ul>{% for b in t.benefits %}<li>{{ b }}</li>{% endfor %}</ul>
+        {%- if t.note %}<p class="small muted">{{ t.note }}</p>{% endif %}
+        <p><a class="button{% if not loop.first %} ghost{% endif %}" href="{{ joinHref }}">{% if t.amount == "Talk to us" %}Get in touch{% else %}Become a {{ t.name | lower }}{% endif %}</a></p>
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- if not sup.joinUrl %}
+    <p class="small muted">Email us and we'll send you the details, including how to pay.</p>
+    {%- endif %}
+  </section>
+
+  <section class="supporters-list" aria-labelledby="list-heading">
+    <h2 id="list-heading">Our supporters</h2>
+    {%- if supporters.length %}
+    <ul class="supporter-names">
+      {%- for s in supporters %}<li>{{ s.Name }}{% if s.Callsign %} <span class="muted">{{ s.Callsign }}</span>{% endif %}</li>{% endfor %}
+    </ul>
+    {%- else %}
+    <p>Be one of our first supporters. With your permission, your name and callsign will appear here.</p>
+    {%- endif %}
+  </section>
+
+  <section class="prose" aria-labelledby="more-heading">
+    <h2 id="more-heading">Other ways to help</h2>
+    {{ pages["support-more"].html | safe }}
+  </section>
+</div>

@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: episodes
+  size: 1
+  alias: ep
+permalink: "/episodes/{{ ep.slug }}/"
+ogType: article
+eleventyComputed:
+  title: "{{ ep.title }}"
+  description: "NewsWest amateur radio news for {{ ep.longDate }}{% if ep.items.length %}: {% for it in ep.items %}{{ it.topic }}{% if not loop.last %}; {% endif %}{% endfor %}{% endif %}"
+  ogAudio: "{{ ep.audio }}"
+  jsonld:
+    "@context": https://schema.org
+    "@type": PodcastEpisode
+    name: "{{ ep.title }}"
+    datePublished: "{{ ep.date }}"
+    url: "{{ ('/episodes/' + ep.slug + '/') | absolute(settings.url) }}"
+    associatedMedia: { "@type": MediaObject, contentUrl: "{{ ep.audio }}" }
+    partOfSeries: { "@type": PodcastSeries, name: NewsWest, url: "{{ '/news/listen/' | absolute(settings.url) }}" }
+---
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><a href="{{ '/news/listen/' | url }}">All episodes</a></p>
+    <h1>{{ ep.title }}</h1>
+  </div>
+</header>
+<div class="wrap page-body has-aside">
+  <div>
+    <section class="card player">
+      <audio controls preload="none" src="{{ ep.audio }}">Your browser can't play audio here: <a href="{{ ep.audio }}">download the episode</a>.</audio>
+      <h2>In this episode</h2>
+      {% include "partials/episode-notes.njk" %}
+      <p class="card-links"><a href="{{ ep.audio }}" download>Download MP3{% if ep.bytes %} ({{ ep.bytes | megabytes }}){% endif %}</a></p>
+    </section>
+    {%- if ep.transcript %}
+    <section class="card transcript">
+      <h2>Transcript</h2>
+      <p class="small muted">Automatic transcript, reviewed by the NewsWest team. It may still contain errors. <a href="{{ '/corrections/' | url }}">Report a problem</a>.</p>
+      <p><a href="{{ ep.transcript }}">Open the transcript</a></p>
+    </section>
+    {%- endif %}
+    <nav class="pager" aria-label="More episodes">
+      {%- if pagination.href.next %}<a href="{{ pagination.href.next | url }}">← Earlier episode</a>{% endif %}
+      {%- if pagination.href.previous %}<a href="{{ pagination.href.previous | url }}">Later episode →</a>{% endif %}
+    </nav>
+  </div>
+  <aside class="page-aside">
+    {% include "partials/callbacks-card.njk" %}
+    {% include "partials/subscribe-card.njk" %}
+  </aside>
+</div>

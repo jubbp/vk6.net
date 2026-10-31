@@ -1,0 +1,69 @@
+---
+layout: layouts/base.njk
+title: Listen
+description: Play the latest NewsWest, browse every episode and search the show notes.
+permalink: /news/listen/
+scripts: [/assets/js/listen.js]
+eleventyComputed:
+  jsonld:
+    "@context": https://schema.org
+    "@type": PodcastSeries
+    name: NewsWest
+    url: "{{ '/news/listen/' | absolute(settings.url) }}"
+    webFeed: "{{ settings.podcast.feed }}"
+    author: { "@type": Organization, name: "{{ settings.org }}" }
+---
+{%- set latest = episodes[0] %}
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">NewsWest</p>
+    <h1>Listen</h1>
+    <div class="lede">{{ pages.listen.html | safe }}</div>
+  </div>
+</header>
+
+<div class="wrap listen-grid">
+  {%- if latest %}
+  <section class="card player" aria-labelledby="np-title" data-player>
+    <p class="eyebrow" data-np-label>Latest episode</p>
+    <h2 id="np-title"><a data-np-link href="{{ ('/episodes/' + latest.slug + '/') | url }}">{{ latest.title }}</a></h2>
+    <audio controls preload="none" src="{{ latest.audio }}" data-np-audio>Your browser can't play audio here: <a href="{{ latest.audio }}">download the episode</a>.</audio>
+    <div data-np-notes>{% set ep = latest %}{% include "partials/episode-notes.njk" %}</div>
+    <p class="card-links"><a data-np-download href="{{ latest.audio }}" download>Download MP3</a></p>
+  </section>
+  {%- else %}
+  <section class="card"><p>Episodes are being loaded. Meanwhile, every episode is at <a href="{{ settings.podcast.audioHost }}">audio.vk6.net</a>.</p></section>
+  {%- endif %}
+
+  <aside>
+    {% include "partials/subscribe-card.njk" %}
+  </aside>
+</div>
+
+<section class="wrap archive" aria-labelledby="archive-heading">
+  <div class="archive-head">
+    <h2 id="archive-heading">All episodes</h2>
+    <form class="archive-tools" role="search" onsubmit="return false">
+      <label class="sr-only" for="q">Search the show notes</label>
+      <input id="q" type="search" placeholder="Search: a club, callsign or topic" autocomplete="off" data-search>
+      <label class="sr-only" for="year">Year</label>
+      <select id="year" data-year>
+        <option value="">All years</option>
+        {%- for y in episodes | years %}<option>{{ y }}</option>{% endfor %}
+      </select>
+    </form>
+  </div>
+  <p class="small muted" aria-live="polite" data-count>{{ episodes.length }} episodes</p>
+  <ol class="episode-list">
+    {%- for ep in episodes %}
+    <li data-search="{{ ep.search }}" data-year="{{ ep.year }}">
+      <button type="button" class="play" data-play data-audio="{{ ep.audio }}" data-title="{{ ep.title }}" data-link="{{ ('/episodes/' + ep.slug + '/') | url }}" aria-label="Play {{ ep.title }}"><span aria-hidden="true">▶</span></button>
+      <div>
+        <h3><a href="{{ ('/episodes/' + ep.slug + '/') | url }}">{{ ep.title }}</a></h3>
+        <div class="ep-notes">{% include "partials/episode-notes.njk" %}</div>
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+  <p class="small muted">Older material: <a href="{{ settings.podcast.audioHost }}">audio.vk6.net</a> has every file, including text editions and video broadcasts.</p>
+</section>

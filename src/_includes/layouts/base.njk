@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- set pageTitle = (title + " · " + settings.club) if title else (settings.club + " · home of " + settings.show) %}
+  {%- set pageDescription = description or "WA Amateur Radio News (WAARN, VK6ARN): home of NewsWest, weekly amateur radio news for Western Australia since 1931." %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}">
+  {%- if settings.preview %}
+  <meta name="robots" content="noindex, nofollow">
+  {%- endif %}
+  {%- if not settings.preview %}
+  <link rel="canonical" href="{{ page.url | absolute(settings.url) }}">
+  {%- endif %}
+  <meta name="theme-color" content="#0b0b0d">
+
+  <meta property="og:site_name" content="{{ settings.club }}">
+  <meta property="og:type" content="{{ ogType or 'website' }}">
+  <meta property="og:title" content="{{ title or settings.show }}">
+  <meta property="og:description" content="{{ pageDescription }}">
+  <meta property="og:url" content="{{ page.url | absolute(settings.url) }}">
+  <meta property="og:image" content="{{ '/assets/img/og-image.png' | absolute(settings.url) }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="WA Amateur Radio News logo: home of NewsWest, VK6ARN, since 1931">
+  <meta name="twitter:card" content="summary_large_image">
+  {%- if ogAudio %}
+  <meta property="og:audio" content="{{ ogAudio }}">
+  {%- endif %}
+
+  <link rel="alternate" type="application/rss+xml" title="NewsWest podcast" href="{{ settings.podcast.feed }}">
+  <link rel="icon" href="{{ '/assets/img/favicon-64.png' | url }}" type="image/png">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | url }}">
+  {%- for href in styles %}
+  <link rel="stylesheet" href="{{ href | url }}">
+  {%- endfor %}
+  {%- if jsonld %}
+  <script type="application/ld+json">{{ jsonld | json | safe }}</script>
+  {%- endif %}
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip" href="#main">Skip to content</a>
+
+  {%- if settings.preview %}
+  <div class="preview-bar" role="note">Preview of the new vk6.net. Content and design still being checked. <a href="https://www.vk6.net/">Current site</a></div>
+  {%- endif %}
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | url }}" aria-label="{{ settings.club }}, home">
+        <img class="brand-logo" src="{{ '/assets/img/waarn-logo-200.png' | url }}" alt="" width="100" height="74">
+        <span class="brand-text"><strong>{{ settings.club }}</strong><span>{{ settings.orgShort }} · {{ settings.callsign }} · home of {{ settings.show }}</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          {%- for item in settings.nav %}
+          <li>
+            {%- if item.children %}
+            <details class="nav-group">
+              <summary{% if item | isCurrent(page) %} class="current"{% endif %}>{{ item.label }}</summary>
+              <ul>
+                {%- for child in item.children %}
+                <li><a href="{{ child.url | url }}"{% if page.url == child.url %} aria-current="page"{% endif %}>{{ child.label }}</a></li>
+                {%- endfor %}
+              </ul>
+            </details>
+            {%- else %}
+            <a class="nav-top{% if item | isCurrent(page) %} current{% endif %}" href="{{ item.url | url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+            {%- endif %}
+          </li>
+          {%- endfor %}
+          <li><a class="nav-cta" href="{{ '/callbacks/' | url }}">Send a callback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-brand"><img src="{{ '/assets/img/waarn-logo-200.png' | url }}" alt="" width="72" height="53"> <strong>{{ settings.org }}</strong></p>
+        <p>{{ settings.orgShort }} · {{ settings.callsign }} · producers of {{ settings.show }}, {{ settings.tagline | lower }}</p>
+        <p><a href="mailto:{{ settings.email }}">{{ settings.email }}</a></p>
+      </div>
+      <div>
+        <h2>Listen</h2>
+        <ul>
+          <li><a href="{{ '/news/listen/' | url }}">Latest episode and archive</a></li>
+          <li><a href="{{ '/subscribe/' | url }}">Subscribe</a></li>
+          <li><a href="{{ settings.podcast.feed }}">Podcast feed (RSS)</a></li>
+          <li><a href="{{ '/news/broadcasts/' | url }}">On air near you</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Get involved</h2>
+        <ul>
+          <li><a href="{{ '/news/contact/' | url }}">Submit your news</a></li>
+          <li><a href="{{ '/news/relay/' | url }}">Relay NewsWest</a></li>
+          <li><a href="{{ '/callbacks/' | url }}">Send a callback</a></li>
+          <li><a href="{{ '/support/' | url }}">Support us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>The club</h2>
+        <ul>
+          <li><a href="{{ '/waarn/' | url }}">About WAARN</a></li>
+          <li><a href="{{ '/governance/' | url }}">Governance</a></li>
+          <li><a href="{{ '/privacy/' | url }}">Privacy</a></li>
+          <li><a href="{{ '/corrections/' | url }}">Corrections and removals</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-base">
+      <p>© {{ build.year }} {{ settings.org }}</p>
+      <div class="scale" aria-hidden="true"></div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/site.js' | url }}" defer></script>
+  {%- for src in scripts %}
+  <script src="{{ src | url }}" defer></script>
+  {%- endfor %}
+</body>
+</html>

@@ -1,0 +1,39 @@
+export default function (config) {
+  // Content lives outside src/: rebuild the preview when it changes.
+  config.addWatchTarget('content/');
+  config.addPassthroughCopy({ 'src/assets': 'assets' });
+  config.addPassthroughCopy({
+    'node_modules/leaflet/dist/leaflet.js': 'assets/vendor/leaflet/leaflet.js',
+    'node_modules/leaflet/dist/leaflet.css': 'assets/vendor/leaflet/leaflet.css',
+    'node_modules/leaflet/dist/images': 'assets/vendor/leaflet/images',
+  });
+
+  // Absolute URL for link previews and structured data.
+  config.addFilter('absolute', (path, base) => new URL(path, base).href);
+  config.addFilter('json', (value) => JSON.stringify(value).replace(/</g, '\\u003c'));
+  config.addFilter('megabytes', (bytes) => (bytes ? `${(bytes / 1048576).toFixed(1)} MB` : ''));
+  config.addFilter('years', (episodes) => [...new Set(episodes.map((e) => e.year))]);
+  config.addFilter('byGroup', (events, group) => events.filter((e) => e.group === group));
+  config.addFilter('byMonth', (events) => {
+    const months = [];
+    for (const e of events) {
+      if (months.at(-1)?.month !== e.month) months.push({ month: e.month, events: [] });
+      months.at(-1).events.push(e);
+    }
+    return months;
+  });
+  config.addFilter('limit', (list, n) => list.slice(0, n));
+  // Menu highlighting: a group is current when one of its pages is; Listen also covers episode pages.
+  config.addFilter('isCurrent', (item, page) => item.children
+    ? item.children.some((c) => c.url === page.url)
+    : page.url === item.url || (item.url === '/news/listen/' && page.url.startsWith('/episodes/')));
+
+  return {
+    dir: { input: 'src', includes: '_includes', data: '_data', output: '_site' },
+    // Set by the GitHub Pages workflow when the site is served from a sub-path (before the custom domain).
+    pathPrefix: process.env.PATH_PREFIX || '/',
+    templateFormats: ['njk', 'md'],
+    htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
+  };
+}

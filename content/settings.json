@@ -1,0 +1,122 @@
+{
+  "preview": true,
+  "siteName": "vk6.net",
+  "club": "WA Amateur Radio News",
+  "org": "WA Amateur Radio News Inc",
+  "orgShort": "WAARN",
+  "callsign": "VK6ARN",
+  "show": "NewsWest",
+  "tagline": "Amateur Radio News Since 1931",
+  "url": "https://www.vk6.net",
+  "email": "newswest@vk6.net",
+
+  "broadcast": {
+    "day": "Sunday",
+    "timezone": "WST",
+    "utcOffsetHours": 8,
+    "durationMinutes": 30,
+    "times": [
+      { "label": "Morning broadcast", "time": "09:30", "note": "after the 09:00 WIA National News" },
+      { "label": "Evening repeat", "time": "19:00", "note": "WIA National News, then NewsWest" }
+    ],
+    "featured": [
+      { "freq": "146.700 MHz", "station": "VK6RAP", "where": "Roleystone, 2 m: origin of the linked network" },
+      { "freq": "439.800 MHz", "station": "VK6RAP", "where": "Roleystone, 70 cm" },
+      { "freq": "53.800 MHz", "station": "VK6RAP", "where": "Roleystone, 6 m" },
+      { "freq": "29.680 MHz", "station": "VK6RHF", "where": "Martin, 10 m" }
+    ]
+  },
+
+  "deadlines": [
+    { "what": "Audio contributions", "when": "Noon Friday" },
+    { "what": "Text for the team to read on air", "when": "5 pm Thursday" },
+    { "what": "Helpline items (to Roy VK6XV)", "when": "Thursday morning" }
+  ],
+
+  "audio": {
+    "format": "MP3, 256 kbit/s, mono",
+    "tool": { "name": "Audacity", "url": "https://www.audacityteam.org/" }
+  },
+
+  "supporters": {
+    "_comment": "Draft for the committee: amounts, benefits and how to pay are not yet decided. joinUrl blank = 'email us' button.",
+    "name": "WAARN Supporters",
+    "joinUrl": "",
+    "tiers": [
+      { "name": "Supporter", "amount": "$25 a year", "for": "Listeners", "benefits": ["Your name (and callsign) on our supporters list, if you'd like", "Thanked on NewsWest once a year", "Priority booking for PerthTech"] },
+      { "name": "Club supporter", "amount": "$100 a year", "for": "Clubs and groups", "benefits": ["Your club listed as a supporter, with a link", "A mention on NewsWest when you join", "Priority booking for your members at PerthTech"] },
+      { "name": "Sponsor", "amount": "Talk to us", "for": "Businesses", "benefits": ["Your business on our sponsors list on this website, with your logo and a link", "Recognised at PerthTech: signage, sponsored sessions or prizes", "Tailored to what suits you"], "note": "Sponsors are never mentioned on air: NewsWest goes out on the amateur bands, which can't be used commercially." }
+    ]
+  },
+
+  "forms": {
+    "callbacks": "https://docs.google.com/forms/d/e/1FAIpQLSfVHjYS4ssYIStg7U2s5ctwvGlzWaPL81SJQE_A02_7v5nlQQ/viewform",
+    "broadcasterSignup": "https://docs.google.com/forms/d/e/1FAIpQLSfPjCqIUCVemNxsdCKNxdlIrQj2tQoSkLTSkgUv73t75V8abg/viewform",
+    "emailSignup": ""
+  },
+
+  "podcast": {
+    "feed": "https://storage.googleapis.com/vk6arn-audio-test/feed.xml",
+    "apple": "",
+    "spotify": "",
+    "pocketCasts": "",
+    "audioHost": "http://audio.vk6.net/"
+  },
+
+  "sources": {
+    "episodesJson": "https://storage.googleapis.com/vk6arn-audio-test/data/episodes.json",
+    "feed": "https://storage.googleapis.com/vk6arn-audio-test/feed.xml",
+    "broadcastsSheet": "1cmtffLRY8z0ajdcgXaF8VNQ0WRCG6QFaAV5hu9BSk6U",
+    "clubsSheet": "",
+    "weeklyNotesDoc": "1wYNSBhrfeEb5IZ-0ucxJmfb9KjMkJqndp9p-BtDMcy4",
+    "pageDocs": {
+      "_comment": "Page key -> Google Doc ID (shared 'anyone with the link can view'). Blank = use the copy in content/pages/.",
+      "home": "",
+      "news": "",
+      "contact": "",
+      "scripts": "",
+      "waarn": "",
+      "history": "",
+      "governance": "",
+      "becoming-an-amateur": "",
+      "helpline": "",
+      "relay": "",
+      "support": "",
+      "privacy": "",
+      "corrections": ""
+    }
+  },
+
+  "legacyRedirects": [
+    { "path": "/meeting/", "title": "VK6 Club Calendar", "to": "https://calendar.google.com/calendar/embed?src=vk6.net_9iftqcfs9f4enanh3sn46rdrc8%40group.calendar.google.com&ctz=Australia%2FPerth" },
+    { "path": "/nets/", "title": "Nets calendar", "to": "https://calendar.google.com/calendar/embed?src=vk6.net_4a9tr10mg63kvpoq780s6mdrk8%40group.calendar.google.com&ctz=Australia%2FPerth" },
+    { "path": "/contests/", "title": "Contest calendar", "to": "https://calendar.google.com/calendar/embed?src=vk6.net_3m0e57jjodqmve03d09hi3gkmo%40group.calendar.google.com&ctz=Australia%2FPerth" }
+  ],
+
+  "nav": [
+    { "label": "Listen", "url": "/news/listen/" },
+    { "label": "The News", "url": "/news/", "children": [
+      { "label": "About the broadcast", "url": "/news/" },
+      { "label": "Broadcast schedule", "url": "/news/broadcasts/" },
+      { "label": "Coverage map", "url": "/news/coverage/" },
+      { "label": "Send a callback", "url": "/callbacks/" },
+      { "label": "Submit your news", "url": "/news/contact/" },
+      { "label": "Scripts to record", "url": "/news/scripts/" },
+      { "label": "Relay NewsWest", "url": "/news/relay/" }
+    ]},
+    { "label": "Get licensed", "url": "/becoming-an-amateur/", "children": [
+      { "label": "Becoming an amateur", "url": "/becoming-an-amateur/" },
+      { "label": "VK6 clubs", "url": "/clubs/" }
+    ]},
+    { "label": "PerthTech", "url": "/perthtech/" },
+    { "label": "About", "url": "/waarn/", "children": [
+      { "label": "About WAARN", "url": "/waarn/" },
+      { "label": "Club news", "url": "/club-news/" },
+      { "label": "History since 1931", "url": "/history/" },
+      { "label": "VI6CRO Carnarvon", "url": "/vi6cro/" },
+      { "label": "Helpline", "url": "/helpline/" },
+      { "label": "Governance", "url": "/governance/" },
+      { "label": "Support us", "url": "/support/" }
+    ]}
+  ]
+}

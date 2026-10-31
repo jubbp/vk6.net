@@ -1,0 +1,7 @@
+<ul class="sub-buttons">
+  {%- if settings.podcast.apple %}<li><a class="button ghost" href="{{ settings.podcast.apple }}">Apple Podcasts</a></li>{% endif %}
+  {%- if settings.podcast.spotify %}<li><a class="button ghost" href="{{ settings.podcast.spotify }}">Spotify</a></li>{% endif %}
+  {%- if settings.podcast.pocketCasts %}<li><a class="button ghost" href="{{ settings.podcast.pocketCasts }}">Pocket Casts</a></li>{% endif %}
+  <li><a class="button ghost" href="{{ settings.podcast.feed }}" data-copy="{{ settings.podcast.feed }}">Podcast feed (RSS)</a></li>
+  <li><a class="button ghost" href="{{ '/subscribe/' | url }}">Weekly email</a></li>
+</ul>

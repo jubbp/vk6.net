@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: The News
+description: When and where to hear NewsWest, how to give a callback, and this week's show notes.
+permalink: /news/
+---
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">NewsWest</p>
+    <h1>The News</h1>
+    <p class="lede">Every Sunday morning on the VK6 linked repeaters and HF, repeated Sunday evening, and online any time.</p>
+  </div>
+</header>
+<div class="wrap page-body has-aside">
+  <div class="prose">
+    {{ pages.news.html | safe }}
+    {%- if pages["this-week"] %}
+    <section class="this-week">
+      <h2>This week's show notes</h2>
+      {{ pages["this-week"].html | safe }}
+    </section>
+    {%- endif %}
+  </div>
+  <aside class="page-aside">
+    {% include "partials/next-broadcast.njk" %}
+    {% include "partials/callbacks-card.njk" %}
+  </aside>
+</div>

@@ -1,0 +1,1 @@
+Heard NewsWest? Log your callback here. It tells us who's listening and where, and the totals are reported to the WIA each week. If you can, also give your callsign on air at the end of the broadcast.

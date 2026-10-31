@@ -1,0 +1,12 @@
+---
+layout: layouts/page.njk
+title: Send a callback
+eyebrow: NewsWest
+permalink: /callbacks/
+aside: [next-broadcast]
+---
+{{ pages.callbacks.html | safe }}
+<div class="form-embed">
+  <iframe src="{{ settings.forms.callbacks }}?embedded=true" title="NewsWest callback form" loading="lazy"></iframe>
+</div>
+<p class="small">Form not showing? <a href="{{ settings.forms.callbacks }}">Open it in a new page</a>.</p>

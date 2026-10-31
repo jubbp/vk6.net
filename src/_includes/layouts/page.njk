@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+---
+<header class="page-head">
+  <div class="wrap">
+    {%- if eyebrow %}<p class="eyebrow">{{ eyebrow }}</p>{% endif %}
+    <h1>{{ title }}</h1>
+    {%- if lede %}<p class="lede">{{ lede }}</p>{% endif %}
+  </div>
+</header>
+{%- set asideList = aside or (p.aside if p else null) %}
+<div class="wrap page-body{% if asideList %} has-aside{% endif %}">
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+  {%- if asideList %}
+  <aside class="page-aside">
+    {%- for part in asideList %}{% include "partials/" + part + ".njk" %}{% endfor %}
+  </aside>
+  {%- endif %}
+</div>

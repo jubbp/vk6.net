@@ -1,0 +1,29 @@
+---
+# Pages that are just text (from content/pages/<key>.md or its Google Doc), plus optional side cards.
+layout: layouts/page.njk
+pagination:
+  data: list
+  size: 1
+  alias: p
+  addAllPagesToCollections: true
+list:
+  - { key: news/contact, text: contact, title: Submit your news, eyebrow: Get involved, lede: "Audio or text, from any club or amateur. Here's how to get it on NewsWest.", aside: [deadlines] }
+  - { key: news/scripts, text: scripts, title: Scripts to record, eyebrow: Get involved, lede: "Short promos in your own voice, played on NewsWest.", aside: [deadlines] }
+  - { key: waarn, text: waarn, title: About WAARN, eyebrow: About, lede: "WA Amateur Radio News Inc: the volunteers behind NewsWest and vk6.net." }
+  - { key: history, text: history, title: History since 1931, eyebrow: About }
+  - { key: governance, text: governance, title: Governance, eyebrow: About }
+  - { key: vi6cro, text: vi6cro, title: "VI6CRO, Carnarvon", eyebrow: Past events, lede: "WA Amateur Radio News supported VI6CRO at the Carnarvon Space and Technology Museum, April 2023." }
+  - { key: helpline, text: helpline, title: Helpline, eyebrow: On NewsWest, lede: "Pre-loved equipment, wanted items and help, every week with Roy VK6XV." }
+  - { key: becoming-an-amateur, text: becoming-an-amateur, title: Becoming an amateur, eyebrow: Get licensed, lede: "Getting your licence is easier than you think. A weekend is often all it takes." }
+  - { key: privacy, text: privacy, title: Privacy, eyebrow: About this site }
+  - { key: corrections, text: corrections, title: Corrections and removals, eyebrow: About this site }
+permalink: "/{{ p.key }}/"
+eleventyComputed:
+  title: "{{ p.title }}"
+  eyebrow: "{{ p.eyebrow }}"
+  lede: "{{ p.lede }}"
+---
+{{ pages[p.text].html | safe }}
+{%- if p.key == "becoming-an-amateur" %}
+<p><a class="button" href="{{ '/clubs/' | url }}">Find a club that offers training</a></p>
+{%- endif %}

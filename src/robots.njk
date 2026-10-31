@@ -1,0 +1,14 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+{%- if settings.preview -%}
+# Preview: crawlers may fetch pages so they can read each page's "noindex" tag.
+# (Blocking them here would hide that tag, and linked pages could still be listed.)
+User-agent: *
+Allow: /
+{%- else -%}
+User-agent: *
+Allow: /
+Sitemap: {{ settings.url }}/sitemap.xml
+{%- endif %}

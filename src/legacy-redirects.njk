@@ -1,0 +1,13 @@
+---
+# Old Google Sites calendar pages: send visitors to the club's Google Calendars.
+pagination:
+  data: settings.legacyRedirects
+  size: 1
+  alias: r
+permalink: "{{ r.path }}"
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en-AU"><head><meta charset="utf-8"><title>{{ r.title }}</title>
+<meta http-equiv="refresh" content="0; url={{ r.to }}"><meta name="robots" content="noindex"></head>
+<body><p>The {{ r.title }} has moved: <a href="{{ r.to }}">open it in Google Calendar</a>.</p></body></html>

@@ -1,0 +1,14 @@
+{#- Server-rendered schedule; site.js adds the date of the next one and "on air now". -#}
+<section class="card on-air" data-next-broadcast='{{ settings.broadcast | json }}' aria-labelledby="next-heading">
+  <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> <span data-status>On air every {{ settings.broadcast.day }}</span></p>
+  <h2 id="next-heading" data-next>Every {{ settings.broadcast.day }}, {{ settings.broadcast.times[0].time }} {{ settings.broadcast.timezone }}</h2>
+  <p class="muted" data-countdown>
+    {%- for t in settings.broadcast.times %}{{ t.label }} {{ t.time }} {{ settings.broadcast.timezone }} ({{ t.note }}){% if not loop.last %} · {% endif %}{% endfor -%}
+  </p>
+  <ul class="freqs">
+    {%- for f in settings.broadcast.featured %}
+    <li><strong>{{ f.freq }}</strong> <span>{{ f.station }}</span> <small>{{ f.where }}</small></li>
+    {%- endfor %}
+  </ul>
+  <p class="card-links"><a href="{{ '/news/broadcasts/' | url }}">Full schedule, HF and interstate</a> · <a href="{{ '/news/coverage/' | url }}">Coverage map</a></p>
+</section>

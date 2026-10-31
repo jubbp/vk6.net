@@ -1,0 +1,10 @@
+node_modules/
+_site/
+content/_live/
+.DS_Store
+node_modules.nosync/
+_site.nosync/
+_site
+node_modules
+# Raw crawl of the old site: contains private email addresses; keep local only.
+audit/current-site-inventory-*.json
