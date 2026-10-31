@@ -86,44 +86,25 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <p class="footer-brand"><img src="{{ '/assets/img/waarn-logo-200.png' | url }}" alt="" width="72" height="53"> <strong>{{ settings.org }}</strong></p>
-        <p>{{ settings.orgShort }} · {{ settings.callsign }} · producers of {{ settings.show }}, {{ settings.tagline | lower }}</p>
-        <p><a href="mailto:{{ settings.email }}">{{ settings.email }}</a></p>
-      </div>
-      <div>
-        <h2>Listen</h2>
-        <ul>
-          <li><a href="{{ '/news/listen/' | url }}">Latest episode and archive</a></li>
-          <li><a href="{{ '/subscribe/' | url }}">Subscribe</a></li>
-          <li><a href="{{ settings.podcast.feed }}">Podcast feed (RSS)</a></li>
+    <div class="wrap footer-inner">
+      <p class="footer-brand"><img src="{{ '/assets/img/waarn-logo-200.png' | url }}" alt="" width="38" height="28"><strong>{{ settings.org }}</strong><span>{{ settings.orgShort }} · {{ settings.callsign }} · producers of {{ settings.show }}</span><a href="mailto:{{ settings.email }}">{{ settings.email }}</a></p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="{{ '/news/listen/' | url }}">Listen</a></li>
+          <li><a href="{{ settings.podcast.feed }}">Podcast feed</a></li>
           <li><a href="{{ '/news/broadcasts/' | url }}">On air near you</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Get involved</h2>
-        <ul>
+          <li><a href="{{ '/callbacks/' | url }}">Register your callback</a></li>
           <li><a href="{{ '/news/contact/' | url }}">Submit your news</a></li>
           <li><a href="{{ '/news/relay/' | url }}">Relay NewsWest</a></li>
-          <li><a href="{{ '/callbacks/' | url }}">Register your callback</a></li>
           <li><a href="{{ '/perthtech/' | url }}">PerthTech</a></li>
           <li><a href="{{ '/support/' | url }}">Support us</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>The club</h2>
-        <ul>
           <li><a href="{{ '/waarn/' | url }}">About WAARN</a></li>
           <li><a href="{{ '/governance/' | url }}">Governance</a></li>
           <li><a href="{{ '/privacy/' | url }}">Privacy</a></li>
-          <li><a href="{{ '/corrections/' | url }}">Corrections and removals</a></li>
+          <li><a href="{{ '/corrections/' | url }}">Corrections</a></li>
         </ul>
-      </div>
-    </div>
-    <div class="wrap footer-base">
-      <p>© {{ build.year }} {{ settings.org }}</p>
-      <div class="scale" aria-hidden="true"></div>
+      </nav>
+      <p class="footer-copy">© {{ build.year }} {{ settings.org }}</p>
     </div>
   </footer>
 

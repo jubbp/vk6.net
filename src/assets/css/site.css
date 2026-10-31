@@ -298,20 +298,18 @@ td.freq { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
 .supporters-list { margin-top: 8px; }
 .supporter-names { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; }
 
-/* Footer */
-.site-footer { background: var(--night); color: #b9b8b3; margin-top: 48px; padding-top: 52px; }
-.footer-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 32px; }
-.footer-grid h2 { font: 600 0.78rem var(--sans); text-transform: uppercase; letter-spacing: 0.08em; color: #fff; }
-.footer-grid ul { list-style: none; padding: 0; }
-.footer-grid li { margin-bottom: 6px; }
-.site-footer a { color: #e9e8e4; text-decoration: none; }
-.site-footer a:hover { text-decoration: underline; }
-.footer-brand { display: flex; align-items: center; gap: 12px; color: #fff; font-family: var(--display); font-size: 1.1rem; }
-.footer-brand img { height: 44px; width: auto; }
-.footer-base { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-block: 26px; margin-top: 24px; border-top: 1px solid #2a2a2f; font-size: 0.82rem; }
-.footer-base p { margin: 0; }
-.scale { display: none; }
-@media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-grid > :first-child { grid-column: 1 / -1; } }
+/* Footer: compact */
+.site-footer { background: var(--night); color: #a9a8a3; margin-top: 40px; font-size: 0.82rem; }
+.footer-inner { display: grid; gap: 10px; padding-block: 20px 18px; }
+.footer-brand { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin: 0; }
+.footer-brand img { height: 26px; width: auto; }
+.footer-brand strong { color: #fff; font-weight: 600; font-size: 0.88rem; }
+.footer-brand a { margin-left: auto; }
+.footer-links { list-style: none; margin: 0; padding: 10px 0 0; border-top: 1px solid #2a2a2f; display: flex; flex-wrap: wrap; gap: 4px 15px; }
+.site-footer a { color: #e2e1dd; text-decoration: none; }
+.site-footer a:hover { color: #fff; text-decoration: underline; }
+.footer-copy { margin: 0; font-size: 0.76rem; color: #85847f; }
+@media (max-width: 640px) { .footer-brand span { flex-basis: 100%; } .footer-brand a { margin-left: 0; } }
 
 .this-week { margin-top: 2.5em; padding-top: 1.5em; border-top: 1px solid var(--line); }
 .pre { white-space: pre-line; }
