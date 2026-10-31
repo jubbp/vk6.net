@@ -11,23 +11,11 @@ jsonld:
   foundingDate: "2015-01"
 ---
 {%- set latest = episodes[0] %}
-<section class="front">
-  <div class="wrap front-grid">
-    <div class="front-copy">
-      <p class="kicker">{{ settings.show }} · every Sunday since 1931</p>
-      <h1>Amateur radio news for Western Australia.</h1>
-      <p class="lede">The clubs, contests, nets and people of VK6, on air across the state, online, and in your podcast app. Made by the volunteers of {{ settings.club }}.</p>
-      <p class="actions">
-        <a class="button" href="{{ '/news/listen/' | url }}">Listen now</a>
-        <a class="button ghost" href="{{ '/news/broadcasts/' | url }}">Find it on air</a>
-      </p>
-    </div>
-    {% include "partials/next-broadcast.njk" %}
-  </div>
-</section>
-
-<div class="wrap lead-grid">
-  <div class="lead-main">
+<div class="wrap home-layout">
+  <div class="home-main">
+    <p class="kicker">{{ settings.show }} · every Sunday since 1931</p>
+    <h1>Amateur radio news for Western Australia.</h1>
+    <p class="lede">News from the clubs, contests, nets and people of VK6, every Sunday on the repeaters and HF, and any time online or in your podcast app. Made by the volunteers of {{ settings.club }}.</p>
     {%- if latest %}
     {%- set ep = latest %}{% set playerLabel = "This week on NewsWest" %}
     {% include "partials/player.njk" %}
@@ -38,7 +26,7 @@ jsonld:
     </div>
     {%- endif %}
   </div>
-  <aside class="lead-side">
+  <aside class="home-side">
     {% include "partials/callbacks-card.njk" %}
     {% include "partials/support-card.njk" %}
   </aside>
