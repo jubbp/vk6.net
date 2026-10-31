@@ -309,6 +309,7 @@ td.freq { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
 .site-footer a { color: #e2e1dd; text-decoration: none; }
 .site-footer a:hover { color: #fff; text-decoration: underline; }
 .footer-copy { margin: 0; font-size: 0.76rem; color: #85847f; }
+.footer-copy a { color: #a9a8a3; }
 @media (max-width: 640px) { .footer-brand span { flex-basis: 100%; } .footer-brand a { margin-left: 0; } }
 
 .this-week { margin-top: 2.5em; padding-top: 1.5em; border-top: 1px solid var(--line); }
