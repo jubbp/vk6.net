@@ -25,7 +25,7 @@ eleventyComputed:
 <div class="wrap listen-grid">
   {%- if latest %}
   <div>
-    {%- set ep = latest %}{% set playerLabel = "Latest episode" %}
+    {%- set ep = latest %}{% set playerLabel = "Latest episode" %}{% set notesSeek = true %}
     {% include "partials/player.njk" %}
     <div class="lead-notes" data-np-notes>{% include "partials/episode-notes.njk" %}</div>
   </div>
