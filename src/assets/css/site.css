@@ -1,6 +1,6 @@
 /* vk6.net: editorial theme ("newsroom", with an audio-app player).
    Light, calm pages; logo red as a sparing accent; yellow only for the on-air signal.
-   Fonts from Google Fonts: Newsreader (headlines) and Inter (text). */
+   Fonts from Google Fonts: Inter Tight (headlines) and Inter (text). No serif fonts. */
 
 :root {
   --ink: #141416;
@@ -16,7 +16,7 @@
   --night-2: #1f1f23;
   --link: #b30909;
   --radius: 10px;
-  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --display: "Inter Tight", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --wrap: 1160px;
@@ -46,8 +46,8 @@ img, svg, iframe { max-width: 100%; }
 a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 3px solid var(--red); outline-offset: 2px; border-radius: 3px; }
-h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 0.45em; color: var(--ink); }
-h1 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); font-weight: 650; }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; line-height: 1.12; letter-spacing: -0.005em; margin: 0 0 0.45em; color: var(--ink); }
+h1 { font-size: clamp(2.1rem, 4.6vw, 3.2rem); font-weight: 700; letter-spacing: 0; }
 h2 { font-size: 1.6rem; }
 h3 { font-size: 1.2rem; }
 p, ul, ol, dl { margin: 0 0 1em; }
@@ -71,7 +71,7 @@ code { font-family: var(--mono); font-size: 0.88em; background: var(--wash); bor
 .brand { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; flex-shrink: 0; }
 .brand-logo { height: 40px; width: auto; flex-shrink: 0; }
 .brand-text { display: grid; line-height: 1.15; }
-.brand-text strong { font-family: var(--serif); font-size: 1.22rem; font-weight: 650; letter-spacing: -0.01em; }
+.brand-text strong { font-family: var(--display); font-size: 1.22rem; font-weight: 700; letter-spacing: -0.01em; }
 .brand-text span { font-size: 0.74rem; color: var(--muted); letter-spacing: 0.02em; }
 .menu-toggle { display: none; margin-left: auto; background: none; color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 7px 14px; font: 600 0.95rem var(--sans); }
 .site-nav { margin-left: auto; }
@@ -148,7 +148,7 @@ code { font-family: var(--mono); font-size: 0.88em; background: var(--wash); bor
 .prose h2 { margin-top: 1.5em; font-size: 1.5rem; }
 .prose h3 { margin-top: 1.2em; }
 .prose li { margin-bottom: 0.35em; }
-.prose blockquote { margin: 0 0 1.3em; padding: 2px 0 2px 18px; border-left: 3px solid var(--red); font-family: var(--serif); font-size: 1.15rem; color: var(--ink-2); }
+.prose blockquote { margin: 0 0 1.3em; padding: 2px 0 2px 18px; border-left: 3px solid var(--red); font-size: 1.08rem; color: var(--ink-2); }
 .prose blockquote p { margin: 0; }
 
 /* Cards: quiet panels, no shadows */
@@ -219,16 +219,16 @@ code { font-family: var(--mono); font-size: 0.88em; background: var(--wash); bor
 /* Tiles: an editorial index, not boxes */
 .tiles { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); column-gap: 32px; }
 .tiles a { display: grid; gap: 2px; padding: 14px 0 16px; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
-.tiles strong { font-family: var(--serif); font-size: 1.18rem; font-weight: 600; }
+.tiles strong { font-family: var(--display); font-size: 1.18rem; font-weight: 600; }
 .tiles span { color: var(--muted); font-size: 0.92rem; }
 .tiles a:hover strong { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
-.thanks .prose { font-family: var(--serif); font-size: 1.22rem; line-height: 1.55; color: var(--ink-2); max-width: 60ch; }
+.thanks .prose { font-size: 1.12rem; line-height: 1.6; color: var(--ink-2); max-width: 64ch; }
 
 /* Posts */
 .post-list { list-style: none; padding: 0; margin: 0; }
 .post-list a { display: grid; gap: 4px; padding: 16px 0; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--ink); }
 .post-list time { font-size: 0.82rem; color: var(--muted); }
-.post-list strong { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; }
+.post-list strong { font-family: var(--display); font-size: 1.3rem; font-weight: 600; }
 .post-list span { color: var(--ink-2); }
 .post-list a:hover strong { color: var(--link); }
 
@@ -292,7 +292,7 @@ td.freq { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
 .tiers { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin: 20px 0 12px; }
 .tier { display: flex; flex-direction: column; background: var(--paper); }
 .tier h3 { font-size: 1.4rem; margin-bottom: 2px; }
-.tier .amount { font-family: var(--serif); font-size: 1.7rem; font-weight: 650; color: var(--red); margin-bottom: 12px; }
+.tier .amount { font-family: var(--display); font-size: 1.7rem; font-weight: 700; color: var(--red); margin-bottom: 12px; }
 .tier ul { padding-left: 1.1em; flex: 1; }
 .tier.featured { border-color: var(--red); box-shadow: inset 0 3px 0 var(--red); }
 .supporters-list { margin-top: 8px; }
@@ -306,7 +306,7 @@ td.freq { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
 .footer-grid li { margin-bottom: 6px; }
 .site-footer a { color: #e9e8e4; text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
-.footer-brand { display: flex; align-items: center; gap: 12px; color: #fff; font-family: var(--serif); font-size: 1.1rem; }
+.footer-brand { display: flex; align-items: center; gap: 12px; color: #fff; font-family: var(--display); font-size: 1.1rem; }
 .footer-brand img { height: 44px; width: auto; }
 .footer-base { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-block: 26px; margin-top: 24px; border-top: 1px solid #2a2a2f; font-size: 0.82rem; }
 .footer-base p { margin: 0; }
