@@ -1,23 +1,29 @@
-## Informing Western Australian amateurs since 1931
+WA Amateur Radio News (WAARN) is the amateur radio club that produces **NewsWest**, the weekly amateur radio news for Western Australia. Our callsign is **VK6ARN**. We're all volunteers.
 
-WA Amateur Radio News (WAARN) was formed as an amateur radio club in late 2014 and incorporated in Western Australia as an association in January 2015. Its main activities are producing and broadcasting NewsWest, the weekly amateur radio news programme for Western Australia, and maintaining the vk6.net website.
+## What we do
 
-WAARN also develops activities that teach amateurs more about their hobby, and promotes amateur radio to the wider community.
+- **NewsWest, every Sunday of the year:** news from WA's clubs and amateurs, on air across the state and relayed interstate, and online as a podcast.
+- **The WIA National News** on the VK6 broadcast network, ahead of NewsWest each Sunday.
+- **PerthTech:** our [technical day](/perthtech/) for amateur radio operators.
+- **Training:** courses like NewsHound 101, which teaches amateurs to write, record and edit news items for broadcast.
+- **vk6.net:** this website.
 
-## NewsWest
+## The NewsWest team
 
-NewsWest is produced every week by a small team of WAARN members. We're all volunteers and donate our resources to amateur radio. The team changes from time to time; the current team members are Darren VK6EK, Phil VK6DEV, Steve VK6SJ, Anthony VK6AXB and Bob VK6POP.
+NewsWest is produced by a small team who take turns as producer: **Anthony VK6AXB, Bob VK6POP, Darren VK6EK, Phillip VK6DEV and Steve VK6SJ**. A production schedule plans the weeks ahead, so regular segments and contributions land in the right episode.
 
-A whole range of volunteers put the news to air every week. Their contribution is valuable and regularly acknowledged on air, and you can thank them when you give a callback at the end of the news.
+Our editorial policy is simple: every item must relate to amateur radio and Western Australia. We don't use filler, so some weeks are longer than others.
+
+Behind the team is a much bigger group of volunteers: the contributors who send in their clubs' news and segments, and the broadcasters and repeater owners who put NewsWest to air. You can thank them with a [callback](/callbacks/) at the end of the news.
+
+## How WAARN began
+
+Amateur radio news has been broadcast in Western Australia since the early 1930s, produced over the decades by whoever was willing to take it on. In 2014 a group of amateurs met to give it a more lasting home: an incorporated club whose main job is the news, with room for education and other activities as well. WA Amateur Radio News Inc was incorporated on 20 January 2015, and became a WIA affiliated club. The [history page](/history/) tells more of the story.
 
 ## vk6.net
 
-The vk6.net website has been part of amateur radio in Western Australia for a long time. It began as a gateway to amateur radio in the state. When it fell out of date, the NewsWest team sought permission from the domain holder, Robyn VK6XRE, to take over its management, and set about redesigning it. If you have content or an update, email [newswest@vk6.net](mailto:newswest@vk6.net).
+The vk6.net website has been part of amateur radio in Western Australia for a long time, first as a gateway to amateur radio in the state. When it fell out of date, the NewsWest team took over its management with the permission of the domain holder, Robyn VK6XRE. WAARN now looks after it.
 
-## Education
+## Join us or get in touch
 
-Our first course, in 2015, was "Newshound101", teaching participants to write a script and record it in Audacity. Next came "Perth Tech 2016", a one-day seminar in Perth in April 2016 with presentations and demonstrations by amateurs skilled in particular subjects. PerthTech became an annual event.
-
-## On air and at events
-
-WAARN has fielded a team in Australian contests since 2015, including the John Moyle Field Day and the Remembrance Day contest. We've done live broadcasts of NewsWest from hamfests and run stalls there. Live broadcasts are a big undertaking, with members dismantling their shacks to bring equipment, so they may not happen again, but recording a programme live for later broadcast may be possible.
+New members are welcome, and so is your club's news. Email [newswest@vk6.net](mailto:newswest@vk6.net).
