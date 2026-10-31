@@ -65,6 +65,8 @@
   },
 
   "sources": {
+    "_episodes_comment": "Demo: episodes listed from the current audio host (HTTP only, so they only play on an HTTP preview). Blank oldHost = use episodesJson/feed.",
+    "oldHost": "http://audio.vk6.net/",
     "episodesJson": "https://storage.googleapis.com/vk6arn-audio-test/data/episodes.json",
     "feed": "https://storage.googleapis.com/vk6arn-audio-test/feed.xml",
     "broadcastsSheet": "1cmtffLRY8z0ajdcgXaF8VNQ0WRCG6QFaAV5hu9BSk6U",

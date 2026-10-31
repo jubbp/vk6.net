@@ -61,8 +61,48 @@ function fromFeed(xml) {
   });
 }
 
+// Demo source: the current audio host's Apache listings (root = current episode, archive/YYYY/MM/).
+async function fromOldHost(base) {
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const links = async (url) => [...(await get(url)).matchAll(/href="([^"?\/][^"]*)"/g)].map((m) => m[1]);
+  const files = (await links(base)).filter((f) => /^\d{8}\.newswest\.mp3$/i.test(f));
+  for (const y of (await links(`${base}archive/`)).filter((x) => /^\d{4}\/$/.test(x))) {
+    for (const m of (await links(`${base}archive/${y}`)).filter((x) => /^\d{2}\/$/.test(x))) {
+      for (const f of await links(`${base}archive/${y}${m}`)) if (/^\d{8}\.newswest\.mp3$/i.test(f)) files.push(`archive/${y}${m}${f}`);
+    }
+  }
+  return files.map((path) => {
+    const [, yy, mm, dd] = path.match(/(\d{4})(\d{2})(\d{2})\.newswest\.mp3$/i);
+    return { date: `${yy}-${mm}-${dd}`, title: `NewsWest, ${Number(dd)} ${MONTHS[Number(mm) - 1]} ${yy}`, audio: base + path, bytes: null, producer: '', items: [], summary: '', transcript: null };
+  });
+}
+
+// This week's show notes Doc: segment headlines like "**1:08 RAOTC November bulletin, tomorrow (Clive VK6CSW)**".
+// Only the headlines are used; the body text can hold people's contact details.
+function notesFromDoc(md) {
+  const date = (md.match(/NewsWest,\s+\w+\s+(\d{1,2})\s+(\w+)\s+(\d{4})/) || []);
+  const producer = (md.match(/Produced by ([^.]+)\./) || [])[1] || '';
+  const items = [...md.matchAll(/^\*\*\d{1,2}:\d{2}\s+(.+?)\*\*\s*$/gm)].map((m) => {
+    const t = m[1].trim();
+    const who = t.match(/^(.*?)\s*\(([^)]+)\)$/);
+    return who ? { segment: who[2], topic: who[1], notes: [] } : { segment: '', topic: t, notes: [] };
+  });
+  return { day: date[1], month: date[2], year: date[3], producer, items };
+}
+
 await step('episodes', async () => {
   let episodes;
+  if (src.oldHost) {
+    episodes = await fromOldHost(src.oldHost);
+    try {
+      const n = notesFromDoc(await get(`https://docs.google.com/document/d/${src.weeklyNotesDoc}/export?format=md`));
+      const ep = episodes.find((e) => e.title === `NewsWest, ${n.day} ${n.month} ${n.year}`);
+      if (ep && n.items.length) Object.assign(ep, { items: n.items, producer: n.producer });
+    } catch { /* notes are optional */ }
+    episodes.sort((a, b) => b.date.localeCompare(a.date));
+    await writeFile(new URL('episodes.json', live), JSON.stringify(episodes, null, 1));
+    return `${episodes.length} episodes from ${src.oldHost}`;
+  }
   try {
     episodes = JSON.parse(await get(src.episodesJson));
   } catch {
