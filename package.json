@@ -7,7 +7,8 @@
     "fetch": "node scripts/fetch-content.mjs",
     "build": "eleventy",
     "start": "eleventy --serve",
-    "all": "npm run fetch && npm run build"
+    "all": "npm run fetch && npm run build",
+    "postinstall": "node scripts/icloud-nosync.mjs"
   },
   "engines": {
     "node": ">=20"
