@@ -33,7 +33,7 @@ The most recent PerthTechs were held at the **Gidgegannup Recreation Club**, abo
 
 ## History
 
-PerthTech began in **April 2016** as a one-day seminar in Perth, with presentations and demonstrations by amateurs skilled in particular subjects, and became an annual event. The 2020 event was cancelled. PerthTech has been funded largely by its raffle.
+PerthTech began in **April 2016** as a one-day seminar in Perth, with presentations and demonstrations by amateurs skilled in particular subjects, and became an annual event. The 2020 event was cancelled.
 
 ## The next PerthTech
 
