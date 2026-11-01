@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: What's on in WA
+description: Amateur radio club meetings, field days, activity days and contests across Western Australia for the next eight weeks.
+permalink: /whats-on/
+scripts: [/assets/js/whats-on.js]
+---
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">What's on · next 8 weeks</p>
+    <h1>What's on in WA</h1>
+    <p class="lede">Club meetings, activity days and contests across Western Australia, from the VK6 club and contest calendars. Times are Perth time.</p>
+    <div class="chips" role="group" aria-label="Show">
+      <button type="button" class="chip on" data-kind="all" aria-pressed="true">Everything</button>
+      <button type="button" class="chip" data-kind="meeting" aria-pressed="false">Club events</button>
+      <button type="button" class="chip" data-kind="contest" aria-pressed="false">Contests</button>
+    </div>
+  </div>
+</header>
+<div class="wrap events-page">
+  {%- for w in calendar.weeks %}
+  <section class="card week" data-week style="--bar: {{ 'var(--accent)' if loop.first else 'var(--navy)' }}">
+    <h2>{{ w.week | weekLabel }}{% if loop.first %} <small>this week</small>{% endif %}</h2>
+    <ul class="event-list">
+      {%- for e in w.events %}
+      <li class="event {{ e.kind }}" data-kind="{{ e.kind }}">
+        <span class="ev-when"><b>{{ e.day }}</b>{{ e.time or "All day" }}</span>
+        <span class="ev-what"><span class="ev-title">{{ e.title }}</span>{% if e.where %}<span class="ev-where">{{ e.where }}</span>{% endif %}</span>
+        <span class="tag {{ 'tag-contest' if e.kind == 'contest' else 'tag-club' }}">{{ "Contest" if e.kind == "contest" else "Club" }}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- else %}
+  <p class="notice">The calendars aren't available right now. See the <a href="{{ '/meeting/' | url }}">club calendar</a>.</p>
+  {%- endfor %}
+  <section class="card" style="--bar: var(--green)">
+    <h2>Add your club's event</h2>
+    <p>Events come from the VK6 Club Calendar and the contest calendars. To list a meeting, field day or activity day, <a href="{{ '/news/contact/' | url }}">send us the details</a>; it will also be read out on NewsWest.</p>
+    <p class="small muted">Open the full calendars: <a href="{{ '/meeting/' | url }}">VK6 club calendar</a> · <a href="{{ '/contests/' | url }}">contests</a> · <a href="{{ '/nets/' | url }}">nets</a>.</p>
+  </section>
+</div>

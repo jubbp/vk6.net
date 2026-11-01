@@ -79,7 +79,6 @@
             {%- endif %}
           </li>
           {%- endfor %}
-          <li><a class="nav-cta" href="{{ '/callbacks/' | url }}">Register your callback</a></li>
           <li><button class="mode-switch" type="button" data-mode-switch aria-label="Switch to dark mode" title="Light or dark"><span class="sun" aria-hidden="true"></span><span class="moon" aria-hidden="true"></span></button></li>
         </ul>
       </nav>
@@ -90,7 +89,7 @@
     {{ content | safe }}
   </main>
 
-  {% include "partials/wheres-steve.njk" %}
+  {%- if page.url == "/" %}{% include "partials/wheres-steve.njk" %}{% endif %}
 
   <footer class="site-footer">
     <div class="wrap footer-inner">

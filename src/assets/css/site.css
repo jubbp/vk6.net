@@ -474,3 +474,24 @@ table.lb tbody tr:first-child td { font-weight: 700; }
 :root[data-mode="dark"] .tile-teal > h2:first-child { color: var(--on-accent); }
 @media (prefers-color-scheme: dark) { :root:not([data-mode="light"]) .tile-teal > h2:first-child { color: var(--on-accent); } }
 @media (max-width: 1320px) { .brand-text { display: none; } }
+
+/* What's on and nets pages */
+.events-page { display: grid; gap: 18px; padding-block: 32px 56px; }
+.events-page > * { max-width: 900px; width: 100%; }
+.week > h2:first-child small { font: 500 0.78rem var(--sans); opacity: .85; margin-left: 6px; }
+.week > h2.on-gold { color: #2b1d00; }
+.event-list { list-style: none; padding: 0; margin: 0; }
+.event { display: grid; grid-template-columns: 6.5em minmax(0, 1fr) auto; gap: 4px 16px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.event:last-child { border-bottom: 0; }
+.ev-when { display: grid; font: 500 0.82rem var(--mono); color: var(--muted); }
+.ev-when b { color: var(--accent); font-weight: 700; }
+.ev-title { display: block; font-weight: 600; }
+.ev-where { display: block; color: var(--muted); font-size: 0.88rem; }
+.tag-club { background: var(--tint); border-color: transparent; color: var(--accent); }
+.tag-contest { background: color-mix(in srgb, var(--gold) 22%, transparent); border-color: transparent; color: #8a5a00; }
+:root[data-mode="dark"] .tag-contest { color: var(--gold); }
+@media (prefers-color-scheme: dark) { :root:not([data-mode="light"]) .tag-contest { color: var(--gold); } }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.chip { font: 600 0.88rem var(--sans); padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); color: var(--ink-2); cursor: pointer; }
+.chip.on { background: var(--navy); border-color: var(--navy); color: #fff; }
+@media (max-width: 560px) { .event { grid-template-columns: 5.5em minmax(0, 1fr); } .event .tag { display: none; } }

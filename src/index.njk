@@ -35,13 +35,13 @@ jsonld:
 
 <div class="wrap hub-grid">
   {#- What's on: club meetings and contests, next fortnight -#}
-  {%- set upcoming = (calendar.meetings | concat(calendar.contests)) | sort(false, false, "iso") %}
+  {%- set upcoming = calendar.events | before(calendar.twoWeeks) %}
   <section class="card tile tile-teal" style="--bar: var(--accent)">
     <h2>What's on <small>next 2 weeks</small></h2>
     {%- if upcoming.length %}
     <ul class="feed">{% for e in upcoming | limit(6) %}<li><span class="when">{{ e.day }}</span><span>{{ e.title }}<span class="sub">{% if e.time %}{{ e.time }}{% else %}All day{% endif %}{% if e.where %} · {{ e.where | truncate(48) }}{% endif %}</span></span></li>{% endfor %}</ul>
     {%- else %}<p class="muted">Nothing listed for the next fortnight.</p>{% endif %}
-    <p class="tile-more"><a href="{{ '/meeting/' | url }}">Club calendar</a> · <a href="{{ '/contests/' | url }}">Contests</a></p>
+    <p class="tile-more"><a href="{{ '/whats-on/' | url }}">Everything on in WA</a></p>
   </section>
 
   {#- WA parks (POTA) -#}
@@ -72,7 +72,7 @@ jsonld:
     {%- if calendar.nets.length %}
     <ul class="feed">{% for e in calendar.nets | limit(6) %}<li><span class="when">{{ e.day }}<br>{{ e.time }}</span><span>{{ e.title }}<span class="sub">{{ e.where | truncate(44) }}</span></span></li>{% endfor %}</ul>
     {%- else %}<p class="muted">No nets listed.</p>{% endif %}
-    <p class="tile-more"><a href="{{ '/nets/' | url }}">Nets calendar</a></p>
+    <p class="tile-more"><a href="{{ '/get-on-air/nets/' | url }}">All nets this week</a></p>
   </section>
 
   {#- Support -#}

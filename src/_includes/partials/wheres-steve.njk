@@ -1,6 +1,7 @@
-{#- Where's Steve? A floating thank-you to Steve VK6SJ: floats for 10 s, then curves into the corner (steve.js). Set in settings.steve. -#}
+{#- Where's Steve? A floating thank-you to Steve VK6SJ, on the home page only: floats for 10 s, then curves into the
+    corner (steve.js). Set in settings.steve. Once the site is live (not preview) each visitor sees it once a day. -#}
 {%- if settings.steve and settings.steve.show %}
-<div class="steve-float" id="steve" hidden>
+<div class="steve-float" id="steve" hidden{% if not settings.preview %} data-once-a-day{% endif %}>
   <button type="button" class="sf-badge" id="sf-badge" aria-expanded="false" aria-controls="sf-card">
     <img class="sf-face" src="{{ '/assets/img/steve/steve-vk6sj.jpg' | url }}" alt="" width="56" height="56">
     <span class="sf-label">Where's Steve?</span>

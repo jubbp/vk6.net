@@ -41,6 +41,9 @@ export default function (config) {
   config.addFilter('perthTime', (iso) => new Date(iso).toLocaleString('en-AU', { timeZone: 'Australia/Perth', day: 'numeric', month: 'long', hour: 'numeric', minute: '2-digit' }));
   config.addFilter('concat', (a, b) => [...(a || []), ...(b || [])]);
   config.addFilter('ampm', (hhmm) => { const [h, m] = String(hhmm).split(':').map(Number); return `${(h % 12) || 12}${m ? ':' + String(m).padStart(2, '0') : ''} ${h < 12 ? 'am' : 'pm'}`; });
+  config.addFilter('before', (list, iso) => (list || []).filter((e) => e.iso < iso));
+  config.addFilter('weekLabel', (w) => { const d = new Date(w + 'T00:00:00Z'); return 'Week of ' + d.toLocaleDateString('en-AU', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' }).replace(',', ''); });
+  config.addFilter('dayLabel', (iso) => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-AU', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC' }).replace(',', ''));
   config.addFilter('limit', (list, n) => list.slice(0, n));
   // Menu highlighting: a group is current when one of its pages is; Listen also covers episode pages.
   config.addFilter('isCurrent', (item, page) => item.children

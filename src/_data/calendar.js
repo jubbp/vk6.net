@@ -2,7 +2,7 @@ import ical from 'node-ical';
 import { readContent } from '../_lib/content.js';
 // The VK6 club, nets and contest calendars (Google Calendar ICS, fetched into content/_live/calendars/),
 // expanded into dated occurrences for the next few weeks. Times are shown in Perth (UTC+8, no daylight saving).
-const DAYS = 21;
+const DAYS = 56;
 const perth = (d) => new Date(d.getTime() + 8 * 3600e3);
 const fmt = (d) => {
   const p = perth(d);
@@ -45,5 +45,15 @@ export default () => {
   const from = new Date(), to = new Date(+from + DAYS * 864e5);
   const contests = [...occurrences('contests', from, to), ...occurrences('contestsVk4sn', from, to)]
     .filter((e, i, all) => all.findIndex((o) => o.title === e.title && o.date === e.date) === i);
-  return { built: from.toISOString(), meetings: occurrences('meetings', from, to), nets: occurrences('nets', from, to), contests };
+  const meetings = occurrences('meetings', from, to).map((e) => ({ ...e, kind: 'meeting' }));
+  const events = [...meetings, ...contests.map((e) => ({ ...e, kind: 'contest' }))].sort((a, b) => a.iso.localeCompare(b.iso));
+  // Group by Perth week (Monday start) for the What's on page.
+  const weekOf = (date) => { const d = new Date(date + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7)); return d.toISOString().slice(0, 10); };
+  const weeks = [];
+  for (const e of events) { const w = weekOf(e.date); let g = weeks.find((x) => x.week === w); if (!g) weeks.push(g = { week: w, events: [] }); g.events.push(e); }
+  const twoWeeks = new Date(+from + 14 * 864e5).toISOString();
+  const nets = occurrences('nets', from, new Date(+from + 7 * 864e5));
+  const netDays = [];
+  for (const e of nets) { let g = netDays.find((x) => x.date === e.date); if (!g) netDays.push(g = { date: e.date, nets: [] }); g.nets.push(e); }
+  return { built: from.toISOString(), twoWeeks, meetings, contests, events, weeks, nets, netDays };
 };

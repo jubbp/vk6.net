@@ -1,10 +1,15 @@
 // Where's Steve? Floats around the window for 10 seconds, bouncing off the edges, then curves into the
 // bottom-right corner at the same speed and stays there. Pauses on hover or while the card is open.
 // Still in the corner for people who turn off motion. Closing hides it for the rest of the visit.
+// With data-once-a-day (the live site) each browser sees it on its first home-page visit of the (Perth) day only.
 (() => {
   const box = document.getElementById('steve'), badge = document.getElementById('sf-badge'), card = document.getElementById('sf-card'), close = document.getElementById('sf-close');
   if (!box) return;
   try { if (sessionStorage.getItem('steve-closed') === '1') return; } catch (e) {}
+  if (box.hasAttribute('data-once-a-day')) {
+    const today = new Date(Date.now() + 8 * 3600e3).toISOString().slice(0, 10);  // Perth date
+    try { if (localStorage.getItem('steve-seen') === today) return; localStorage.setItem('steve-seen', today); } catch (e) {}
+  }
   box.hidden = false;
   const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const FLOAT_FOR = 10000, SPEED = 230, t0 = performance.now();

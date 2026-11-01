@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Nets this week
+description: Regular amateur radio nets you can join from Western Australia this week, with times and frequencies.
+permalink: /get-on-air/nets/
+---
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Get on air</p>
+    <h1>Nets this week</h1>
+    <p class="lede">Regular nets you can check into from WA, day by day for the next seven days. Times are Perth time. A net is a friendly on-air roll call: new amateurs are always welcome.</p>
+  </div>
+</header>
+<div class="wrap events-page">
+  {%- for d in calendar.netDays %}
+  <section class="card week" style="--bar: {{ 'var(--gold)' if loop.first else 'var(--navy)' }}">
+    <h2{% if loop.first %} class="on-gold"{% endif %}>{{ d.date | dayLabel }}{% if loop.first %} <small>today</small>{% endif %}</h2>
+    <ul class="event-list">
+      {%- for e in d.nets %}
+      <li class="event"><span class="ev-when"><b>{{ e.time or "All day" }}</b></span><span class="ev-what"><span class="ev-title">{{ e.title }}</span>{% if e.where %}<span class="ev-where">{{ e.where }}</span>{% endif %}</span></li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- else %}
+  <p class="notice">The nets calendar isn't available right now. See the <a href="{{ '/nets/' | url }}">nets calendar</a>.</p>
+  {%- endfor %}
+  <p class="small muted">From the WA nets calendar. Missing a net or a change of frequency? <a href="{{ '/news/contact/' | url }}">Let us know</a>.</p>
+</div>
