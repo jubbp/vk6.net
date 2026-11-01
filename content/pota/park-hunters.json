@@ -1,0 +1,3275 @@
+{
+ "AU-0003": [
+  "VK4KC",
+  "VK2IO",
+  "VK1AO",
+  "VK3PF",
+  "JF7RJM"
+ ],
+ "AU-0004": [
+  "VK2VW",
+  "VK1AO",
+  "VK3PF",
+  "VK3GJG",
+  "VK4JPS"
+ ],
+ "AU-0006": [
+  "VK3PF",
+  "VK2IO",
+  "VK1AO",
+  "VK6DS",
+  "JF7RJM"
+ ],
+ "AU-0007": [
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "VK2VW",
+  "VK4NH"
+ ],
+ "AU-0010": [
+  "VK3PF",
+  "VK5LA",
+  "VK2YK",
+  "VK6JK",
+  "VK2IO"
+ ],
+ "AU-0011": [
+  "VK3PF",
+  "VK4NH",
+  "VK2VW",
+  "VK1AO",
+  "VK2IO"
+ ],
+ "AU-0012": [
+  "VK4KC",
+  "VK3PF",
+  "VK2IO",
+  "VK6AAX",
+  "VK6DEV"
+ ],
+ "AU-0013": [
+  "VK3PF",
+  "VK2IO",
+  "VK1AO",
+  "VK6MFP",
+  "VK5PAS"
+ ],
+ "AU-0014": [
+  "VK2VW",
+  "VK4NH",
+  "VK4EMP",
+  "VK2IO",
+  "VK3PF"
+ ],
+ "AU-0015": [
+  "VK6AAX",
+  "VK6ALE",
+  "VK1AO",
+  "VK3PF",
+  "VK6ASK"
+ ],
+ "AU-0018": [
+  "JA2KVB",
+  "VK3TZT",
+  "KE8MD",
+  "VK7ID",
+  "YC0ASW"
+ ],
+ "AU-0019": [
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "VK6WTF",
+  "VK2VW"
+ ],
+ "AU-0020": [
+  "JG1RBB",
+  "JS1IFK",
+  "VK6KN",
+  "JH1MXV",
+  "BD8DOK"
+ ],
+ "AU-0021": [
+  "JF1VST",
+  "JF7RJM",
+  "VK1AO",
+  "VK3AXI",
+  "VK3PF"
+ ],
+ "AU-0023": [
+  "VK6AAX",
+  "VK6ALE",
+  "VK6DS",
+  "VK6ADM",
+  "VK6AJP"
+ ],
+ "AU-0024": [
+  "VK6MMB",
+  "VK5PAS",
+  "VK6NU",
+  "VK6LDX",
+  "VK2IO"
+ ],
+ "AU-0028": [
+  "VK2IO",
+  "VK1AO",
+  "VK4AAC",
+  "VK6JK",
+  "VK4KC"
+ ],
+ "AU-0030": [
+  "VK6DS",
+  "DV1K",
+  "JF1VST",
+  "JF7RJM",
+  "VK1AO"
+ ],
+ "AU-0031": [
+  "VK2VW",
+  "VK4KC",
+  "VK3PF",
+  "VK3YV",
+  "VK3APJ"
+ ],
+ "AU-0032": [
+  "VK3PF",
+  "VK1AO",
+  "DV1K",
+  "JA2INL",
+  "JH1MXV"
+ ],
+ "AU-0034": [
+  "VK1AO",
+  "VK4KC",
+  "VK2IO",
+  "VK6LK",
+  "VK3PF"
+ ],
+ "AU-0035": [
+  "VK1AO",
+  "VK2IO",
+  "VK3PF",
+  "VK4EMP",
+  "VK2VW"
+ ],
+ "AU-0037": [
+  "VK4EMP",
+  "VK1AO",
+  "VK2IO",
+  "VK4KC",
+  "VK3PF"
+ ],
+ "AU-0040": [
+  "VK3PF",
+  "VK4KC",
+  "E20JWB",
+  "JA1VVH",
+  "VK1AO"
+ ],
+ "AU-0041": [
+  "VK2VW",
+  "VK3PF",
+  "VK6DS",
+  "VK1AO",
+  "VK4KC"
+ ],
+ "AU-0042": [
+  "VK4KC",
+  "VK3PF",
+  "VK2VW",
+  "VK2IO",
+  "VK4NH"
+ ],
+ "AU-0043": [
+  "VK4EMP",
+  "VK1AO",
+  "VK2IO",
+  "VK2OKR",
+  "VK3PF"
+ ],
+ "AU-0044": [
+  "VK3PF",
+  "VK1AO",
+  "VK4NH",
+  "VK2VW",
+  "VK2IO"
+ ],
+ "AU-0047": [
+  "VK3ANL",
+  "VK3PF",
+  "VK5CZ",
+  "VK4TJ",
+  "VK2VW"
+ ],
+ "AU-0048": [
+  "VK3PF",
+  "VK5LA",
+  "JF7RJM",
+  "VK2IO",
+  "VK3CLD"
+ ],
+ "AU-0056": [
+  "VK5PAS",
+  "VK6MMB",
+  "VK2IO",
+  "VK3OHM",
+  "VK3PF"
+ ],
+ "AU-0058": [
+  "VK1AO",
+  "VK3PF",
+  "VK6LK",
+  "VK2IO",
+  "JF7RJM"
+ ],
+ "AU-0059": [
+  "VK6PAW",
+  "VK6KN",
+  "VK5PAS",
+  "HS5TXB",
+  "ZL2LA"
+ ],
+ "AU-0060": [
+  "VK4KC",
+  "VK6ASK",
+  "VK1AO",
+  "VK3PF",
+  "JF7RJM"
+ ],
+ "AU-0061": [
+  "VK1AO",
+  "VK3YV",
+  "VK3PF",
+  "VK4NH",
+  "VK2IO"
+ ],
+ "AU-0062": [
+  "VK1AO",
+  "VK4EMP",
+  "VK6ASK",
+  "CS7BHA",
+  "JA9KRO"
+ ],
+ "AU-0063": [
+  "VK2VW",
+  "VK6LK",
+  "VK3PF",
+  "VK3GJG",
+  "VK2VAR"
+ ],
+ "AU-0064": [
+  "VK4AAC",
+  "VK1AO",
+  "VK3PF",
+  "ZL1RPC",
+  "JE4XCQ"
+ ],
+ "AU-0069": [
+  "VK3PF",
+  "VK6HRC",
+  "VK6MMB",
+  "VK6NU",
+  "AD4XJ"
+ ],
+ "AU-0071": [
+  "VK6LK",
+  "VK6ASK",
+  "VK6AAX",
+  "VK6ADM",
+  "VK6BAD"
+ ],
+ "AU-0072": [
+  "VK6AAG",
+  "VK6LK",
+  "VK6ASK",
+  "VK6AAX",
+  "VK6ADM"
+ ],
+ "AU-0073": [
+  "VK5LA",
+  "VK3ACZ",
+  "VK5BJE",
+  "VK2IO",
+  "VK1AO"
+ ],
+ "AU-0076": [
+  "VK3PF",
+  "VK2IO",
+  "VK1AO",
+  "VK6MFP",
+  "VK6AAX"
+ ],
+ "AU-0077": [
+  "VK3PF",
+  "VK4TJ",
+  "VK2IO",
+  "UT5PI",
+  "VK1AO"
+ ],
+ "AU-0078": [
+  "VK2VW",
+  "VK4NH",
+  "VK3PF",
+  "VK1AO",
+  "VK2IO"
+ ],
+ "AU-0079": [
+  "VK4KC",
+  "VK3PF",
+  "VK6AJP",
+  "KG5CIK",
+  "VK2IO"
+ ],
+ "AU-0080": [
+  "VK2VW",
+  "VK3PF",
+  "VK4AAC",
+  "VK1AO",
+  "VK2IO"
+ ],
+ "AU-0081": [
+  "VK2IO",
+  "VK6LK",
+  "VK3PF",
+  "VK1AO",
+  "VK4NH"
+ ],
+ "AU-0082": [
+  "VK3PF",
+  "VK1AO",
+  "JF7RJM",
+  "VK2VW",
+  "VK2IO"
+ ],
+ "AU-0083": [
+  "VK2IO",
+  "VK3PF",
+  "VK6ASK",
+  "VK3ACZ",
+  "VK6AAX"
+ ],
+ "AU-0084": [
+  "VK2VW",
+  "VK4EMP",
+  "VK1AO",
+  "VK2IO",
+  "VK4NH"
+ ],
+ "AU-0085": [
+  "JF7RJM",
+  "VK4MPB",
+  "VK4KC",
+  "VK8DNT",
+  "VK4SPB"
+ ],
+ "AU-0086": [
+  "VK3TDK",
+  "VK1AO",
+  "VK5LA",
+  "VK2IO",
+  "VK2VW"
+ ],
+ "AU-0087": [
+  "VK3PF",
+  "VK6AAX",
+  "VK6DS",
+  "VK2IO",
+  "VK5HS"
+ ],
+ "AU-0088": [
+  "VK2IO",
+  "VK3PF",
+  "VK4KC",
+  "VK1AO",
+  "VK6AAX"
+ ],
+ "AU-0089": [
+  "VK3PF",
+  "VK4KC",
+  "VK2IO",
+  "VK5LA",
+  "VK1AO"
+ ],
+ "AU-0092": [
+  "VK1AO",
+  "VK2IO",
+  "VK6ASK",
+  "VK3PF",
+  "ZL1HIM"
+ ],
+ "AU-0095": [
+  "VK3PF",
+  "VK4EMP",
+  "VK1GM",
+  "VK1AO",
+  "VK3ACZ"
+ ],
+ "AU-0096": [
+  "VK1AO",
+  "VK3PF",
+  "VK6JK",
+  "VK2IO",
+  "VK6KN"
+ ],
+ "AU-0097": [
+  "VK3PF",
+  "VK1AO",
+  "VK5HAA",
+  "VK5PAS",
+  "VK2YK"
+ ],
+ "AU-0098": [
+  "VK5CZ",
+  "VK2IO",
+  "VK2VW",
+  "VK3ARH",
+  "VK3DAC"
+ ],
+ "AU-0099": [
+  "VK3PF",
+  "VK4KC",
+  "VK2IO",
+  "VK1AO",
+  "JA1VVH"
+ ],
+ "AU-0100": [
+  "VK2IO",
+  "VK1AO",
+  "VK6LK",
+  "VK2USH",
+  "VK2VW"
+ ],
+ "AU-0101": [
+  "VK2IO",
+  "VK3ARH",
+  "VK3PF",
+  "VK3SQ",
+  "VK4FDJL"
+ ],
+ "AU-0103": [
+  "VK6LK",
+  "VK2VW",
+  "VK4NH",
+  "JA1VVH",
+  "VK2IO"
+ ],
+ "AU-0104": [
+  "VK3PF",
+  "VK2IO",
+  "VK4NH",
+  "VK1AO",
+  "JF7RJM"
+ ],
+ "AU-0105": [
+  "VK3PF",
+  "VK5LA",
+  "VK4KC",
+  "VK3FB",
+  "VK2IO"
+ ],
+ "AU-0106": [
+  "VK4EMP",
+  "JF7RJM",
+  "VK1AO",
+  "VK3AXI",
+  "VK3PF"
+ ],
+ "AU-0107": [
+  "VK1AO",
+  "VK2IO",
+  "VK3PF",
+  "VK6NU",
+  "VK2USH"
+ ],
+ "AU-0110": [
+  "VK1AO",
+  "VK6AAX",
+  "VK6ADM",
+  "KG5CIK",
+  "VK6JK"
+ ],
+ "AU-0111": [
+  "VK2IO",
+  "VK6DS",
+  "VK1AO",
+  "VK3PF",
+  "VK4KC"
+ ],
+ "AU-0113": [
+  "KJ4AUQ",
+  "N1GMV",
+  "VK2HFC",
+  "VK3DWL",
+  "VK4NM"
+ ],
+ "AU-0114": [
+  "VK3PF",
+  "VK4KC",
+  "VK2IO",
+  "VK3YV",
+  "VK6JK"
+ ],
+ "AU-0115": [
+  "VK6LK",
+  "VK6BAD",
+  "VK6AAX",
+  "VK3APJ",
+  "VK3UAO"
+ ],
+ "AU-0116": [
+  "VK4EMP",
+  "VK1AO",
+  "VK4NH",
+  "VK3PF",
+  "KG5CIK"
+ ],
+ "AU-0120": [
+  "VK6LK",
+  "VK1AO",
+  "VK2IO",
+  "F5PYI",
+  "DL9RP"
+ ],
+ "AU-0121": [
+  "VK2VW",
+  "VK1AO",
+  "VK4AAC",
+  "VK3PF",
+  "VK3SO"
+ ],
+ "AU-0123": [
+  "VK2IO",
+  "VK3PF",
+  "VK4NH",
+  "VK1AO",
+  "VK4EMP"
+ ],
+ "AU-0128": [
+  "VK5PAS",
+  "VK6FN",
+  "VK6MMB",
+  "VK6NI",
+  "VK6NU"
+ ],
+ "AU-0129": [
+  "VK1AO",
+  "VK3PF",
+  "VK2VW",
+  "VK4KC",
+  "VK6EK"
+ ],
+ "AU-0130": [
+  "VK1AO",
+  "VK4EMP",
+  "VK3GJG",
+  "VK2OKR",
+  "VK2MOE"
+ ],
+ "AU-0132": [
+  "VK2VW",
+  "VK1AO",
+  "VK3PF",
+  "VK4KC",
+  "VK2IO"
+ ],
+ "AU-0133": [
+  "VK2IO",
+  "VK4AAC",
+  "VK2NP",
+  "VK5FANA",
+  "ZL2BB"
+ ],
+ "AU-0134": [
+  "VK5LA",
+  "JE6WKY",
+  "VK3ACZ",
+  "VK3APJ",
+  "VK3SG"
+ ],
+ "AU-0138": [
+  "VK1AO",
+  "VK4NH",
+  "VK2VW",
+  "VK3GJG",
+  "JF7RJM"
+ ],
+ "AU-0142": [
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "EA1GIB",
+  "F5PYI"
+ ],
+ "AU-0144": [
+  "VK2IO",
+  "VK3OHM",
+  "VK3PF",
+  "VK3SQ",
+  "VK5FANA"
+ ],
+ "AU-0146": [
+  "VK1AO",
+  "VK2VW",
+  "VK4NH",
+  "VK6DS",
+  "VK6LK"
+ ],
+ "AU-0149": [
+  "VK3PF",
+  "VK6LK",
+  "VK3SO",
+  "VK3ACZ",
+  "VK2VW"
+ ],
+ "AU-0151": [
+  "VK1AO",
+  "VK3YV",
+  "VK8DNT",
+  "VK3PF",
+  "EA1GIB"
+ ],
+ "AU-0152": [
+  "VK2VW",
+  "VK4NH",
+  "VK2IO",
+  "VK3PF",
+  "VK3SQ"
+ ],
+ "AU-0153": [
+  "VK3PF",
+  "VK1AO",
+  "VK2VW",
+  "JF1VST",
+  "JF7RJM"
+ ],
+ "AU-0161": [
+  "VK2IO",
+  "VK1AD",
+  "VK1AO",
+  "VK2USH",
+  "VK3FRB"
+ ],
+ "AU-0164": [
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "JF7RJM",
+  "VK4KC"
+ ],
+ "AU-0166": [
+  "7K1VKU/1",
+  "E20EHQ",
+  "E25KFR",
+  "EA5D",
+  "IK2TDM"
+ ],
+ "AU-0167": [
+  "VK6LK",
+  "VK2IO",
+  "VK3GJG",
+  "VK6ASK",
+  "VK3ACZ"
+ ],
+ "AU-0169": [
+  "VK6MMB",
+  "VK2IO",
+  "VK6NU",
+  "VK3PF",
+  "VK4FW"
+ ],
+ "AU-0171": [
+  "VK3PF",
+  "VK3SQ",
+  "VK1AO",
+  "VK4AAC",
+  "VK2VW"
+ ],
+ "AU-0172": [
+  "VK1AO",
+  "VK6LK",
+  "VK6JK",
+  "VK2IO",
+  "VK3PF"
+ ],
+ "AU-0173": [
+  "VK2VW",
+  "VK6LK",
+  "VK1AO",
+  "VK2IO",
+  "ZL1HIM"
+ ],
+ "AU-0175": [
+  "VK2IO",
+  "VK3ACU",
+  "VK6AJP",
+  "VK6HRC"
+ ],
+ "AU-0177": [
+  "VK3PF",
+  "VK2IO",
+  "VK1AO",
+  "VK4EMP",
+  "VK2ZR"
+ ],
+ "AU-0178": [
+  "VK1AO",
+  "VK4KC",
+  "VK6LK",
+  "VK2IO",
+  "VK4EMP"
+ ],
+ "AU-0683": [
+  "VK1AO",
+  "VK3PF",
+  "VK4NH",
+  "VK3APJ",
+  "VK3ANL"
+ ],
+ "AU-0834": [
+  "VK1AO",
+  "VK3PF",
+  "VK2IO",
+  "VK6LK",
+  "VK3YV"
+ ],
+ "AU-1070": [
+  "VK1AO",
+  "VK3PF",
+  "VK2VW",
+  "VK2IO",
+  "VK4EMP"
+ ],
+ "AU-1144": [
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "VK6MFP",
+  "VK6JK"
+ ],
+ "AU-1173": [
+  "VK1AO",
+  "VK8DNT",
+  "VK4KC",
+  "VK3PF",
+  "JF7RJM"
+ ],
+ "AU-1791": [
+  "9V1SA",
+  "E21LLR",
+  "JS1EQF",
+  "VK6FN",
+  "VK6MIL"
+ ],
+ "AU-2892": [
+  "VK3PF",
+  "VK2IO",
+  "VK2USH",
+  "VK4EMP",
+  "VK3FB"
+ ],
+ "AU-2893": [
+  "VK2IO",
+  "VK3PF",
+  "VK1AO",
+  "VK2ZR",
+  "VK2USH"
+ ],
+ "AU-2897": [
+  "VK3TDK",
+  "VK1AO",
+  "VK6LK",
+  "VK4NH",
+  "VK1AD"
+ ],
+ "AU-2898": [
+  "VK4KC",
+  "DL2ND",
+  "F5PYI",
+  "IK4IDF",
+  "ZL4NVW"
+ ],
+ "AU-2899": [
+  "VK4AAC",
+  "VK1AD",
+  "VK1AO",
+  "VK3SQ",
+  "VK3PF"
+ ],
+ "AU-2900": [
+  "VK6AAG",
+  "VK6ASK",
+  "VK6BAD",
+  "VK6AAX",
+  "VK6ADM"
+ ],
+ "AU-2901": [
+  "VK4KC",
+  "VK3YV",
+  "VK6JK",
+  "VK1AO",
+  "VK2IO"
+ ],
+ "AU-2903": [
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "VK2VW",
+  "VK6LK"
+ ],
+ "AU-2908": [
+  "VK3PF",
+  "VK5PAS",
+  "VK2IO",
+  "VK3YV",
+  "VK2XSE"
+ ],
+ "AU-2909": [
+  "VK6EK",
+  "JA9OJM",
+  "DV1K",
+  "E25VCR",
+  "ZL1CZ"
+ ],
+ "AU-2913": [
+  "VK4KC",
+  "VK4EMP",
+  "VK2IO",
+  "KG5CIK",
+  "VK3APJ"
+ ],
+ "AU-2915": [
+  "VK6LK",
+  "VK6ADM",
+  "VK3GJG",
+  "VK3PF",
+  "VK6AAX"
+ ],
+ "AU-2916": [
+  "VK6MMB",
+  "VK2MG",
+  "VK2VW",
+  "VK4CZ",
+  "VK5PL"
+ ],
+ "AU-2917": [
+  "VK1AO",
+  "VK2VW",
+  "VK3PF",
+  "IK4IDF",
+  "OH1MM"
+ ],
+ "AU-2919": [
+  "VK2VW",
+  "VK1AO",
+  "VK4KC",
+  "JF7RJM",
+  "VK2IO"
+ ],
+ "AU-2921": [
+  "JF7RJM",
+  "JG1RBB",
+  "JA9KRO",
+  "VK3PF",
+  "EA3FH"
+ ],
+ "AU-2922": [
+  "VK2IO",
+  "VK2YK",
+  "F4BKT",
+  "F5PYI",
+  "JF7RJM"
+ ],
+ "AU-2923": [
+  "VK6DS",
+  "VK6LK",
+  "JF7RJM",
+  "JJ1PFC",
+  "VK3PF"
+ ],
+ "AU-2924": [
+  "VK1AO",
+  "VK3PF",
+  "KG5CIK",
+  "VK3FMRC",
+  "VK4DNO"
+ ],
+ "AU-2925": [
+  "VK3PF",
+  "VK4NH",
+  "VK3UZI",
+  "VK3SQ",
+  "VK4KC"
+ ],
+ "AU-2926": [
+  "VK1AO",
+  "VK4NH",
+  "VK2VW",
+  "VK2IO",
+  "VK4EMP"
+ ],
+ "AU-2927": [
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "VK3YV",
+  "JF7RJM"
+ ],
+ "AU-2928": [
+  "VK4KC",
+  "VK1AO",
+  "VK6LK",
+  "VK2IO",
+  "VK3PF"
+ ],
+ "AU-2929": [
+  "VK6DS",
+  "VK2IO",
+  "VK3PF",
+  "VK5LA",
+  "VK6JK"
+ ],
+ "AU-2931": [
+  "VK3PF",
+  "VK1AO",
+  "VK2VW",
+  "VK6ASK",
+  "VK3MCK"
+ ],
+ "AU-2932": [],
+ "AU-2933": [
+  "VK6ASK",
+  "VK3PF",
+  "JF7RJM",
+  "CU3HY",
+  "ZL2BB"
+ ],
+ "AU-2935": [
+  "VK4EMP",
+  "VK1AO",
+  "VK2IO",
+  "JR1BQJ",
+  "JA9OJM"
+ ],
+ "AU-2936": [
+  "VK3PF",
+  "VK2IO",
+  "VK4AAC",
+  "KG5CIK",
+  "VK2MOE"
+ ],
+ "AU-2938": [
+  "VK2IO",
+  "KG5CIK",
+  "VK3MCK",
+  "VK3ZK",
+  "VK4TJ"
+ ],
+ "AU-2939": [
+  "VK2VW",
+  "VK4NH",
+  "VK4KC",
+  "VK2IO",
+  "VK3AWA"
+ ],
+ "AU-2943": [
+  "VK6EK",
+  "VK6AAX",
+  "VK6AAG",
+  "VK6DEV",
+  "ZL1TM"
+ ],
+ "AU-2945": [
+  "VK2BYF",
+  "VK3ANL",
+  "VK3DAC",
+  "VK3SQ",
+  "VK5FANA"
+ ],
+ "AU-2946": [
+  "VK6LK",
+  "VK3PF",
+  "VK2IO",
+  "VK4AAC",
+  "VK1AO"
+ ],
+ "AU-2948": [
+  "VK2VW",
+  "VK1AO",
+  "VK2YAK",
+  "JF7RJM",
+  "VK2IO"
+ ],
+ "AU-2949": [
+  "VK6LK",
+  "VK6ASK",
+  "VK2IO",
+  "VK3GJG",
+  "VK4NH"
+ ],
+ "AU-2950": [
+  "VK1AO",
+  "VK2IO",
+  "VK2VW",
+  "VK3ACZ",
+  "VK3PF"
+ ],
+ "AU-2951": [
+  "VK6AAX",
+  "VK6ADM",
+  "F5PYI",
+  "JH1MXV",
+  "VK1AO"
+ ],
+ "AU-2955": [
+  "VK1GM",
+  "VK2IO",
+  "VK2VW",
+  "VK6LK",
+  "VK3GJG"
+ ],
+ "AU-2956": [
+  "VK6KN",
+  "VK1AO",
+  "VK2IO",
+  "VK3PF",
+  "VK7NET"
+ ],
+ "AU-2957": [
+  "VK1AO",
+  "VK3PF",
+  "VK2VW",
+  "VK4KC",
+  "VK6LK"
+ ],
+ "AU-2959": [
+  "VK4KC",
+  "VK2IO",
+  "VK1AO",
+  "VK3PF",
+  "VK6FA"
+ ],
+ "AU-2960": [
+  "VK6AAG",
+  "VK6LK",
+  "VK6ASK",
+  "VK6AAX",
+  "VK6NU"
+ ],
+ "AU-2961": [
+  "VK1AO",
+  "VK6KN",
+  "VK3PF",
+  "VK2IO",
+  "VK4EMP"
+ ],
+ "AU-2962": [
+  "VK3SQ",
+  "VK3PF",
+  "VK5FANA",
+  "VK5CZ",
+  "VK5PAS"
+ ],
+ "AU-2963": [
+  "VK3PF",
+  "VK3ANL",
+  "VK3ARH",
+  "VK3SQ",
+  "VK4TJ"
+ ],
+ "AU-2965": [
+  "VK4EMP",
+  "VK1AO",
+  "VK6EK"
+ ],
+ "AU-2969": [
+  "VK3PF",
+  "VK1AO",
+  "VK6JK",
+  "VK2IO",
+  "VK6MFP"
+ ],
+ "AU-2971": [
+  "VK1AO",
+  "VK3PF",
+  "VK6LK",
+  "VK4EMP",
+  "VK3SQ"
+ ],
+ "AU-2973": [
+  "VK3PF",
+  "VK6JK",
+  "VK2IO",
+  "JJ1PFC",
+  "JF7RJM"
+ ],
+ "AU-2975": [
+  "DV1K",
+  "JA1CUF",
+  "JA1VVH",
+  "JA9IFF",
+  "JF7RJM"
+ ],
+ "AU-2985": [
+  "JA3QNI",
+  "VK5NEC",
+  "VK5WU",
+  "ZL1VAH"
+ ],
+ "AU-2987": [
+  "VK4EMP",
+  "VK1AO",
+  "VK6LK",
+  "VK6DS",
+  "VK2ZR"
+ ],
+ "AU-2988": [
+  "VK3PF",
+  "VK1AO",
+  "VK1RF",
+  "VK2IO",
+  "VK3AXI"
+ ],
+ "AU-2991": [
+  "VK3AWA",
+  "VK7DD"
+ ],
+ "AU-2992": [
+  "JH1UCC",
+  "JK1TFZ",
+  "JR3DXJ",
+  "YC9ATK"
+ ],
+ "AU-2993": [
+  "VK1AO",
+  "VK6LK",
+  "VK6ASK",
+  "VK2IO",
+  "VK3PF"
+ ],
+ "AU-2995": [
+  "VK3PF",
+  "VK1AO",
+  "VK4NH",
+  "VK4EMP",
+  "VK6AJP"
+ ],
+ "AU-2998": [
+  "VK1AO",
+  "VK2IO",
+  "VK3PF",
+  "JF7RJM",
+  "VK4KC"
+ ],
+ "AU-3000": [
+  "VK8DNT",
+  "VK3PF",
+  "VK6JK",
+  "JF7RJM",
+  "VK1AO"
+ ],
+ "AU-3001": [
+  "DS1TUW",
+  "JA1VVH",
+  "JF1VST",
+  "JH1MXV",
+  "VK2IO"
+ ],
+ "AU-3004": [
+  "VK6LK",
+  "VK6ASK",
+  "VK2IO",
+  "VK6DEV",
+  "VK3ACZ"
+ ],
+ "AU-3005": [
+  "KC4KEZ",
+  "JH2KAG",
+  "JS1IFK",
+  "JF7RJM",
+  "VK2HAK"
+ ],
+ "AU-3008": [
+  "VK2VW",
+  "VK4NH",
+  "VK3PF",
+  "VK1AO",
+  "VK4KC"
+ ],
+ "AU-3012": [
+  "VK2VW",
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "VK8DNT"
+ ],
+ "AU-3015": [
+  "VK1AO",
+  "VK4EMP",
+  "VK2IO",
+  "VK2VAR",
+  "VK3TKK"
+ ],
+ "AU-3016": [
+  "JF1VST",
+  "JF7RJM",
+  "JJ1PFC",
+  "JN1NKV",
+  "VK1AO"
+ ],
+ "AU-3017": [
+  "HS1JZT",
+  "K6FA",
+  "KL1SF",
+  "VK3AUX",
+  "VK3TZT"
+ ],
+ "AU-3025": [
+  "VK1AO",
+  "VK2IO",
+  "VK4KC",
+  "VK6LK",
+  "VK3PF"
+ ],
+ "AU-3029": [
+  "VK1AO",
+  "VK4NH",
+  "VK2IO",
+  "VK3PF",
+  "VK4EMP"
+ ],
+ "AU-3033": [
+  "JF7RJM",
+  "VK6DS",
+  "VK4KC",
+  "BA7LUI",
+  "ZL3DMH"
+ ],
+ "AU-3037": [
+  "VK1AO",
+  "VK6AAX",
+  "VK6ALE",
+  "VK3PF",
+  "VK2IO"
+ ],
+ "AU-3038": [
+  "VK6DS",
+  "VK6LK",
+  "VK2IO",
+  "KG5CIK",
+  "VK6NU"
+ ],
+ "AU-3043": [
+  "VK1AO",
+  "VK2IO",
+  "VK3ACZ",
+  "VK3GJG",
+  "VK3PF"
+ ],
+ "AU-3045": [
+  "VK3PF",
+  "VK2IO",
+  "VK4NH",
+  "VK3APJ",
+  "VK6JK"
+ ],
+ "AU-3101": [
+  "VK1AO",
+  "VK3YV",
+  "VK3PF",
+  "VK4NH",
+  "JF7RJM"
+ ],
+ "AU-3112": [
+  "VK6DS",
+  "VK4EMP",
+  "VK4KC",
+  "VK2ZR",
+  "VK6LK"
+ ],
+ "AU-3114": [
+  "VK1AO",
+  "VK2VW",
+  "VK3PF",
+  "VK4EMP",
+  "VK8DNT"
+ ],
+ "AU-3116": [
+  "VK6LK",
+  "VK2ZR",
+  "VK2IO",
+  "VK2VW",
+  "VK4NH"
+ ],
+ "AU-3119": [
+  "JF7RJM",
+  "VK8DNT",
+  "VK6AJP",
+  "JF1AWC",
+  "JA1VVH"
+ ],
+ "AU-3120": [
+  "JF1IZZ",
+  "JG1RSI",
+  "JO2VSD",
+  "VK0DS"
+ ],
+ "AU-3121": [
+  "VK6ALE",
+  "VK6AAX",
+  "VK6NU",
+  "VK6LK",
+  "VK6ASK"
+ ],
+ "AU-3124": [
+  "VK3SQ",
+  "VK4AAC",
+  "VK4NH",
+  "F4ILH",
+  "IW2NXI"
+ ],
+ "AU-3126": [
+  "VK6AAX",
+  "VK6ADM",
+  "VK1AO",
+  "VK3PF",
+  "F5PYI"
+ ],
+ "AU-3127": [
+  "VK1AO",
+  "VK4EMP",
+  "VK4KC",
+  "VK6EK",
+  "VK2IO"
+ ],
+ "AU-3132": [
+  "VK6ALE",
+  "VK2IO",
+  "JF7RJM",
+  "VK3GJG",
+  "VK1AO"
+ ],
+ "AU-3133": [
+  "VK1AO",
+  "JF7RJM",
+  "VK3PF",
+  "VK6NU",
+  "VK3YV"
+ ],
+ "AU-3135": [
+  "VK4KC",
+  "VK6DS",
+  "VK4EMP",
+  "VK1AO",
+  "VK4MRH"
+ ],
+ "AU-3140": [
+  "VK4KC",
+  "VK2IO",
+  "VK3PF",
+  "ZL1CZ",
+  "VK1GM"
+ ],
+ "AU-3144": [
+  "VK6LK",
+  "VK1AO",
+  "VK2IO",
+  "VK6ASK",
+  "ZL2BB"
+ ],
+ "AU-3146": [
+  "VK6DS",
+  "VK1AO",
+  "VK6NU",
+  "KG5CIK",
+  "VK8DNT"
+ ],
+ "AU-3148": [
+  "VK6ALE",
+  "VK6ASK",
+  "VK3GJG",
+  "VK3PF",
+  "VK4FNQ"
+ ],
+ "AU-3240": [
+  "VK1AO",
+  "VK2IO",
+  "VK6ASK",
+  "VK4FW",
+  "VK6ALE"
+ ],
+ "AU-3265": [
+  "JI4JGD",
+  "VK2IO",
+  "VK3AUX",
+  "VK4AAC",
+  "VK5CZ"
+ ],
+ "AU-3267": [
+  "VK4KC",
+  "VK4EMP",
+  "JF7RJM",
+  "VK4DTS",
+  "VK4MWL"
+ ],
+ "AU-3277": [
+  "VK8DNT",
+  "VK4KC",
+  "DU6BCV",
+  "E28AM",
+  "JH1MXV"
+ ],
+ "AU-3284": [
+  "VK1AO",
+  "VK3PF",
+  "VK6ALE",
+  "VK6ASK",
+  "VK1DA"
+ ],
+ "AU-3293": [
+  "VK6LK",
+  "VK6JK",
+  "VK6EK",
+  "VK3PF",
+  "JF7RJM"
+ ],
+ "AU-3294": [
+  "VK1AO",
+  "VK4KC",
+  "VK2IO",
+  "VK6LK",
+  "VK3PF"
+ ],
+ "AU-3296": [
+  "VK1AO",
+  "VK4NH",
+  "VK2IO",
+  "VK3PF",
+  "VK4EMP"
+ ],
+ "AU-3297": [
+  "VK2IO",
+  "VK3PF",
+  "VK1AO",
+  "VK2ZR",
+  "JF7RJM"
+ ],
+ "AU-3298": [
+  "VK5KVA",
+  "VK5BJE",
+  "VK5CZ",
+  "VK5FANA",
+  "VK3XE"
+ ],
+ "AU-3299": [
+  "VK1AO",
+  "VK3PF",
+  "VK2IO",
+  "VK3APJ",
+  "VK3DCQ"
+ ],
+ "AU-3302": [
+  "VK4AAC",
+  "VK3PF",
+  "VK4NH",
+  "VK1AO",
+  "IK1GPG"
+ ],
+ "AU-3303": [
+  "VK3PF",
+  "VK6MFP",
+  "VK1AO",
+  "VK2IO",
+  "VK6JK"
+ ],
+ "AU-3304": [
+  "VK1AO",
+  "VK3PF",
+  "VK5LA",
+  "VK2IO",
+  "VK4AAC"
+ ],
+ "AU-3305": [
+  "VK4KC",
+  "VK1AO",
+  "VK3ACZ",
+  "VK4NH",
+  "F5PYI"
+ ],
+ "AU-3350": [
+  "VK6DS",
+  "VK5PL",
+  "VK3GJG",
+  "VK3PF",
+  "VK4AAC"
+ ],
+ "AU-3362": [
+  "VK1AO",
+  "VK6DS",
+  "VK1AD",
+  "VK6NU",
+  "VK6JK"
+ ],
+ "AU-3387": [
+  "VK6LK",
+  "VK6ASK",
+  "VK6AAX",
+  "VK6ADM",
+  "VK6BAD"
+ ],
+ "AU-3389": [
+  "VK1AO",
+  "VK2IO",
+  "VK3PF",
+  "F5PYI",
+  "IK4IDF"
+ ],
+ "AU-3403": [
+  "JA9HWD",
+  "JF7RJM",
+  "JG7NIF",
+  "JJ1PFC",
+  "JQ1FEP"
+ ],
+ "AU-3410": [
+  "VK3PF",
+  "VK6DS",
+  "ZL1BQD",
+  "DV1K",
+  "JA1VVH"
+ ],
+ "AU-3433": [
+  "VK6JK",
+  "VK6EK",
+  "VK6LK",
+  "VK6AAX",
+  "VK6ASK"
+ ],
+ "AU-3438": [
+  "VK1AO",
+  "VK4KC",
+  "VK2IO",
+  "F5PYI",
+  "VK4NH"
+ ],
+ "AU-3446": [
+  "VK1AO",
+  "VK3AG"
+ ],
+ "AU-3464": [
+  "9V1SA",
+  "AB8DD",
+  "DS4CSD",
+  "DS5SQS",
+  "HL1HG"
+ ],
+ "AU-3473": [
+  "VK3PF",
+  "VK1AO",
+  "VK4NH",
+  "VK4EMP",
+  "VK4MGL"
+ ],
+ "AU-3474": [
+  "VK3PF",
+  "VK6LK",
+  "VK1AO",
+  "VK5LA",
+  "JF7RJM"
+ ],
+ "AU-3478": [
+  "VK3PF",
+  "VK3YV",
+  "JH1MXV",
+  "JR0IVN",
+  "VK1AO"
+ ],
+ "AU-3491": [
+  "VK3PF",
+  "VK2IO",
+  "VK1AO",
+  "VK4NH",
+  "VK4KC"
+ ],
+ "AU-3494": [
+  "VK1AO",
+  "VK6ASK",
+  "VK6AAX",
+  "VK6ADM",
+  "VK3CEO"
+ ],
+ "AU-3505": [
+  "VK6ALE",
+  "VK6ASK",
+  "VK4FW",
+  "VK6AAX",
+  "VK6ADM"
+ ],
+ "AU-3509": [
+  "K0ILP",
+  "K1DC",
+  "KE6VNI",
+  "W4WDK"
+ ],
+ "AU-3512": [
+  "VK4KC",
+  "VK3PF",
+  "JF7RJM",
+  "KG5CIK",
+  "VK1AO"
+ ],
+ "AU-3522": [
+  "JJ1CBY",
+  "UW5ZM"
+ ],
+ "AU-3525": [
+  "JF1VST",
+  "JF7RJM",
+  "JN1NKV",
+  "VK1AO",
+  "VK3PF"
+ ],
+ "AU-3530": [
+  "VK4KC",
+  "VK6JK",
+  "VK4DTS",
+  "VK6AJP"
+ ],
+ "AU-3532": [
+  "VK3PF",
+  "JF1VST",
+  "JF7RJM",
+  "JN1NKV",
+  "JS6UAK"
+ ],
+ "AU-3547": [
+  "VK1AO",
+  "VK3ACZ",
+  "VK3ALF",
+  "VK2IO",
+  "VK4NH"
+ ],
+ "AU-3567": [
+  "VK6LK",
+  "VK4EMP",
+  "VK1AO",
+  "VK8DNT",
+  "JA9KRO"
+ ],
+ "AU-3575": [
+  "JI3MJK",
+  "KO4O",
+  "VE6CV",
+  "VK0DS",
+  "VK2EZF"
+ ],
+ "AU-3581": [
+  "VK1AO",
+  "VK4FW",
+  "VK6AAX",
+  "VK6ADM",
+  "VK6ALE"
+ ],
+ "AU-3583": [
+  "VK2VW",
+  "VK3PF",
+  "VK1AO",
+  "VK4EMP",
+  "VK2IO"
+ ],
+ "AU-3584": [
+  "VK4KC",
+  "VK4EMP",
+  "VK1AO",
+  "VK4DNO",
+  "VK4NH"
+ ],
+ "AU-3598": [
+  "VK4NH",
+  "VK4EMP",
+  "VK1AO",
+  "VK2IO",
+  "JF7RJM"
+ ],
+ "AU-3600": [
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "JF7RJM",
+  "VK4KC"
+ ],
+ "AU-3603": [
+  "VK6DS",
+  "VK2IO",
+  "VK3PF",
+  "VK5LA",
+  "VK6JK"
+ ],
+ "AU-3608": [
+  "VK4EMP",
+  "JF7RJM",
+  "VK2IO",
+  "VK4YES",
+  "JA9KRO"
+ ],
+ "AU-3611": [
+  "VK1AO",
+  "VK3PF",
+  "VK2IO",
+  "VK6ASK",
+  "VK6AAX"
+ ],
+ "AU-3642": [
+  "VK1AO",
+  "VK2IO",
+  "VK3PF",
+  "VK2DYN",
+  "VK2VAR"
+ ],
+ "AU-3648": [
+  "VK6LK",
+  "VK6JK",
+  "VK6EK",
+  "VK3PF",
+  "JF7RJM"
+ ],
+ "AU-3692": [
+  "VK6ALE",
+  "VK6AAG",
+  "VK1AO",
+  "VK6ADM",
+  "VK6AAX"
+ ],
+ "AU-3698": [
+  "VK2IO",
+  "VK3YV",
+  "VK1AO",
+  "VK3PF",
+  "JF7RJM"
+ ],
+ "AU-3701": [
+  "VK1AO",
+  "VK2IO",
+  "VK1OZ",
+  "VK3PF",
+  "VK6KN"
+ ],
+ "AU-3702": [
+  "VK1GM",
+  "VK3FB",
+  "VK3SO",
+  "VK4FNQ",
+  "VK6AAX"
+ ],
+ "AU-3707": [
+  "VK1AO",
+  "VK4NH",
+  "JF7RJM",
+  "JJ1PFC",
+  "JN1NKV"
+ ],
+ "AU-3709": [
+  "VK4KC",
+  "VK1AO",
+  "F5PYI",
+  "VK3DCQ",
+  "VK6JK"
+ ],
+ "AU-3715": [
+  "VK6AAX",
+  "VK6BAD",
+  "VK6AAG",
+  "VK6ADM",
+  "VK6NU"
+ ],
+ "AU-3717": [
+  "VK2IO",
+  "VK2USH",
+  "HS5TXB",
+  "VK1AO",
+  "VK3CEO"
+ ],
+ "AU-3737": [
+  "VK3PF",
+  "VK6LK",
+  "VK4EMP",
+  "VK2IO",
+  "VK4NH"
+ ],
+ "AU-3738": [
+  "VK1AO",
+  "VK6ASK",
+  "VK6ALE",
+  "VK6WTF",
+  "I4RHP"
+ ],
+ "AU-3740": [
+  "VK6LK",
+  "VK1AO",
+  "VK3PF",
+  "JF7RJM",
+  "VK2IO"
+ ],
+ "AU-3743": [
+  "VK2IO",
+  "VK1AO",
+  "DV1K",
+  "VK3PF",
+  "VK3UAO"
+ ],
+ "AU-3768": [
+  "VK1AO",
+  "VK4KC",
+  "VK3PF",
+  "VK2IO",
+  "VK6LK"
+ ],
+ "AU-3770": [
+  "VK1AO",
+  "VK6JK",
+  "VK2ZR",
+  "VK2IO",
+  "9M2EZR"
+ ],
+ "AU-3785": [
+  "VK3YV",
+  "VK1AO",
+  "ZL1HIM",
+  "VK4NH",
+  "VK2IO"
+ ],
+ "AU-3786": [
+  "VK4EMP",
+  "VK1AO",
+  "VK3PF",
+  "VK4NH",
+  "VK3ACZ"
+ ],
+ "AU-3792": [
+  "VK3PF",
+  "DV1K",
+  "JF1VST",
+  "VK1AO",
+  "VK3CEO"
+ ],
+ "AU-6425": [
+  "VK3PF",
+  "VK4KC",
+  "VK6LK",
+  "VK2IO",
+  "VK6ASK"
+ ],
+ "AU-6699": [
+  "VK3PF",
+  "VK5LA",
+  "JF7RJM",
+  "NG9B",
+  "KG5CIK"
+ ],
+ "AU-6701": [
+  "VK4NH",
+  "VK3PF",
+  "VK2IO",
+  "JF4OZY",
+  "WA0RVK"
+ ],
+ "AU-6703": [
+  "VK3YV",
+  "VK1AO",
+  "ZL3JD",
+  "DV1K",
+  "JA9IFF"
+ ],
+ "AU-6706": [
+  "ZL1LC",
+  "VK4NH",
+  "VK5AYL",
+  "WD5AFR",
+  "VK3PF"
+ ],
+ "AU-6707": [
+  "VK4NH",
+  "VK4KC",
+  "VK2IO",
+  "VK3YV",
+  "VK3PF"
+ ],
+ "AU-6710": [
+  "VK2VW",
+  "VK3PF",
+  "VK4NH",
+  "VK4KC",
+  "VK2VAR"
+ ],
+ "AU-6712": [
+  "VK3YV",
+  "VK3PF",
+  "VK3APJ",
+  "VK3UAO",
+  "VK4KTW"
+ ],
+ "AU-6714": [
+  "VK4KC",
+  "VK2VW",
+  "VK1AO",
+  "JF7RJM",
+  "ZL3MR"
+ ],
+ "AU-6716": [
+  "VK4KC",
+  "VK1AO",
+  "VK3PF",
+  "F5PYI",
+  "KG5CIK"
+ ],
+ "AU-6717": [
+  "VK4KC",
+  "VK1AO",
+  "VK2VW",
+  "IK2ODD",
+  "UT5PI"
+ ],
+ "AU-6725": [
+  "VK1AO",
+  "VK3AG"
+ ],
+ "AU-6726": [
+  "VK1AO",
+  "JF7RJM",
+  "VK1TTY",
+  "VK3APJ",
+  "VK3CEO"
+ ],
+ "AU-6729": [
+  "JE2CPI",
+  "JR0IVN",
+  "K7IOC",
+  "KG2CV",
+  "VK1RD"
+ ],
+ "AU-6730": [
+  "VK4KC",
+  "VK1AO",
+  "VK3PF",
+  "VK4NH",
+  "F5PYI"
+ ],
+ "AU-6741": [
+  "VK1AO",
+  "VK4KC",
+  "VK6LK",
+  "VK6JK",
+  "VK4NH"
+ ],
+ "AU-6744": [
+  "VK3PF",
+  "VK4TJ",
+  "VK2IO",
+  "KG5CIK",
+  "VK3ELF"
+ ],
+ "AU-6761": [
+  "4I1BNC",
+  "RU0LL",
+  "YB2CPO"
+ ],
+ "AU-6766": [
+  "VK4KC",
+  "VK4NH",
+  "VK1AO",
+  "VK3GJG",
+  "F5NZO"
+ ],
+ "AU-6767": [
+  "VK6AAX",
+  "VK6ALE",
+  "VK6BAD",
+  "VK6BP",
+  "VK6DEV"
+ ],
+ "AU-6768": [
+  "JF7RJM",
+  "VK1AO",
+  "VK4DTS",
+  "VK6ALE",
+  "JA9KRO"
+ ],
+ "AU-6773": [
+  "VK1AO",
+  "VK2VAR",
+  "VK3GJG",
+  "VK6ASK",
+  "ZL1GA"
+ ],
+ "AU-6782": [
+  "VK5WU",
+  "VK2HRX",
+  "ZL1RPC"
+ ],
+ "AU-6788": [
+  "VK4NH",
+  "VK3PF",
+  "JF7RJM",
+  "VK2IO",
+  "VK1CHW"
+ ],
+ "AU-6790": [
+  "VK2IO",
+  "VK3ACZ",
+  "VK3FB",
+  "VK6AAX",
+  "VK6ADM"
+ ],
+ "AU-6967": [
+  "7K3BKY",
+  "VK2POP",
+  "DS5DNO",
+  "HL3LQZ",
+  "JG5DHX"
+ ],
+ "AU-6979": [
+  "VK6AAX",
+  "VK6ALE",
+  "VK6BAD",
+  "VK6EK",
+  "VK6WTF"
+ ],
+ "AU-6994": [
+  "VK6LK",
+  "VK3PF",
+  "VK6ASK",
+  "VK1AO",
+  "VK2IO"
+ ],
+ "AU-7029": [
+  "VK6LK",
+  "VK3PF",
+  "E21LLR",
+  "VK4ABK",
+  "VK5CZ"
+ ],
+ "AU-7030": [
+  "VK6DS",
+  "VK1AO",
+  "VK2IO",
+  "VK4DTS",
+  "JF7RJM"
+ ],
+ "AU-7032": [
+  "VK6JK",
+  "AD8J",
+  "JA1AKL",
+  "VK6NU",
+  "ZL1BW"
+ ],
+ "AU-7034": [
+  "VK1OZ",
+  "VK1AO",
+  "JH1MXV",
+  "VK3ACZ",
+  "VK4DTS"
+ ],
+ "AU-7035": [
+  "VK4KC",
+  "VK2VW",
+  "JF7RJM",
+  "VK1AO",
+  "VK2IO"
+ ],
+ "AU-7036": [
+  "VK3GCD",
+  "JS1IFK",
+  "VK3CEO",
+  "JG7MRR",
+  "VK4CZ"
+ ],
+ "AU-7108": [
+  "VK2IO",
+  "VK8DNT",
+  "ZL1VAH"
+ ],
+ "AU-7111": [
+  "VK3PF",
+  "EC5CSW",
+  "F4HJO",
+  "VK1AO",
+  "VK3UAO"
+ ],
+ "AU-7113": [
+  "VK4KC",
+  "VK4EMP",
+  "VK2IO",
+  "F5NZO",
+  "F5PYI"
+ ],
+ "AU-7115": [
+  "VK8DNT",
+  "VK1AO",
+  "VK6ASK",
+  "DS1TUW",
+  "JA9KRO"
+ ],
+ "AU-7116": [
+  "JF7RJM",
+  "VK8DNT",
+  "VK6ASK",
+  "JA9IFF",
+  "JA9KRO"
+ ],
+ "AU-7118": [
+  "VK1AO",
+  "VK6AJP",
+  "VK3PF",
+  "VK5WU",
+  "VK2USH"
+ ],
+ "AU-7122": [
+  "9V1SA",
+  "E21LLR",
+  "JS1EQF",
+  "VK6FN",
+  "VK6MIL"
+ ],
+ "AU-7212": [
+  "VK1AO",
+  "VK4NH",
+  "VK6AAX",
+  "VK2IO",
+  "VK6JK"
+ ],
+ "AU-7213": [
+  "JA1VVH",
+  "VK2IO",
+  "VK3APJ",
+  "VK3DAC",
+  "VK3KTT"
+ ],
+ "AU-7214": [
+  "JJ1PFC",
+  "VK1AO",
+  "VK1CHW",
+  "VK3PF",
+  "VK5LA"
+ ],
+ "AU-7529": [
+  "VK3PF",
+  "VK1AO",
+  "VK2VW",
+  "VK4EMP",
+  "VK6DS"
+ ],
+ "AU-7530": [
+  "VK3PF",
+  "VK1AO",
+  "VK2VW",
+  "VK6DS",
+  "VK4EMP"
+ ],
+ "AU-7532": [
+  "VK1AO",
+  "VK3PF",
+  "VK2IO",
+  "VK2DI",
+  "VK4MGL"
+ ],
+ "AU-7553": [
+  "JF7RJM",
+  "VK3PF",
+  "VK3AXI",
+  "VK3AWA",
+  "JH1MXV"
+ ],
+ "AU-7558": [
+  "VK1AO",
+  "VK3PF",
+  "VK4KC",
+  "VK4DTS",
+  "VK4MPB"
+ ],
+ "AU-7560": [
+  "E20JWB",
+  "IK5NQI",
+  "JA0CJK",
+  "JA9DCF",
+  "JF1VST"
+ ],
+ "AU-7566": [
+  "VK6AAX",
+  "VK6ADM",
+  "VK6ALE",
+  "VK6BAD",
+  "VK6DEV"
+ ],
+ "AU-7568": [
+  "VK2IO",
+  "JR1BQJ",
+  "KL7TC",
+  "VK1AO",
+  "JN1NKV"
+ ],
+ "AU-7570": [
+  "JF7RJM",
+  "S55G",
+  "VK1AO",
+  "VK2IO",
+  "VK2USH"
+ ],
+ "AU-7571": [
+  "BX2ALD",
+  "JA0MUU",
+  "JA6JYN",
+  "JR2IGV",
+  "VK6JK"
+ ],
+ "AU-7577": [
+  "BV2NF",
+  "DS5SQS",
+  "E20JWB",
+  "JA1VVH",
+  "JG7NIF"
+ ],
+ "AU-7587": [
+  "VK4EMP",
+  "VK1AO",
+  "N4CPR",
+  "VK3CEO",
+  "VK3DL"
+ ],
+ "AU-7603": [
+  "VK6WTF",
+  "VK1AX",
+  "VK2USH",
+  "JA9IFF"
+ ],
+ "AU-7604": [
+  "VK1AO",
+  "VK2IO",
+  "VK3CEO",
+  "VK3PF",
+  "VK6LK"
+ ],
+ "AU-7683": [
+  "VK4KC",
+  "VK6EK",
+  "VK4EMP",
+  "VK1AO",
+  "VK3PF"
+ ],
+ "AU-8119": [
+  "VK1AO",
+  "VK4KC",
+  "VK4EMP",
+  "VK6DEV",
+  "VK3YV"
+ ],
+ "AU-8122": [
+  "VK4KC",
+  "VK4EMP",
+  "VK4DTS"
+ ],
+ "AU-8123": [
+  "VK4KC",
+  "VK4EMP",
+  "VK4NH",
+  "VK1AO",
+  "VK2IO"
+ ],
+ "AU-8124": [
+  "VK4KC",
+  "VK1AD",
+  "VK1AO",
+  "VK2VW",
+  "VK4NH"
+ ],
+ "AU-8125": [
+  "VK4KC",
+  "VK3YV",
+  "VK1AO",
+  "VK4DTS",
+  "VK5LA"
+ ],
+ "AU-8126": [
+  "VK3YV",
+  "VK4KC",
+  "VK1AO",
+  "F5PYI"
+ ],
+ "AU-8474": [
+  "VK4EMP",
+  "VK1AO",
+  "VK4NH",
+  "VK3PF",
+  "VK1AD"
+ ],
+ "AU-8494": [
+  "VK7JZ",
+  "VK6AJP",
+  "VK5AV",
+  "JH1MXV",
+  "W0VTT"
+ ],
+ "AU-8510": [
+  "VK5LA",
+  "VK6AAX",
+  "VK6ADM",
+  "F5PYI",
+  "VK6AJP"
+ ],
+ "AU-8511": [
+  "VK6JK",
+  "VK6LK",
+  "7K1CPT",
+  "DS1TUW",
+  "JA9IFF"
+ ],
+ "AU-8512": [
+  "VK2IO",
+  "VK1AO",
+  "OH1XT",
+  "VK6DEV",
+  "VK6DS"
+ ],
+ "AU-8513": [
+  "VK1AO",
+  "VK4KC",
+  "VK6FN",
+  "VK2IO",
+  "VK6AAX"
+ ],
+ "AU-8515": [
+  "VK1AO",
+  "VK6AAX",
+  "VK6ADM",
+  "VK6EK",
+  "VK6FN"
+ ],
+ "AU-8516": [
+  "VK4KC",
+  "VK1AO",
+  "VK3PF",
+  "VK4NH",
+  "VK2IO"
+ ],
+ "AU-8517": [
+  "VK4DTS",
+  "VK4KC",
+  "VK1AO",
+  "VK4NH",
+  "JF7RJM"
+ ],
+ "AU-8527": [
+  "VK6AAX",
+  "VK6ALE",
+  "VK6BAD",
+  "VK6DEV",
+  "VK6ADM"
+ ],
+ "AU-8530": [
+  "VK6AAX",
+  "VK6ADM",
+  "VK2IO",
+  "VK2USH",
+  "VK6GUY"
+ ],
+ "AU-8531": [
+  "VK6LK",
+  "VK2VW",
+  "VK6AAX",
+  "VK1AO",
+  "VK3PF"
+ ],
+ "AU-8533": [
+  "VK1AO",
+  "VK6MFP",
+  "JG3DHN",
+  "VK2USH",
+  "VK3AWA"
+ ],
+ "AU-8534": [
+  "VK6MFP",
+  "VK4CZ",
+  "VK6AJP",
+  "VK6JK",
+  "VK6LK"
+ ],
+ "AU-8535": [
+  "VK6MFP",
+  "VK2POP",
+  "VK6NU"
+ ],
+ "AU-8536": [
+  "VK6MFP",
+  "VK4EMP",
+  "VK4KC",
+  "VK6DS",
+  "VK2IO"
+ ],
+ "AU-8538": [
+  "F5PYI",
+  "VK2IO",
+  "VK6LK",
+  "VK6EK",
+  "VK6JK"
+ ],
+ "AU-8543": [
+  "VK1AO",
+  "VK2IO",
+  "VK6JK",
+  "VK6DS",
+  "VK6NU"
+ ],
+ "AU-8545": [
+  "VK1OZ",
+  "VK1AO",
+  "VK2IO",
+  "F5PYI",
+  "JH1MXV"
+ ],
+ "AU-8546": [
+  "VK4MPB",
+  "BA7LUI",
+  "JH2FCE",
+  "VK1MF",
+  "VK5TRM"
+ ],
+ "AU-8547": [
+  "VK6MFP",
+  "JR2NTC",
+  "JG7MRR",
+  "JR4ARN",
+  "VK0DS"
+ ],
+ "AU-8549": [
+  "VK3PF",
+  "VK1AO",
+  "VK2IO",
+  "VK4DNO",
+  "JF7RJM"
+ ],
+ "AU-8551": [
+  "VK6DS",
+  "JQ1FEP",
+  "JH7DFZ",
+  "JJ2CJB",
+  "RU0LL"
+ ],
+ "AU-8552": [
+  "JA9OJM",
+  "JF2RYX",
+  "VK1AO",
+  "JA9KRO",
+  "ZL3RIK"
+ ],
+ "AU-8553": [
+  "VK6AAX",
+  "VK6ADM",
+  "VK6EK",
+  "VK6LK",
+  "F5PYI"
+ ],
+ "AU-8696": [
+  "VK2IO",
+  "VK4AAC",
+  "VK2NP",
+  "VK5FANA",
+  "ZL2BB"
+ ],
+ "AU-8713": [
+  "VK3PF",
+  "VK4KC",
+  "VK6AAX",
+  "VK6ASK",
+  "JF7RJM"
+ ],
+ "AU-8714": [
+  "VK4KC",
+  "VK3PF",
+  "VK2IO",
+  "VK3FB",
+  "JF7RJM"
+ ],
+ "AU-8715": [
+  "VK4KC",
+  "JF7RJM",
+  "VK1AO",
+  "VK8DNT",
+  "VK3PF"
+ ],
+ "AU-8716": [
+  "4I1HCY",
+  "JA1VVH",
+  "JF7RJM",
+  "JG6PHH",
+  "JH1JJV"
+ ],
+ "AU-8717": [
+  "4I1HCY",
+  "JA1VVH",
+  "JF7RJM",
+  "JG6PHH",
+  "JH1JJV"
+ ],
+ "AU-8718": [
+  "VK6EK",
+  "VK3PF",
+  "JA9OJM",
+  "VK1AO",
+  "JF7RJM"
+ ],
+ "AU-8719": [
+  "VK3PF",
+  "VK6DS",
+  "JF7RJM",
+  "JH1MXV",
+  "JI1FLB"
+ ],
+ "AU-8720": [
+  "VK4KC",
+  "DS1TUW",
+  "VK6JK",
+  "VK4NH",
+  "F5PYI"
+ ],
+ "AU-8721": [
+  "VK4EMP",
+  "VK6EK",
+  "VK3PF",
+  "VK2IO",
+  "JA9IFF"
+ ],
+ "AU-8722": [
+  "VK6JK",
+  "JE1JCF",
+  "KI8N",
+  "VK4STC",
+  "VK6AJP"
+ ],
+ "AU-8723": [
+  "VK1AO",
+  "VK3PF",
+  "JG1RBB",
+  "VK6ASK",
+  "JF7RJM"
+ ],
+ "AU-8724": [
+  "VK4EMP",
+  "JF7RJM",
+  "VK4NH",
+  "VK6AJP",
+  "IU8CNE"
+ ],
+ "AU-8725": [
+  "VK1AO",
+  "VK2IO",
+  "VK3PF",
+  "VK4KC",
+  "VK4EMP"
+ ],
+ "AU-8726": [
+  "VK1AO",
+  "VK2IO",
+  "VK6JK",
+  "VK3PF",
+  "VK8DNT"
+ ],
+ "AU-8727": [
+  "VK1AO",
+  "VK2IO",
+  "VK1OZ",
+  "VK4KC",
+  "VK3PF"
+ ],
+ "AU-8728": [
+  "JF7RJM",
+  "VK2MOE",
+  "VK2IO",
+  "VK2USH",
+  "VK1AO"
+ ],
+ "AU-8729": [
+  "VK6LK",
+  "VK6JK",
+  "VK6MFP",
+  "JF7RJM",
+  "VK1AO"
+ ],
+ "AU-8730": [
+  "VK1AO",
+  "VK2IO",
+  "VK1OZ",
+  "VK4KC",
+  "JF7RJM"
+ ],
+ "AU-8731": [
+  "VK1AO",
+  "VK4KC",
+  "VK4EMP",
+  "VK6LK",
+  "VK3PF"
+ ],
+ "AU-8732": [
+  "VK6DS",
+  "VK3PF",
+  "VK4KC",
+  "VK4NH",
+  "VK6AJP"
+ ],
+ "AU-8733": [
+  "VK1AO",
+  "VK2IO",
+  "VK5LA",
+  "VK3PF",
+  "VK6LK"
+ ],
+ "AU-8734": [
+  "VK6JK",
+  "JF7RJM",
+  "VK1AO",
+  "JA1VVH",
+  "JM1VWQ"
+ ],
+ "AU-8735": [
+  "VK6LK",
+  "VK6JK",
+  "VK1AO",
+  "JF7RJM"
+ ],
+ "AU-8736": [
+  "VK3PF",
+  "VK6MFP",
+  "VK6ASK",
+  "VK4DTS",
+  "VK6JK"
+ ],
+ "AU-8880": [
+  "JF7RJM",
+  "JG7NIF",
+  "JH8PFW"
+ ],
+ "AU-8881": [
+  "JF7RJM",
+  "VK1AO",
+  "KG5CIK",
+  "VK3PF",
+  "JE6WUG"
+ ],
+ "AU-8941": [
+  "VK6ASK",
+  "VK6AAX",
+  "VK6PCE",
+  "VK6DEV",
+  "VK4KC"
+ ],
+ "AU-8942": [
+  "VK2IO",
+  "VK2USH",
+  "JG1RBB",
+  "VK3PF",
+  "JF7RJM"
+ ],
+ "AU-8943": [
+  "VK2IO",
+  "VK3CEO",
+  "JF7RJM",
+  "VK2USH",
+  "VK6LK"
+ ],
+ "AU-8944": [
+  "VK4KC",
+  "VK4HWP",
+  "VK6AAX",
+  "VK1AO",
+  "VK2IO"
+ ],
+ "AU-9680": [
+  "DS1TUW",
+  "VK6DEV",
+  "DJ1HAM",
+  "JA9IFF",
+  "VK7ID"
+ ],
+ "AU-9681": [
+  "VK4KC",
+  "VK1AO",
+  "DV1K",
+  "VK4DTS",
+  "VK3PF"
+ ],
+ "AU-9683": [
+  "JF7RJM",
+  "VK6KN",
+  "VK6EK",
+  "VK6DEV",
+  "VK2IO"
+ ],
+ "AU-9878": [
+  "VK6LK",
+  "VK1AO",
+  "VK6AJP",
+  "VK4FSC",
+  "DV1K"
+ ],
+ "AU-9918": [
+  "VK4KC",
+  "VK1AO",
+  "VK2IO",
+  "VK5LA",
+  "F5PYI"
+ ],
+ "AU-9920": [
+  "VK6DS",
+  "JF7RJM",
+  "VK6ASK",
+  "K7CTV",
+  "VK8DNT"
+ ],
+ "AU-9921": [
+  "VK3PF",
+  "VK1AO",
+  "VK6LK",
+  "VK4DNO",
+  "VK6ALE"
+ ],
+ "AU-9923": [
+  "VK4KC",
+  "VK6LK",
+  "VK5LA",
+  "JF7RJM",
+  "IK4IDF"
+ ],
+ "AU-9925": [
+  "VK4KC",
+  "JF7RJM",
+  "VK3PF",
+  "VK1AO",
+  "HS0GWL"
+ ],
+ "AU-9926": [
+  "VK4KC",
+  "JF7RJM",
+  "VK3PF",
+  "VK6AJP",
+  "JA1VVH"
+ ],
+ "AU-9927": [
+  "VK6EK",
+  "VK3PF",
+  "VK1AO",
+  "JF7RJM",
+  "VK6AJP"
+ ],
+ "AU-9931": [
+  "VK1AO",
+  "VK4EMP",
+  "CS7BHA",
+  "JA9KRO",
+  "VK6ASK"
+ ],
+ "AU-9937": [
+  "BI6NSL",
+  "JA1AKL",
+  "JE2CPI",
+  "JF1VST",
+  "JG7MRR"
+ ],
+ "AU-9952": [
+  "DS5KLN"
+ ],
+ "AU-9954": [
+  "BW0S",
+  "EA1AUO",
+  "JF1UKN",
+  "JH5HDA",
+  "JH7APL"
+ ],
+ "AU-9956": [
+  "BH2XIH",
+  "BH8AVW",
+  "BI1RRE",
+  "HL1VAU",
+  "HS7WMU"
+ ],
+ "AU-9981": [
+  "VK6LK",
+  "VK6DS",
+  "VK6JK",
+  "VK2IO",
+  "VK3PF"
+ ],
+ "AU-9982": [
+  "VK4KC",
+  "VK2IO",
+  "VK3PF",
+  "VK4NH",
+  "VK1AO"
+ ],
+ "AU-9983": [
+  "VK4KC",
+  "VK4NH",
+  "JG1RBB",
+  "JA9OJM",
+  "EA3IDY"
+ ],
+ "AU-9984": [
+  "VK4DTS",
+  "VK4KC",
+  "VK3PF",
+  "VK1AO",
+  "JA9OJM"
+ ],
+ "AU-9985": [
+  "VK4KC",
+  "VK2IO",
+  "VK2USH",
+  "VK1AO",
+  "VK3PF"
+ ],
+ "AU-9986": [
+  "VK3PF",
+  "VK2IO",
+  "JF7RJM",
+  "DV1K",
+  "JA1VVH"
+ ],
+ "AU-9987": [
+  "VK6DS",
+  "VK2VAR",
+  "JF7RJM",
+  "VK3PF",
+  "VK2IO"
+ ],
+ "AU-9988": [
+  "VK6ASK",
+  "VK4KC",
+  "VK6LK",
+  "JF7RJM",
+  "VK6JK"
+ ],
+ "AU-9989": [
+  "VK6DS",
+  "VK2IO",
+  "JF1VST",
+  "JF7RJM",
+  "JH1MXV"
+ ],
+ "AU-9990": [
+  "VK6DS",
+  "JA1VVH",
+  "JF7RJM",
+  "7N1BGR",
+  "JE2CPI"
+ ],
+ "AU-9991": [
+  "VK3PF",
+  "JA1VVH",
+  "JA3CWL",
+  "JF7RJM",
+  "VK2IO"
+ ],
+ "AU-9993": [
+  "JF7RJM",
+  "VK3PF",
+  "7N1FRE",
+  "JA9OJM",
+  "JF2RYX"
+ ],
+ "AU-9994": [
+  "VK3PF",
+  "JF7RJM",
+  "7N1FRE",
+  "JA9OJM",
+  "JF2RYX"
+ ],
+ "AU-9996": [
+  "VK6LK",
+  "DV1K",
+  "JA9IFF",
+  "JF1VST",
+  "JF7RJM"
+ ],
+ "AU-9997": [
+  "VK4EMP",
+  "VK6AAX",
+  "JG1RBB",
+  "6K2ILX",
+  "ZL1CZ"
+ ],
+ "AU-9998": [
+  "JF7RJM",
+  "VK3PF",
+  "DS1TUW",
+  "JG1RBB",
+  "YB8IEL"
+ ],
+ "AU-9999": [
+  "VK6LK",
+  "VK4KC",
+  "VK8DNT",
+  "VK6AAX",
+  "VK6ASK"
+ ],
+ "AU-10000": [
+  "VK4KC",
+  "VK4NH",
+  "VK6AAX",
+  "VK6EK",
+  "VK6AAG"
+ ],
+ "AU-10052": [
+  "VK3PF",
+  "VK2USH",
+  "VK6DS",
+  "VK2IO",
+  "JF7RJM"
+ ],
+ "AU-10055": [
+  "VK1AO",
+  "VK3PF",
+  "VK6WTF",
+  "VK6ALE",
+  "VK2USH"
+ ],
+ "AU-10059": [
+  "VK6ASK",
+  "VK6KN",
+  "VK6ALE",
+  "VK1AO",
+  "VK3GJG"
+ ],
+ "AU-10060": [
+  "VK6ASK",
+  "VK8DNT",
+  "VK6LK",
+  "VK4CGQ",
+  "VK6AAX"
+ ],
+ "AU-10063": [
+  "VK1AO",
+  "VK3PF",
+  "JA1SKE",
+  "JA9KRO",
+  "JF7RJM"
+ ],
+ "AU-10064": [
+  "VK1AO",
+  "VK2IO",
+  "VK6ALE",
+  "VK6AAX",
+  "VK6ASK"
+ ],
+ "AU-10066": [
+  "VK6AAX",
+  "F5PYI",
+  "VK6DEV",
+  "VK1AO",
+  "VK6AJP"
+ ],
+ "AU-10067": [
+  "VK8DNT",
+  "VK6EK",
+  "VK6DEV",
+  "VK6AAX",
+  "BH6BIX"
+ ],
+ "AU-10068": [
+  "VK6AAX",
+  "VK1AO",
+  "VK1GM",
+  "VK4DTS",
+  "VK6ADM"
+ ],
+ "AU-10069": [
+  "VK1AO",
+  "VK6AAX",
+  "VK6LK",
+  "F5PYI",
+  "VK4PMC"
+ ],
+ "AU-10414": [
+  "VK4NH",
+  "JF7RJM",
+  "VK3PF",
+  "VK2IO",
+  "VK4DTS"
+ ],
+ "AU-10431": [
+  "VK3PF",
+  "VK6AAX",
+  "VK6ASK",
+  "VK6MFP",
+  "VK6ADM"
+ ],
+ "AU-10563": [
+  "VK4KC",
+  "VK4HWP",
+  "VK6AAX",
+  "VK2IO",
+  "VK2USH"
+ ],
+ "AU-10564": [
+  "VK6AAX",
+  "VK4KC",
+  "VK4HWP",
+  "VK6ASK",
+  "VK1AO"
+ ],
+ "AU-10565": [
+  "VK1AO",
+  "VK4KC",
+  "VK2IO",
+  "VK6LK",
+  "VK3PF"
+ ],
+ "AU-10606": [
+  "VK6AAX",
+  "VK6AAG",
+  "VK6DS",
+  "VK6ADM",
+  "VK1AO"
+ ],
+ "AU-10720": [
+  "VK3PF",
+  "VK2IO",
+  "VK2RU",
+  "VK3ACU",
+  "VK5AV"
+ ],
+ "AU-10771": [
+  "VK6LK",
+  "VK1AO",
+  "VK1GM",
+  "F5NZO",
+  "VK3TDK"
+ ],
+ "AU-10834": [
+  "VK4EMP",
+  "VK1AO",
+  "VK2IO",
+  "VK2YAK",
+  "VK3SQ"
+ ],
+ "AU-10847": [
+  "VK4KC",
+  "VK6ASK",
+  "VK6WTF",
+  "JF7RJM",
+  "HL1VAU"
+ ],
+ "AU-10848": [
+  "VK4KC",
+  "VK6ASK",
+  "VK6WTF",
+  "JF7RJM",
+  "HL1VAU"
+ ],
+ "AU-10849": [
+  "VK3PF",
+  "VK4EMP",
+  "JA9KRO",
+  "JF7RJM",
+  "VK2USH"
+ ],
+ "AU-10850": [
+  "VK3PF",
+  "VK6ASK",
+  "VK5DU",
+  "JF7RJM",
+  "VK1AO"
+ ],
+ "AU-10851": [
+  "JF7RJM",
+  "VK6LK",
+  "AA2LM",
+  "DV1K",
+  "JA9KRO"
+ ],
+ "AU-10852": [
+  "VK3PF",
+  "VK6LK",
+  "JF7RJM",
+  "VK2MOE",
+  "VK1AO"
+ ],
+ "AU-10853": [
+  "JF7RJM",
+  "JJ1PFC",
+  "VK3PF",
+  "VK6AJP",
+  "DV1K"
+ ],
+ "AU-10855": [
+  "VK4KC",
+  "VK3CEO",
+  "JF7RJM",
+  "VK3PF",
+  "VK3ACZ"
+ ],
+ "AU-10876": [
+  "VK4NH",
+  "VK8DNT",
+  "JA1VVH",
+  "VK4CEG",
+  "VK4GAP"
+ ],
+ "AU-10879": [
+  "VK1AO",
+  "VK6LK",
+  "VK6ALE",
+  "VK6ASK",
+  "VK4EMP"
+ ],
+ "AU-11032": [
+  "VK4KC",
+  "VK6LK",
+  "VK6ASK",
+  "VK3PF",
+  "VK6MFP"
+ ],
+ "AU-11212": [
+  "VK2IO",
+  "JF7RJM",
+  "VK6ASK",
+  "VK6LK",
+  "VK1AO"
+ ],
+ "AU-11213": [
+  "VK4KC",
+  "VK6LK",
+  "VK1OZ",
+  "JF7RJM",
+  "VK2USH"
+ ],
+ "AU-11214": [
+  "VK6LK",
+  "VK3PF",
+  "F5PYI",
+  "VK6AAX",
+  "VK6ALE"
+ ],
+ "AU-11215": [
+  "VK6LK",
+  "VK6WTF",
+  "VK1AO",
+  "VK4MWL",
+  "VK2IO"
+ ],
+ "AU-11216": [
+  "VK2USH",
+  "JE2CPI",
+  "JF1MXQ",
+  "JN3TIK",
+  "JS1IFK"
+ ],
+ "AU-11217": [
+  "VK6LK",
+  "VK6ASK",
+  "VK2IO",
+  "VK6DEV",
+  "VK3ACZ"
+ ],
+ "AU-11221": [
+  "VK6LK",
+  "VK1AO",
+  "VK2VAR",
+  "VK5TOM",
+  "VK6AJP"
+ ],
+ "AU-11222": [
+  "JF7RJM",
+  "JA9KRO",
+  "VK1AO",
+  "9V1DX",
+  "DS1TUW"
+ ],
+ "AU-11223": [
+  "VK6LK",
+  "VK5LA",
+  "JA9KRO",
+  "JF7RJM",
+  "HS5TXB"
+ ],
+ "AU-11224": [
+  "JF7RJM",
+  "VK1AD",
+  "VK2IO",
+  "DS1TUW",
+  "JA9KRO"
+ ],
+ "AU-11225": [
+  "JF1UKN",
+  "JH2NKE",
+  "JH2NWP",
+  "JI4WAO",
+  "JR3KSL"
+ ],
+ "AU-11226": [
+  "VK1AD",
+  "4G0G",
+  "BG4SE",
+  "E20EHQ",
+  "W1SRD"
+ ],
+ "AU-11227": [
+  "VK6EK",
+  "VK3PF",
+  "YC1IVW",
+  "E29CXH",
+  "JA9IFF"
+ ],
+ "AU-11228": [
+  "VK6LK",
+  "JA9KRO",
+  "VK1AO",
+  "VK3SPG",
+  "VK6AJP"
+ ],
+ "AU-11340": [
+  "JF7RJM",
+  "VK6WTF",
+  "E29AHU",
+  "JF1VST",
+  "ZL3WSL"
+ ],
+ "AU-11341": [
+  "JF7RJM",
+  "JS1IFK",
+  "JM1VWQ",
+  "JS6UAG",
+  "VK3PF"
+ ],
+ "AU-11342": [
+  "VK6WTF",
+  "JF7RJM",
+  "VK4KC",
+  "VK1OZ",
+  "VK6DS"
+ ],
+ "AU-11343": [
+  "VK4KC",
+  "JF7RJM",
+  "VK2USH",
+  "VK3PF",
+  "VK1AO"
+ ],
+ "AU-11409": [
+  "VK6LK",
+  "VK2IO",
+  "VK3PF",
+  "VK4AAC",
+  "VK1AO"
+ ],
+ "AU-11412": [
+  "VK1AO",
+  "VK3PF",
+  "VK6ALE",
+  "VK6ASK",
+  "VK6HRC"
+ ],
+ "AU-11414": [
+  "JF7RJM",
+  "VK2IO",
+  "HS5TXB",
+  "JA9KRO",
+  "VK6KB"
+ ]
+}

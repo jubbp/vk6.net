@@ -1,0 +1,494 @@
+{
+ "VK6AAG": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 62,
+   "qsos": 131
+  },
+  "activator": {
+   "activations": 3,
+   "parks": 3,
+   "qsos": 39
+  }
+ },
+ "VK6AAX": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 561,
+   "qsos": 1040
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6ADM": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 251,
+   "qsos": 407
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6AGT": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 19,
+   "qsos": 20
+  },
+  "activator": {
+   "activations": 19,
+   "parks": 5,
+   "qsos": 495
+  }
+ },
+ "VK6AJP": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 160,
+   "qsos": 315
+  },
+  "activator": {
+   "activations": 2,
+   "parks": 4,
+   "qsos": 31
+  }
+ },
+ "VK6ALE": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 246,
+   "qsos": 436
+  },
+  "activator": {
+   "activations": 92,
+   "parks": 62,
+   "qsos": 3689
+  }
+ },
+ "VK6ASK": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 309,
+   "qsos": 792
+  },
+  "activator": {
+   "activations": 53,
+   "parks": 46,
+   "qsos": 1141
+  }
+ },
+ "VK6BAD": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 284,
+   "qsos": 382
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6BP": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 11,
+   "qsos": 14
+  },
+  "activator": {
+   "activations": 4,
+   "parks": 2,
+   "qsos": 138
+  }
+ },
+ "VK6CAC": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 13,
+   "qsos": 22
+  },
+  "activator": {
+   "activations": 1,
+   "parks": 1,
+   "qsos": 27
+  }
+ },
+ "VK6CAN": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 5,
+   "qsos": 6
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 3,
+   "qsos": 22
+  }
+ },
+ "VK6DEV": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 307,
+   "qsos": 492
+  },
+  "activator": {
+   "activations": 28,
+   "parks": 27,
+   "qsos": 534
+  }
+ },
+ "VK6DS": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 526,
+   "qsos": 1088
+  },
+  "activator": {
+   "activations": 360,
+   "parks": 95,
+   "qsos": 9496
+  }
+ },
+ "VK6EK": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 304,
+   "qsos": 579
+  },
+  "activator": {
+   "activations": 42,
+   "parks": 31,
+   "qsos": 631
+  }
+ },
+ "VK6FA": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 70,
+   "qsos": 98
+  },
+  "activator": {
+   "activations": 4,
+   "parks": 6,
+   "qsos": 75
+  }
+ },
+ "VK6FN": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 31,
+   "qsos": 33
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6GUY": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 52,
+   "qsos": 100
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6HDY": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 49,
+   "qsos": 55
+  },
+  "activator": {
+   "activations": 9,
+   "parks": 8,
+   "qsos": 219
+  }
+ },
+ "VK6HOG": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 11,
+   "qsos": 41
+  },
+  "activator": {
+   "activations": 2,
+   "parks": 2,
+   "qsos": 37
+  }
+ },
+ "VK6HRC": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 73,
+   "qsos": 144
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6JK": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 705,
+   "qsos": 1411
+  },
+  "activator": {
+   "activations": 15,
+   "parks": 15,
+   "qsos": 425
+  }
+ },
+ "VK6KB": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 6,
+   "qsos": 6
+  },
+  "activator": {
+   "activations": 3,
+   "parks": 3,
+   "qsos": 48
+  }
+ },
+ "VK6KN": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 155,
+   "qsos": 387
+  },
+  "activator": {
+   "activations": 161,
+   "parks": 39,
+   "qsos": 5726
+  }
+ },
+ "VK6LDX": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 38,
+   "qsos": 41
+  },
+  "activator": {
+   "activations": 15,
+   "parks": 15,
+   "qsos": 352
+  }
+ },
+ "VK6LK": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 592,
+   "qsos": 1948
+  },
+  "activator": {
+   "activations": 78,
+   "parks": 66,
+   "qsos": 1729
+  }
+ },
+ "VK6MFP": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 258,
+   "qsos": 567
+  },
+  "activator": {
+   "activations": 393,
+   "parks": 197,
+   "qsos": 9257
+  }
+ },
+ "VK6MIL": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 19,
+   "qsos": 22
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 1,
+   "qsos": 4
+  }
+ },
+ "VK6MMB": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 76,
+   "qsos": 97
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6MTF": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 7,
+   "qsos": 8
+  },
+  "activator": {
+   "activations": 9,
+   "parks": 7,
+   "qsos": 100
+  }
+ },
+ "VK6NDX": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 8,
+   "qsos": 8
+  },
+  "activator": {
+   "activations": 10,
+   "parks": 11,
+   "qsos": 182
+  }
+ },
+ "VK6NI": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 23,
+   "qsos": 24
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6NU": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 1098,
+   "qsos": 1842
+  },
+  "activator": {
+   "activations": 7,
+   "parks": 9,
+   "qsos": 121
+  }
+ },
+ "VK6PAW": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 14,
+   "qsos": 20
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6PCE": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 25,
+   "qsos": 39
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 0,
+   "qsos": 0
+  }
+ },
+ "VK6PRF": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 17,
+   "qsos": 22
+  },
+  "activator": {
+   "activations": 3,
+   "parks": 3,
+   "qsos": 102
+  }
+ },
+ "VK6TEK": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 76,
+   "qsos": 91
+  },
+  "activator": {
+   "activations": 3,
+   "parks": 3,
+   "qsos": 51
+  }
+ },
+ "VK6THW": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 2,
+   "qsos": 3
+  },
+  "activator": {
+   "activations": 2,
+   "parks": 3,
+   "qsos": 27
+  }
+ },
+ "VK6WR": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 63,
+   "qsos": 82
+  },
+  "activator": {
+   "activations": 3,
+   "parks": 3,
+   "qsos": 48
+  }
+ },
+ "VK6WTF": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 212,
+   "qsos": 467
+  },
+  "activator": {
+   "activations": 40,
+   "parks": 30,
+   "qsos": 931
+  }
+ },
+ "VK6XM": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 1,
+   "qsos": 4
+  },
+  "activator": {
+   "activations": 0,
+   "parks": 1,
+   "qsos": 6
+  }
+ },
+ "VK6XNP": {
+  "fetched": "2026-11-01T09:26:21.553Z",
+  "hunter": {
+   "parks": 27,
+   "qsos": 55
+  },
+  "activator": {
+   "activations": 16,
+   "parks": 16,
+   "qsos": 219
+  }
+ }
+}
