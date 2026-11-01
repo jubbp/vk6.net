@@ -1,13 +1,18 @@
 # Builds vk6.net and publishes it to GitHub Pages.
-# Runs on every push, hourly (to pick up Drive edits, new episodes and calendar changes),
-# on demand, and when Apps Script sends a "content-updated" event after a publish.
+# Runs on every push; daily just after midnight Perth (so "today", "this week" and the calendars roll
+# over, and Drive and Sheet edits are picked up); twice more on Sundays for the new episode (11 am and
+# 9 pm Perth, after each broadcast); on demand ("Run workflow" after an edit you want live now); and when
+# Apps Script sends a "content-updated" event (not wired up yet; then the Sunday runs can go).
+# POTA data is refreshed separately, weekly (pota.yml).
 name: Build and publish
 
 on:
   push:
     branches: [main]
   schedule:
-    - cron: '17 * * * *'
+    - cron: '10 16 * * *'   # daily, 00:10 Perth
+    - cron: '0 3 * * 0'     # Sunday 11:00 Perth, after the morning broadcast
+    - cron: '0 13 * * 0'    # Sunday 21:00 Perth, after the evening repeat
   workflow_dispatch:
   repository_dispatch:
     types: [content-updated]

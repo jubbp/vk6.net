@@ -1,6 +1,6 @@
 # Weekly Parks on the Air update: refreshes the WA data cache in content/pota/ (only parks with new
 # activity are read, so normally a few dozen requests) and commits it, keeping a dated history in the
-# repo. The hourly build (build.yml) then publishes the new figures; it never calls POTA itself.
+# repo, and starts a site build so the new figures go live. The site build never calls POTA itself.
 # POTA offers no official data API yet: keep this weekly and gentle.
 name: Weekly POTA update
 
@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: pota
@@ -33,3 +34,7 @@ jobs:
           if git diff --cached --quiet; then echo "No change"; exit 0; fi
           git commit -m "POTA data: weekly update $(date -u +%Y-%m-%d)"
           git push
+          # A push made by this job doesn't start other workflows, so ask for a site build directly.
+          gh workflow run build.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
