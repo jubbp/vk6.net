@@ -1,0 +1,35 @@
+# Weekly Parks on the Air update: refreshes the WA data cache in content/pota/ (only parks with new
+# activity are read, so normally a few dozen requests) and commits it, keeping a dated history in the
+# repo. The hourly build (build.yml) then publishes the new figures; it never calls POTA itself.
+# POTA offers no official data API yet: keep this weekly and gentle.
+name: Weekly POTA update
+
+on:
+  schedule:
+    - cron: '0 22 * * 0'   # Monday 6 am Perth
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pota
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - run: node scripts/fetch-pota.mjs
+      - name: Commit the updated data
+        run: |
+          git config user.name "vk6.net POTA update"
+          git config user.email "automation@vk6.net"
+          git add content/pota
+          if git diff --cached --quiet; then echo "No change"; exit 0; fi
+          git commit -m "POTA data: weekly update $(date -u +%Y-%m-%d)"
+          git push

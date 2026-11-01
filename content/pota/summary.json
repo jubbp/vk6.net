@@ -1,0 +1,679 @@
+{
+ "generated": "2026-11-01T09:30:41.708Z",
+ "parks": {
+  "total": 1463,
+  "activated": 474,
+  "never": 989,
+  "nearPerthNever": 45,
+  "nearPerthExamples": [
+   {
+    "ref": "AU-2906",
+    "name": "Carnac Island Nature Park"
+   },
+   {
+    "ref": "AU-3006",
+    "name": "Moondyne Convention Centre Resources Area"
+   },
+   {
+    "ref": "AU-3046",
+    "name": "Banksia Nature Park"
+   },
+   {
+    "ref": "AU-3351",
+    "name": "Balannup Lake Nature Reserve"
+   }
+  ]
+ },
+ "totals": {
+  "activations": 1716,
+  "qsos": 40285,
+  "vk6Activators": 31,
+  "huntersChecked": 41
+ },
+ "week": [
+  {
+   "date": "2026-10-25",
+   "call": "VK6MFP",
+   "ref": "AU-3600",
+   "qsos": 17,
+   "cw": 0,
+   "data": 8,
+   "phone": 9,
+   "park": "Lake Joondalup Nature Reserve"
+  }
+ ],
+ "month": [
+  {
+   "date": "2026-10-18",
+   "call": "VK6ALE",
+   "ref": "AU-2955",
+   "qsos": 57,
+   "cw": 0,
+   "data": 0,
+   "phone": 57,
+   "park": "Wills Nature Park"
+  },
+  {
+   "date": "2026-10-18",
+   "call": "VK6ALE",
+   "ref": "AU-3144",
+   "qsos": 29,
+   "cw": 0,
+   "data": 0,
+   "phone": 29,
+   "park": "Weam Nature Park"
+  },
+  {
+   "date": "2026-10-18",
+   "call": "VK6LK",
+   "ref": "AU-3132",
+   "qsos": 17,
+   "cw": 0,
+   "data": 13,
+   "phone": 4,
+   "park": "Rica Erickson Nature Park"
+  },
+  {
+   "date": "2026-10-18",
+   "call": "VK6LK",
+   "ref": "AU-3608",
+   "qsos": 7,
+   "cw": 0,
+   "data": 7,
+   "phone": 0,
+   "park": "Lake Ninan Nature Reserve"
+  },
+  {
+   "date": "2026-10-17",
+   "call": "VK6ALE",
+   "ref": "AU-2949",
+   "qsos": 34,
+   "cw": 0,
+   "data": 0,
+   "phone": 34,
+   "park": "Strange Road Nature Park"
+  },
+  {
+   "date": "2026-10-17",
+   "call": "VK6ALE",
+   "ref": "AU-0167",
+   "qsos": 22,
+   "cw": 0,
+   "data": 0,
+   "phone": 22,
+   "park": "Boyagarring Conservation Park"
+  },
+  {
+   "date": "2026-10-17",
+   "call": "VK6LK",
+   "ref": "AU-3608",
+   "qsos": 20,
+   "cw": 0,
+   "data": 11,
+   "phone": 9,
+   "park": "Lake Ninan Nature Reserve"
+  },
+  {
+   "date": "2026-10-17",
+   "call": "VK6ALE",
+   "ref": "AU-0083",
+   "qsos": 17,
+   "cw": 0,
+   "data": 0,
+   "phone": 17,
+   "park": "Lupton Conservation Park"
+  },
+  {
+   "date": "2026-10-17",
+   "call": "VK6LK",
+   "ref": "AU-3148",
+   "qsos": 13,
+   "cw": 0,
+   "data": 0,
+   "phone": 13,
+   "park": "Wongamine Nature Park"
+  },
+  {
+   "date": "2026-10-17",
+   "call": "VK6LK",
+   "ref": "AU-3692",
+   "qsos": 10,
+   "cw": 0,
+   "data": 0,
+   "phone": 10,
+   "park": "Namelcatchem Nature Reserve"
+  },
+  {
+   "date": "2026-10-17",
+   "call": "VK6THW",
+   "ref": "AU-7603",
+   "qsos": 10,
+   "cw": 0,
+   "data": 10,
+   "phone": 0,
+   "park": "Warren State Forest"
+  },
+  {
+   "date": "2026-10-10",
+   "call": "VK6NU",
+   "ref": "AU-3738",
+   "qsos": 24,
+   "cw": 0,
+   "data": 0,
+   "phone": 24,
+   "park": "Pantapin Nature Reserve"
+  }
+ ],
+ "monthCount": 25,
+ "activatorsYear": [
+  {
+   "call": "VK6DS",
+   "activations": 99,
+   "parks": 33,
+   "qsos": 2376
+  },
+  {
+   "call": "VK6MFP",
+   "activations": 90,
+   "parks": 54,
+   "qsos": 2006
+  },
+  {
+   "call": "VK6KN",
+   "activations": 66,
+   "parks": 23,
+   "qsos": 2270
+  },
+  {
+   "call": "VK6ALE",
+   "activations": 64,
+   "parks": 45,
+   "qsos": 2666
+  },
+  {
+   "call": "VK6WTF",
+   "activations": 40,
+   "parks": 30,
+   "qsos": 931
+  },
+  {
+   "call": "VK6ASK",
+   "activations": 31,
+   "parks": 26,
+   "qsos": 634
+  },
+  {
+   "call": "VK6LK",
+   "activations": 29,
+   "parks": 25,
+   "qsos": 578
+  },
+  {
+   "call": "VK6LDX",
+   "activations": 20,
+   "parks": 15,
+   "qsos": 352
+  },
+  {
+   "call": "VK6AGT",
+   "activations": 11,
+   "parks": 4,
+   "qsos": 295
+  },
+  {
+   "call": "VK6XNP",
+   "activations": 11,
+   "parks": 10,
+   "qsos": 144
+  }
+ ],
+ "activatorsAll": [
+  {
+   "call": "VK6MFP",
+   "activations": 462,
+   "parks": 196,
+   "qsos": 9255
+  },
+  {
+   "call": "VK6DS",
+   "activations": 423,
+   "parks": 90,
+   "qsos": 9188
+  },
+  {
+   "call": "VK6KN",
+   "activations": 180,
+   "parks": 38,
+   "qsos": 5706
+  },
+  {
+   "call": "VK6ALE",
+   "activations": 93,
+   "parks": 62,
+   "qsos": 3689
+  },
+  {
+   "call": "VK6LK",
+   "activations": 81,
+   "parks": 65,
+   "qsos": 1725
+  },
+  {
+   "call": "VK6ASK",
+   "activations": 51,
+   "parks": 41,
+   "qsos": 1068
+  },
+  {
+   "call": "VK6EK",
+   "activations": 42,
+   "parks": 31,
+   "qsos": 631
+  },
+  {
+   "call": "VK6WTF",
+   "activations": 40,
+   "parks": 30,
+   "qsos": 931
+  },
+  {
+   "call": "VK6DEV",
+   "activations": 29,
+   "parks": 26,
+   "qsos": 527
+  },
+  {
+   "call": "VK6LDX",
+   "activations": 20,
+   "parks": 15,
+   "qsos": 352
+  },
+  {
+   "call": "VK6AGT",
+   "activations": 19,
+   "parks": 5,
+   "qsos": 495
+  },
+  {
+   "call": "VK6XNP",
+   "activations": 17,
+   "parks": 16,
+   "qsos": 219
+  },
+  {
+   "call": "VK6JK",
+   "activations": 15,
+   "parks": 15,
+   "qsos": 425
+  },
+  {
+   "call": "VK6NDX",
+   "activations": 15,
+   "parks": 11,
+   "qsos": 182
+  },
+  {
+   "call": "VK6MTF",
+   "activations": 7,
+   "parks": 5,
+   "qsos": 80
+  }
+ ],
+ "hunters": [
+  {
+   "call": "VK6NU",
+   "parks": 1098,
+   "qsos": 1842
+  },
+  {
+   "call": "VK6JK",
+   "parks": 705,
+   "qsos": 1411
+  },
+  {
+   "call": "VK6LK",
+   "parks": 592,
+   "qsos": 1948
+  },
+  {
+   "call": "VK6AAX",
+   "parks": 561,
+   "qsos": 1040
+  },
+  {
+   "call": "VK6DS",
+   "parks": 526,
+   "qsos": 1088
+  },
+  {
+   "call": "VK6ASK",
+   "parks": 309,
+   "qsos": 792
+  },
+  {
+   "call": "VK6DEV",
+   "parks": 307,
+   "qsos": 492
+  },
+  {
+   "call": "VK6EK",
+   "parks": 304,
+   "qsos": 579
+  },
+  {
+   "call": "VK6BAD",
+   "parks": 284,
+   "qsos": 382
+  },
+  {
+   "call": "VK6MFP",
+   "parks": 258,
+   "qsos": 567
+  },
+  {
+   "call": "VK6ADM",
+   "parks": 251,
+   "qsos": 407
+  },
+  {
+   "call": "VK6ALE",
+   "parks": 246,
+   "qsos": 436
+  },
+  {
+   "call": "VK6WTF",
+   "parks": 212,
+   "qsos": 467
+  },
+  {
+   "call": "VK6AJP",
+   "parks": 160,
+   "qsos": 315
+  },
+  {
+   "call": "VK6KN",
+   "parks": 155,
+   "qsos": 387
+  }
+ ],
+ "years": {
+  "2014": 4,
+  "2015": 13,
+  "2016": 9,
+  "2017": 4,
+  "2018": 7,
+  "2019": 20,
+  "2021": 7,
+  "2022": 21,
+  "2023": 162,
+  "2024": 484,
+  "2025": 565,
+  "2026": 420
+ },
+ "months": [
+  {
+   "month": "2026-10",
+   "activations": 25,
+   "parks": 22,
+   "firstEver": 18,
+   "qsos": 638,
+   "top": {
+    "call": "VK6ALE",
+    "activations": 7
+   }
+  },
+  {
+   "month": "2026-09",
+   "activations": 21,
+   "parks": 13,
+   "firstEver": 3,
+   "qsos": 635,
+   "top": {
+    "call": "VK6WTF",
+    "activations": 7
+   }
+  },
+  {
+   "month": "2026-08",
+   "activations": 38,
+   "parks": 28,
+   "firstEver": 2,
+   "qsos": 752,
+   "top": {
+    "call": "VK6WTF",
+    "activations": 9
+   }
+  },
+  {
+   "month": "2026-07",
+   "activations": 69,
+   "parks": 37,
+   "firstEver": 14,
+   "qsos": 1557,
+   "top": {
+    "call": "VK6ALE",
+    "activations": 13
+   }
+  },
+  {
+   "month": "2026-06",
+   "activations": 43,
+   "parks": 36,
+   "firstEver": 10,
+   "qsos": 1126,
+   "top": {
+    "call": "VK6WTF",
+    "activations": 11
+   }
+  },
+  {
+   "month": "2026-05",
+   "activations": 65,
+   "parks": 41,
+   "firstEver": 20,
+   "qsos": 2369,
+   "top": {
+    "call": "VK6DS",
+    "activations": 18
+   }
+  },
+  {
+   "month": "2026-04",
+   "activations": 57,
+   "parks": 38,
+   "firstEver": 19,
+   "qsos": 1678,
+   "top": {
+    "call": "VK6MFP",
+    "activations": 10
+   }
+  },
+  {
+   "month": "2026-03",
+   "activations": 18,
+   "parks": 14,
+   "firstEver": 2,
+   "qsos": 494,
+   "top": {
+    "call": "VK6DS",
+    "activations": 8
+   }
+  },
+  {
+   "month": "2026-02",
+   "activations": 26,
+   "parks": 20,
+   "firstEver": 9,
+   "qsos": 683,
+   "top": {
+    "call": "VK6DS",
+    "activations": 9
+   }
+  },
+  {
+   "month": "2026-01",
+   "activations": 58,
+   "parks": 25,
+   "firstEver": 9,
+   "qsos": 1241,
+   "top": {
+    "call": "VK6LK",
+    "activations": 11
+   }
+  },
+  {
+   "month": "2025-12",
+   "activations": 47,
+   "parks": 30,
+   "firstEver": 9,
+   "qsos": 939,
+   "top": {
+    "call": "VK6MFP",
+    "activations": 17
+   }
+  },
+  {
+   "month": "2025-11",
+   "activations": 54,
+   "parks": 34,
+   "firstEver": 7,
+   "qsos": 1150,
+   "top": {
+    "call": "VK6DS",
+    "activations": 15
+   }
+  },
+  {
+   "month": "2025-10",
+   "activations": 63,
+   "parks": 34,
+   "firstEver": 15,
+   "qsos": 1393,
+   "top": {
+    "call": "VK6KN",
+    "activations": 19
+   }
+  },
+  {
+   "month": "2025-09",
+   "activations": 35,
+   "parks": 21,
+   "firstEver": 3,
+   "qsos": 1097,
+   "top": {
+    "call": "VK6KN",
+    "activations": 12
+   }
+  },
+  {
+   "month": "2025-08",
+   "activations": 39,
+   "parks": 29,
+   "firstEver": 4,
+   "qsos": 1106,
+   "top": {
+    "call": "VK6KN",
+    "activations": 15
+   }
+  },
+  {
+   "month": "2025-07",
+   "activations": 83,
+   "parks": 37,
+   "firstEver": 11,
+   "qsos": 2814,
+   "top": {
+    "call": "VK6MFP",
+    "activations": 18
+   }
+  },
+  {
+   "month": "2025-06",
+   "activations": 32,
+   "parks": 23,
+   "firstEver": 10,
+   "qsos": 812,
+   "top": {
+    "call": "VK6KN",
+    "activations": 11
+   }
+  },
+  {
+   "month": "2025-05",
+   "activations": 54,
+   "parks": 31,
+   "firstEver": 16,
+   "qsos": 1521,
+   "top": {
+    "call": "VK6MFP",
+    "activations": 19
+   }
+  },
+  {
+   "month": "2025-04",
+   "activations": 54,
+   "parks": 35,
+   "firstEver": 12,
+   "qsos": 1671,
+   "top": {
+    "call": "VK6DS",
+    "activations": 16
+   }
+  },
+  {
+   "month": "2025-03",
+   "activations": 32,
+   "parks": 20,
+   "firstEver": 7,
+   "qsos": 1056,
+   "top": {
+    "call": "VK6DS",
+    "activations": 12
+   }
+  },
+  {
+   "month": "2025-02",
+   "activations": 37,
+   "parks": 23,
+   "firstEver": 15,
+   "qsos": 939,
+   "top": {
+    "call": "VK6MFP",
+    "activations": 21
+   }
+  },
+  {
+   "month": "2025-01",
+   "activations": 35,
+   "parks": 24,
+   "firstEver": 10,
+   "qsos": 989,
+   "top": {
+    "call": "VK6DS",
+    "activations": 11
+   }
+  },
+  {
+   "month": "2024-12",
+   "activations": 46,
+   "parks": 30,
+   "firstEver": 14,
+   "qsos": 1356,
+   "top": {
+    "call": "VK6DS",
+    "activations": 15
+   }
+  },
+  {
+   "month": "2024-11",
+   "activations": 36,
+   "parks": 29,
+   "firstEver": 15,
+   "qsos": 1139,
+   "top": {
+    "call": "VK6MFP",
+    "activations": 14
+   }
+  }
+ ]
+}

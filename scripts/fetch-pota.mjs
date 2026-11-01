@@ -1,5 +1,5 @@
 // Parks on the Air in WA: keeps a local copy of the WA data in content/pota/ (committed, so it builds up
-// a history and can be analysed offline) and writes the site's summary to content/_live/pota.json.
+// a history and can be analysed offline) and writes the site's summary to content/pota/summary.json.
 // Gentle on POTA: one request for the WA park list, then only the parks whose activation count has
 // changed since the last run (a few dozen a week). Hunter totals refresh monthly. POTA offers no
 // official data API yet and doesn't support third-party use. POTA is not a contest, so the site shows
@@ -11,7 +11,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 const API = 'https://api.pota.app/';
 const UA = { 'User-Agent': 'vk6.net (WA Amateur Radio News, newswest@vk6.net)' };
 const CACHE = new URL('../content/pota/', import.meta.url);
-const out = new URL('../content/_live/pota.json', import.meta.url);
+const out = new URL('../content/pota/summary.json', import.meta.url);  // what the site shows; committed with the cache
 const FULL = process.argv.includes('--full');
 let requests = 0;
 
@@ -99,6 +99,5 @@ const data = {
   hunters: hunters.slice(0, 15),
   years, months: monthRows,
 };
-await mkdir(new URL('.', out), { recursive: true });
 await writeFile(out, JSON.stringify(data, null, 1));
 console.log(`pota.json: ${acts.length} activations, ${data.week.length} this week, ${hunters.length} VK6 hunters; ${requests} requests to POTA`);
