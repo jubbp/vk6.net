@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-bodyClass: home
+bodyClass: home hub-home
 jsonld:
   "@context": https://schema.org
   "@type": Organization
@@ -11,23 +11,86 @@ jsonld:
   foundingDate: "2015-01"
 ---
 {%- set latest = episodes[0] %}
-<div class="wrap home-layout">
-  <div class="home-main">
-    <p class="kicker">{{ settings.show }} · every Sunday since 1931</p>
-    <h1>Amateur radio news for Western Australia.</h1>
-    <p class="lede">News from the clubs, contests, nets and people of VK6, every Sunday on the repeaters and HF, and any time online or in your podcast app. Made by the volunteers of {{ settings.club }}.</p>
-    {%- if latest %}
-    {%- set ep = latest %}{% set playerLabel = "This week on NewsWest" %}{% set notesSeek = true %}
-    {% include "partials/player.njk" %}
-    <div class="lead-notes">
-      <h2 class="section-title">In this episode</h2>
-      {% include "partials/episode-notes.njk" %}
-      <p class="more"><a href="{{ '/news/listen/' | url }}">All episodes and search →</a></p>
-    </div>
-    {%- endif %}
+{#- The hub front page: everything on the air in VK6. Cards: what's on, WA parks, this week's NewsWest,
+    nets, support, and the POTA challenge. Calendars from _data/calendar.js, POTA from _data/pota.js. -#}
+<div class="wrap hub-hero">
+  <div class="hub-intro">
+    <p class="kicker">vk6.net · amateur radio in Western Australia</p>
+    <h1>Everything on the air in VK6, in one place.</h1>
+    <p class="lede">Events, nets, repeaters, parks and clubs across WA, and {{ settings.show }} every Sunday since 1931. Made by the volunteers of {{ settings.club }}.</p>
+    <form class="hub-search" action="{{ '/news/listen/' | url }}" method="get" role="search">
+      <label class="sr-only" for="hub-q">Search NewsWest</label>
+      <input id="hub-q" name="q" type="search" placeholder="Search NewsWest: a club, callsign or topic" autocomplete="off">
+      <button type="submit">Search</button>
+    </form>
   </div>
-  <aside class="home-side">
-    {% include "partials/callbacks-card.njk" %}
-    {% include "partials/support-card.njk" %}
-  </aside>
+  {%- if latest %}
+  <div class="hub-player">
+    {%- set ep = latest %}{% set playerLabel = "NewsWest this week" %}{% set notesSeek = false %}
+    {% include "partials/player.njk" %}
+    <p class="hub-next small muted">On air every {{ settings.broadcast.day }} {% for t in settings.broadcast.times %}{{ t.time | ampm }}{% if not loop.last %} and {% endif %}{% endfor %} · {{ settings.broadcast.featured[0].freq }} {{ settings.broadcast.featured[0].station }} and relays across WA</p>
+  </div>
+  {%- endif %}
+</div>
+
+<div class="wrap hub-grid">
+  {#- What's on: club meetings and contests, next fortnight -#}
+  {%- set upcoming = (calendar.meetings | concat(calendar.contests)) | sort(false, false, "iso") %}
+  <section class="card tile tile-teal" style="--bar: var(--accent)">
+    <h2>What's on <small>next 2 weeks</small></h2>
+    {%- if upcoming.length %}
+    <ul class="feed">{% for e in upcoming | limit(6) %}<li><span class="when">{{ e.day }}</span><span>{{ e.title }}<span class="sub">{% if e.time %}{{ e.time }}{% else %}All day{% endif %}{% if e.where %} · {{ e.where | truncate(48) }}{% endif %}</span></span></li>{% endfor %}</ul>
+    {%- else %}<p class="muted">Nothing listed for the next fortnight.</p>{% endif %}
+    <p class="tile-more"><a href="{{ '/meeting/' | url }}">Club calendar</a> · <a href="{{ '/contests/' | url }}">Contests</a></p>
+  </section>
+
+  {#- WA parks (POTA) -#}
+  <section class="card tile" style="--bar: var(--green)">
+    <h2>WA parks this week <small>POTA</small></h2>
+    {%- if pota %}
+    {%- set recent = pota.week if pota.week.length else (pota.month | limit(3)) %}
+    {%- if not pota.week.length %}<p class="small muted">No activations logged yet this week. Most recent:</p>{% endif %}
+    <ul class="feed">{% for a in recent | limit(3) %}<li><span class="when">{{ a.date | shortDate }}</span><span><b>{{ a.call }}</b> · {{ a.park }}<span class="sub">{{ a.ref }} · {{ a.qsos }} contacts</span></span></li>{% endfor %}</ul>
+    {%- if pota.activatorsYear.length %}<p class="small">Top activator, last 12 months: <b>{{ pota.activatorsYear[0].call }}</b>, {{ pota.activatorsYear[0].activations }} activations.</p>{% endif %}
+    <div class="mini-stats"><div><b>{{ pota.parks.total | thousands }}</b><span>WA parks</span></div><div><b>{{ pota.parks.never | thousands }}</b><span>never activated</span></div></div>
+    {%- else %}<p class="muted">POTA figures coming soon.</p>{% endif %}
+    <p class="tile-more"><a href="{{ '/portable/pota/' | url }}">POTA in WA and leaderboards</a></p>
+  </section>
+
+  {#- This week's NewsWest, segment by segment -#}
+  <section class="card tile" style="--bar: var(--navy)">
+    <h2>In this week's NewsWest <small>{{ latest.longDate if latest }}</small></h2>
+    {%- if latest and latest.items.length %}
+    <ul class="feed segs">{% for it in latest.items | limit(6) %}{% if it.start or it.start === 0 %}<li><a class="when" href="{{ ('/episodes/' + latest.slug + '/?t=' + it.start) | url }}">{{ it.start | clock }}</a><span>{% if it.segment %}<b>{{ it.segment }}:</b> {% endif %}{{ it.topic }}</span></li>{% endif %}{% endfor %}</ul>
+    {%- endif %}
+    <p class="tile-more"><a href="{{ '/news/listen/' | url }}">Every episode</a> · <a href="{{ '/callbacks/' | url }}">Register your callback</a></p>
+  </section>
+
+  {#- Nets, next few days -#}
+  <section class="card tile tile-gold" style="--bar: var(--gold)">
+    <h2>Nets coming up</h2>
+    {%- if calendar.nets.length %}
+    <ul class="feed">{% for e in calendar.nets | limit(6) %}<li><span class="when">{{ e.day }}<br>{{ e.time }}</span><span>{{ e.title }}<span class="sub">{{ e.where | truncate(44) }}</span></span></li>{% endfor %}</ul>
+    {%- else %}<p class="muted">No nets listed.</p>{% endif %}
+    <p class="tile-more"><a href="{{ '/nets/' | url }}">Nets calendar</a></p>
+  </section>
+
+  {#- Support -#}
+  <section class="card tile" style="--bar: var(--coral)">
+    <h2>Keep NewsWest on air</h2>
+    <p>NewsWest is made entirely by volunteers. Become a {{ settings.supporters.name | replace("Supporters", "Supporter") }} to help cover running costs and bring back PerthTech.</p>
+    {%- set sponsors = supporters | selectattr("Type", "equalto", "Sponsor") | list %}
+    {%- if sponsors.length %}<p class="small muted">With thanks to our sponsor{% if sponsors.length > 1 %}s{% endif %}: {% for s in sponsors %}<a href="{{ s.Url }}" rel="noopener">{{ s.Name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</p>{% endif %}
+    <p><a class="button" href="{{ '/support/' | url }}">Support our work</a></p>
+  </section>
+
+  {#- POTA challenge -#}
+  <section class="card tile" style="--bar: var(--green)">
+    <h2>This month's challenge <small>Portable</small></h2>
+    {%- if pota %}
+    <p>Activate one of the <b>{{ pota.parks.nearPerthNever }}</b> never-activated parks within about 40 km of Perth{% if pota.parks.nearPerthExamples.length %}, such as {% for p in pota.parks.nearPerthExamples | limit(3) %}{{ p.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}.</p>
+    <p class="small muted">First activations get a mention on NewsWest.</p>
+    {%- else %}<p>Find a WA park nobody has activated yet, and get on air from it.</p>{% endif %}
+    <p class="tile-more"><a href="{{ '/becoming-an-amateur/' | url }}">New to radio? Get licensed</a></p>
+  </section>
 </div>
