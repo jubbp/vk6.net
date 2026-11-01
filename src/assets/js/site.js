@@ -16,6 +16,25 @@
   document.addEventListener('click', (e) => groups.forEach((g) => { if (!g.contains(e.target)) g.open = false; }));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') groups.forEach((g) => { g.open = false; }); });
 
+  // Trial themes (preview only): the nav button cycles Newsroom, Signal, Field and remembers the choice.
+  const THEMES = [['', 'Newsroom'], ['signal', 'Signal'], ['field', 'Field']];
+  const themeBtn = document.querySelector('[data-theme-switch]');
+  const showTheme = () => {
+    const i = Math.max(0, THEMES.findIndex(([k]) => k === (document.documentElement.dataset.theme || '')));
+    themeBtn.querySelector('[data-theme-name]').textContent = THEMES[i][1];
+    themeBtn.setAttribute('aria-label', `Theme: ${THEMES[i][1]}. Switch to ${THEMES[(i + 1) % THEMES.length][1]}`);
+    return i;
+  };
+  if (themeBtn) {
+    showTheme();
+    themeBtn.addEventListener('click', () => {
+      const [key] = THEMES[(showTheme() + 1) % THEMES.length];
+      if (key) document.documentElement.dataset.theme = key; else delete document.documentElement.dataset.theme;
+      localStorage.setItem('vk6-theme', key);
+      showTheme();
+    });
+  }
+
   // Next broadcast (Perth has no daylight saving, so a fixed offset is exact).
   const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];

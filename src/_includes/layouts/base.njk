@@ -34,8 +34,13 @@
   <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Inter+Tight:wght@600..800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Inter+Tight:wght@600..800{% if settings.preview %}&family=Space+Grotesk:wght@500..700&family=Outfit:wght@500..700{% endif %}&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | url }}">
+  {%- if settings.preview %}
+  {#- Trial themes: ?theme=signal (or field, newsroom) in a link sets it; the nav button cycles and remembers. #}
+  <link rel="stylesheet" href="{{ '/assets/css/themes.css' | url }}">
+  <script>(() => { const q = new URLSearchParams(location.search).get('theme'); let t = q ?? localStorage.getItem('vk6-theme') ?? ''; if (!['signal', 'field'].includes(t)) t = ''; if (q !== null) localStorage.setItem('vk6-theme', t); if (t) document.documentElement.dataset.theme = t; })();</script>
+  {%- endif %}
   {%- for href in styles %}
   <link rel="stylesheet" href="{{ href | url }}">
   {%- endfor %}
@@ -76,6 +81,9 @@
           </li>
           {%- endfor %}
           <li><a class="nav-cta" href="{{ '/callbacks/' | url }}">Register your callback</a></li>
+          {%- if settings.preview %}
+          <li><button class="theme-switch" type="button" data-theme-switch title="Try another theme"><span class="swatch" aria-hidden="true"></span><span data-theme-name>Newsroom</span></button></li>
+          {%- endif %}
         </ul>
       </nav>
     </div>
