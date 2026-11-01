@@ -13,7 +13,7 @@
   {%- if not settings.preview %}
   <link rel="canonical" href="{{ page.url | absolute(settings.url) }}">
   {%- endif %}
-  <meta name="theme-color" content="#0b0b0d">
+  <meta name="theme-color" content="#011d43">
 
   <meta property="og:site_name" content="{{ settings.club }}">
   <meta property="og:type" content="{{ ogType or 'website' }}">
@@ -30,17 +30,15 @@
   {%- endif %}
 
   <link rel="alternate" type="application/rss+xml" title="NewsWest podcast" href="{{ settings.podcast.feed }}">
-  <link rel="icon" href="{{ '/assets/img/favicon-64.png' | url }}" type="image/png">
+  <link rel="icon" href="{{ '/assets/img/brand/icon.svg' | url }}" type="image/svg+xml">
+  <link rel="icon" href="{{ '/assets/img/favicon-32.png' | url }}" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Inter+Tight:wght@600..800{% if settings.preview %}&family=Space+Grotesk:wght@500..700&family=Outfit:wght@500..700{% endif %}&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&family=Inter+Tight:wght@600..800&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | url }}">
-  {%- if settings.preview %}
-  {#- Trial themes: ?theme=signal (or field, newsroom) in a link sets it; the nav button cycles and remembers. #}
-  <link rel="stylesheet" href="{{ '/assets/css/themes.css' | url }}">
-  <script>(() => { const q = new URLSearchParams(location.search).get('theme'); let t = q ?? localStorage.getItem('vk6-theme') ?? ''; if (!['signal', 'field'].includes(t)) t = ''; if (q !== null) localStorage.setItem('vk6-theme', t); if (t) document.documentElement.dataset.theme = t; })();</script>
-  {%- endif %}
+  {#- Light/dark: the device setting unless the visitor chose with the header switch (remembered). Set before paint. #}
+  <script>try { const m = localStorage.getItem('vk6-mode'); if (m === 'light' || m === 'dark') document.documentElement.dataset.mode = m; } catch (e) {}</script>
   {%- for href in styles %}
   <link rel="stylesheet" href="{{ href | url }}">
   {%- endfor %}
@@ -57,9 +55,10 @@
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="{{ '/' | url }}" aria-label="{{ settings.club }}, home">
-        <img class="brand-logo" src="{{ '/assets/img/waarn-logo-200.png' | url }}" alt="" width="100" height="74">
-        <span class="brand-text"><strong>{{ settings.club }}</strong><span>{{ settings.orgShort }} · {{ settings.callsign }} · home of {{ settings.show }}</span></span>
+      <a class="brand" href="{{ '/' | url }}" aria-label="vk6.net, {{ settings.club }}, home">
+        <img class="brand-logo logo-light" src="{{ '/assets/img/brand/header-light.svg' | url }}" alt="" width="189" height="60">
+        <img class="brand-logo logo-dark" src="{{ '/assets/img/brand/header-dark.svg' | url }}" alt="" width="189" height="60">
+        <span class="brand-text"><span>{{ settings.club }}</span><span>home of {{ settings.show }} · {{ settings.callsign }}</span></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main">
@@ -81,9 +80,7 @@
           </li>
           {%- endfor %}
           <li><a class="nav-cta" href="{{ '/callbacks/' | url }}">Register your callback</a></li>
-          {%- if settings.preview %}
-          <li><button class="theme-switch" type="button" data-theme-switch title="Try another theme"><span class="swatch" aria-hidden="true"></span><span data-theme-name>Newsroom</span></button></li>
-          {%- endif %}
+          <li><button class="mode-switch" type="button" data-mode-switch aria-label="Switch to dark mode" title="Light or dark"><span class="sun" aria-hidden="true"></span><span class="moon" aria-hidden="true"></span></button></li>
         </ul>
       </nav>
     </div>
@@ -93,9 +90,11 @@
     {{ content | safe }}
   </main>
 
+  {% include "partials/wheres-steve.njk" %}
+
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p class="footer-brand"><img src="{{ '/assets/img/waarn-logo-200.png' | url }}" alt="" width="38" height="28"><strong>{{ settings.org }}</strong><span>{{ settings.orgShort }} · {{ settings.callsign }} · {{ settings.show }}</span><a href="mailto:{{ settings.email }}">{{ settings.email }}</a></p>
+      <p class="footer-brand"><img src="{{ '/assets/img/brand/emblem-dark.svg' | url }}" alt="" width="30" height="30"><img src="{{ '/assets/img/waarn-logo-200.png' | url }}" alt="" width="38" height="28"><strong>{{ settings.org }}</strong><span>{{ settings.orgShort }} · {{ settings.callsign }} · {{ settings.show }}</span><a href="mailto:{{ settings.email }}">{{ settings.email }}</a></p>
       <nav aria-label="Footer">
         <ul class="footer-links">
           <li><a href="{{ '/news/listen/' | url }}">Listen</a></li>

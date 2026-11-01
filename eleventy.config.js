@@ -35,6 +35,10 @@ export default function (config) {
     }
     return months;
   });
+  config.addFilter('thousands', (n) => Number(n || 0).toLocaleString('en-AU'));
+  config.addFilter('shortDate', (iso) => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }).replace(',', ''));
+  config.addFilter('monthName', (ym) => new Date(ym + '-01T00:00:00Z').toLocaleDateString('en-AU', { month: 'long', year: 'numeric', timeZone: 'UTC' }));
+  config.addFilter('perthTime', (iso) => new Date(iso).toLocaleString('en-AU', { timeZone: 'Australia/Perth', day: 'numeric', month: 'long', hour: 'numeric', minute: '2-digit' }));
   config.addFilter('limit', (list, n) => list.slice(0, n));
   // Menu highlighting: a group is current when one of its pages is; Listen also covers episode pages.
   config.addFilter('isCurrent', (item, page) => item.children

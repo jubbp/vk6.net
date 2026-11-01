@@ -39,6 +39,13 @@
     "tool": { "name": "Audacity", "url": "https://www.audacityteam.org/" }
   },
 
+  "steve": {
+    "_comment": "Where's Steve? A floating thank-you to Steve VK6SJ (Comtek Radio). show false hides it. The event below is made up for the demo.",
+    "show": true,
+    "where": "Wangaratta Hamfest",
+    "when": "12 November 2026",
+    "thanks": "Steve VK6SJ of Comtek Radio backs the NewsWest team in more ways than we can list. Thanks, Steve. Say g'day if you're there."
+  },
   "supporters": {
     "_comment": "Draft for the committee: amounts, benefits and how to pay are not yet decided. joinUrl blank = 'email us' button.",
     "name": "WAARN Supporters",
@@ -124,6 +131,14 @@
       { "label": "Becoming an amateur", "url": "/becoming-an-amateur/" },
       { "label": "VK6 clubs", "url": "/clubs/" }
     ]},
+    {
+      "label": "Portable",
+      "url": "/portable/pota/",
+      "children": [
+        { "label": "POTA in WA", "url": "/portable/pota/" },
+        { "label": "VK6 POTA stats", "url": "/portable/pota/stats/" }
+      ]
+    },
     { "label": "PerthTech", "url": "/perthtech/" },
     { "label": "About", "url": "/waarn/", "children": [
       { "label": "About WAARN", "url": "/waarn/" },

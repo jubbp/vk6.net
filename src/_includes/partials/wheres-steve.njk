@@ -1,0 +1,17 @@
+{#- Where's Steve? A floating thank-you to Steve VK6SJ: floats for 10 s, then curves into the corner (steve.js). Set in settings.steve. -#}
+{%- if settings.steve and settings.steve.show %}
+<div class="steve-float" id="steve" hidden>
+  <button type="button" class="sf-badge" id="sf-badge" aria-expanded="false" aria-controls="sf-card">
+    <img class="sf-face" src="{{ '/assets/img/steve/steve-vk6sj.jpg' | url }}" alt="" width="56" height="56">
+    <span class="sf-label">Where's Steve?</span>
+  </button>
+  <div class="sf-card" id="sf-card" role="dialog" aria-label="Where's Steve?" hidden>
+    <button type="button" class="sf-close" id="sf-close" aria-label="Close Where's Steve">×</button>
+    <div class="sf-k">Where's Steve?</div>
+    <p class="sf-where"><b>{{ settings.steve.where }}</b><span>{{ settings.steve.when }}</span></p>
+    <a class="sf-logo" href="https://comtekradio.com.au/" rel="noopener"><img src="{{ '/assets/img/supporters/comtek-radio.png' | url }}" alt="Comtek Radio" width="160" height="41"></a>
+    <p class="sf-thanks">{{ settings.steve.thanks }}</p>
+  </div>
+</div>
+<script src="{{ '/assets/js/steve.js' | url }}" defer></script>
+{%- endif %}

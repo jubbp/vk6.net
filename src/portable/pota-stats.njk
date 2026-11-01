@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+title: VK6 POTA stats and archive
+description: All-time Parks on the Air statistics for Western Australia, with a monthly archive.
+permalink: /portable/pota/stats/
+---
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow"><a href="{{ '/portable/pota/' | url }}">Parks on the Air</a> · VK6 statistics</p>
+    <h1>Parks on the Air in Western Australia</h1>
+    {%- if pota %}
+    <div class="stat-row">
+      <div><b>{{ pota.totals.activations | thousands }}</b><span>WA park activations</span></div>
+      <div><b>{{ pota.parks.activated | thousands }}</b><span>of {{ pota.parks.total | thousands }} parks activated</span></div>
+      <div><b>{{ pota.totals.vk6Activators }}</b><span>VK6 activators</span></div>
+      <div><b>{{ pota.totals.qsos | thousands }}</b><span>contacts from WA parks</span></div>
+    </div>
+    {%- endif %}
+  </div>
+</header>
+<div class="wrap">
+{%- if pota %}
+  {%- set ymax = 0 %}{% for y, n in pota.years %}{% if n > ymax %}{% set ymax = n %}{% endif %}{% endfor %}
+  <div class="pota-grid two">
+    <section class="card pota-panel" style="--bar: var(--accent)">
+      <h2>Activations per year <small>WA parks, all activators</small></h2>
+      <div class="bars" role="img" aria-label="WA park activations per year">
+        {%- for y, n in pota.years %}<div class="bar-col"><span class="bar-val">{{ n }}</span><span class="bar" style="height: {{ (n / ymax * 150) | round }}px"></span><span class="bar-lbl">{{ y | string | replace("20", "", 1) }}</span></div>{% endfor %}
+      </div>
+    </section>
+    <section class="card pota-panel" style="--bar: var(--navy)">
+      <h2>All-time VK6 activators <small>WA parks</small></h2>
+      <div class="table-scroll plain"><table class="lb"><thead><tr><th>#</th><th>Callsign</th><th class="r">Activations</th><th class="r">Parks</th><th class="r">QSOs</th></tr></thead><tbody>
+      {%- for e in pota.activatorsAll | limit(12) %}<tr><td class="rank">{{ loop.index }}</td><td><b>{{ e.call }}</b></td><td class="r">{{ e.activations }}</td><td class="r">{{ e.parks }}</td><td class="r">{{ e.qsos | thousands }}</td></tr>{% endfor %}
+      </tbody></table></div>
+    </section>
+  </div>
+  <section class="card pota-panel" style="--bar: var(--green)">
+    <h2>Monthly archive</h2>
+    <div class="table-scroll plain"><table class="lb"><thead><tr><th>Month</th><th class="r">Activations</th><th class="r">Parks</th><th class="r">First-ever</th><th class="r">QSOs</th><th>Top VK6 activator</th></tr></thead><tbody>
+    {%- for m in pota.months %}<tr><td>{{ m.month | monthName }}</td><td class="r">{{ m.activations }}</td><td class="r">{{ m.parks }}</td><td class="r">{{ m.firstEver }}</td><td class="r">{{ m.qsos | thousands }}</td><td>{% if m.top %}<b>{{ m.top.call }}</b> <span class="muted">({{ m.top.activations }})</span>{% endif %}</td></tr>{% endfor %}
+    </tbody></table></div>
+  </section>
+  <p class="small muted pota-source">Figures from the POTA public API (api.pota.app), updated {{ pota.generated | perthTime }} Perth time.</p>
+{%- else %}
+  <p class="notice">POTA figures aren't available yet.</p>
+{%- endif %}
+</div>
