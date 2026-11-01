@@ -45,11 +45,22 @@ permalink: /support/
 
   <section class="supporters-list" aria-labelledby="list-heading">
     <h2 id="list-heading">Our supporters</h2>
-    {%- if supporters.length %}
-    <ul class="supporter-names">
-      {%- for s in supporters %}<li>{{ s.Name }}{% if s.Callsign %} <span class="muted">{{ s.Callsign }}</span>{% endif %}</li>{% endfor %}
+    {%- set sponsors = supporters | selectattr("Type", "equalto", "Sponsor") | list %}
+    {%- set others = supporters | rejectattr("Type", "equalto", "Sponsor") | list %}
+    {%- if sponsors.length %}
+    <ul class="sponsor-tiles">
+      {%- for s in sponsors %}
+      <li><a class="sponsor-tile" href="{{ s.Url }}" rel="noopener">{% if s.Logo %}<img src="{{ ('/assets/img/' + s.Logo) | url }}" alt="{{ s.Name }}" loading="lazy">{% else %}<strong>{{ s.Name }}</strong>{% endif %}</a>
+        <span class="small muted">{{ s.Name }}{% if s.Callsign %} · {{ s.Callsign }}{% endif %} · Sponsor since {{ s.Since }}</span></li>
+      {%- endfor %}
     </ul>
-    {%- else %}
+    {%- endif %}
+    {%- if others.length %}
+    <ul class="supporter-names">
+      {%- for s in others %}<li>{% if s.Url %}<a href="{{ s.Url }}" rel="noopener">{{ s.Name }}</a>{% else %}{{ s.Name }}{% endif %}{% if s.Callsign %} <span class="muted">{{ s.Callsign }}</span>{% endif %}</li>{% endfor %}
+    </ul>
+    {%- endif %}
+    {%- if not supporters.length %}
     <p>Be one of our first supporters. With your permission, your name and callsign will appear here.</p>
     {%- endif %}
   </section>
