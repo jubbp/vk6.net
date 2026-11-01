@@ -1,6 +1,7 @@
 // Parks on the Air in WA: builds content/_live/pota.json from POTA's public API (api.pota.app).
-// About 1,000 small requests, four at a time, so it takes a few minutes: run it on a schedule
-// (hourly or daily), not on every build. The site builds without it; the POTA pages then say
+// About 1,000 small requests, four at a time, so it takes a few minutes: run it once a week, not on
+// every build. POTA offers no official data API yet and doesn't support third-party use, so be gentle;
+// POTA is not a contest, so the site shows activity and thanks, not rankings. The site builds without it; the POTA pages then say
 // the figures aren't available yet.
 //
 // Usage: node scripts/fetch-pota.mjs

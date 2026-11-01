@@ -1,15 +1,15 @@
 ---
 layout: layouts/base.njk
 title: Parks on the Air in WA
-description: Recent POTA activations from Western Australian parks, and the top VK6 activators and hunters.
+description: Recent Parks on the Air activations from Western Australian parks, and a thank-you to the VK6 activators and hunters.
 permalink: /portable/pota/
 ---
 <header class="page-head">
   <div class="wrap">
     <p class="eyebrow">Portable · Parks on the Air</p>
     <h1>WA parks this week</h1>
-    <p class="lede">Who's been out activating Western Australia's parks, and the VK6 activators and hunters at the top of the table. For live spots, see POTA itself.</p>
-    <p class="actions"><a class="button" href="https://pota.app/#/" rel="noopener">Who's on air now? Live spots on pota.app ↗</a> <a class="button ghost" href="{{ '/portable/pota/stats/' | url }}">VK6 stats and archive</a></p>
+    <p class="lede">Who's been out activating Western Australia's parks lately, and a thank-you to the VK6 operators putting WA parks on the air. For live spots, see POTA itself.</p>
+    <p class="actions"><a class="button" href="https://pota.app/#/" rel="noopener">Who's on air now? Live spots on pota.app ↗</a> <a class="button ghost" href="{{ '/portable/pota/stats/' | url }}">WA park activity and archive</a></p>
   </div>
 </header>
 <div class="wrap">
@@ -26,24 +26,24 @@ permalink: /portable/pota/
       <p class="small muted">{{ pota.monthCount }} WA activations in the last 30 days. Logs reach POTA when activators upload them, so the week fills in over a few days.</p>
     </section>
     <section class="card pota-panel" style="--bar: var(--accent)">
-      <h2>Top VK6 activators <small>last 12 months, WA parks</small></h2>
-      <div class="table-scroll plain"><table class="lb"><thead><tr><th>#</th><th>Callsign</th><th class="r">Activations</th><th class="r">Parks</th><th class="r">QSOs</th></tr></thead><tbody>
-      {%- for e in pota.activatorsYear | limit(10) %}<tr><td class="rank">{{ loop.index }}</td><td><b>{{ e.call }}</b></td><td class="r">{{ e.activations }}</td><td class="r">{{ e.parks }}</td><td class="r">{{ e.qsos | thousands }}</td></tr>{% endfor %}
+      <h2>Thank you, VK6 activators <small>most active, last 12 months</small></h2>
+      <div class="table-scroll plain"><table class="lb"><thead><tr><th>Callsign</th><th class="r">Activations</th><th class="r">Parks</th><th class="r">QSOs</th></tr></thead><tbody>
+      {%- for e in pota.activatorsYear | limit(10) %}<tr><td><b>{{ e.call }}</b></td><td class="r">{{ e.activations }}</td><td class="r">{{ e.parks }}</td><td class="r">{{ e.qsos | thousands }}</td></tr>{% endfor %}
       </tbody></table></div>
     </section>
     <section class="card pota-panel" style="--bar: var(--navy)">
-      <h2>Top VK6 hunters <small>all-time, parks worldwide</small></h2>
-      <div class="table-scroll plain"><table class="lb"><thead><tr><th>#</th><th>Callsign</th><th class="r">Parks</th><th class="r">QSOs</th></tr></thead><tbody>
-      {%- for e in pota.hunters | limit(10) %}<tr><td class="rank">{{ loop.index }}</td><td><b>{{ e.call }}</b></td><td class="r">{{ e.parks | thousands }}</td><td class="r">{{ e.qsos | thousands }}</td></tr>{% endfor %}
+      <h2>Thank you, VK6 hunters <small>parks worked worldwide</small></h2>
+      <div class="table-scroll plain"><table class="lb"><thead><tr><th>Callsign</th><th class="r">Parks</th><th class="r">QSOs</th></tr></thead><tbody>
+      {%- for e in pota.hunters | limit(10) %}<tr><td><b>{{ e.call }}</b></td><td class="r">{{ e.parks | thousands }}</td><td class="r">{{ e.qsos | thousands }}</td></tr>{% endfor %}
       </tbody></table></div>
-      <p class="small muted">POTA has no list of WA hunters, so this covers the {{ pota.totals.huntersChecked }} VK6 callsigns seen as activators or top hunters of WA parks. Missing? Let us know.</p>
+      <p class="small muted">A partial list: POTA has no list of WA hunters, so this covers the {{ pota.totals.huntersChecked }} VK6 callsigns we can find as activators or as regular hunters of WA parks. Hunt parks too? <a href="{{ '/news/contact/' | url }}">Ask to be added</a>.</p>
     </section>
   </div>
   <section class="pota-challenge card" style="--bar: var(--gold)">
-    <h2>Activate the unactivated</h2>
-    <p><b>{{ pota.parks.never | thousands }}</b> of WA's <b>{{ pota.parks.total | thousands }}</b> parks have never been activated, {{ pota.parks.nearPerthNever }} of them within about 40 km of Perth{% if pota.parks.nearPerthExamples.length %}, such as {% for p in pota.parks.nearPerthExamples %}{{ p.name }} ({{ p.ref }}){% if not loop.last %}, {% endif %}{% endfor %}{% endif %}. First activations get a mention on NewsWest.</p>
+    <h2>Parks waiting for a first activation</h2>
+    <p><b>{{ pota.parks.never | thousands }}</b> of WA's <b>{{ pota.parks.total | thousands }}</b> parks have never been activated, {{ pota.parks.nearPerthNever }} of them within about 40 km of Perth{% if pota.parks.nearPerthExamples.length %}, such as {% for p in pota.parks.nearPerthExamples %}{{ p.name }} ({{ p.ref }}){% if not loop.last %}, {% endif %}{% endfor %}{% endif %}. NewsWest is always glad to hear about a first activation.</p>
   </section>
-  <p class="small muted pota-source">Figures from the POTA public API (api.pota.app), updated {{ pota.generated | perthTime }} Perth time. Callsigns shown are public on POTA; ask us if you'd rather not be listed.</p>
+  <p class="pota-note small">Figures from <a href="https://pota.app/" rel="noopener">Parks on the Air®</a>, updated weekly (last {{ pota.generated | perthTime }} Perth time). vk6.net is not affiliated with POTA. POTA is not a contest: get out and have fun. Callsigns shown are public on POTA; ask us to add or leave off yours.</p>
 {%- else %}
   <p class="notice">POTA figures aren't available yet. In the meantime, see <a href="https://pota.app/">pota.app</a>.</p>
 {%- endif %}

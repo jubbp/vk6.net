@@ -12,7 +12,7 @@ jsonld:
 ---
 {%- set latest = episodes[0] %}
 {#- The hub front page: everything on the air in VK6. Cards: what's on, WA parks, this week's NewsWest,
-    nets, support, and the POTA challenge. Calendars from _data/calendar.js, POTA from _data/pota.js. -#}
+    nets, support, and parks waiting for a first activation. Calendars from _data/calendar.js, POTA from _data/pota.js. -#}
 <div class="wrap hub-hero">
   <div class="hub-intro">
     <p class="kicker">vk6.net · amateur radio in Western Australia</p>
@@ -51,10 +51,10 @@ jsonld:
     {%- set recent = pota.week if pota.week.length else (pota.month | limit(3)) %}
     {%- if not pota.week.length %}<p class="small muted">No activations logged yet this week. Most recent:</p>{% endif %}
     <ul class="feed">{% for a in recent | limit(3) %}<li><span class="when">{{ a.date | shortDate }}</span><span><b>{{ a.call }}</b> · {{ a.park }}<span class="sub">{{ a.ref }} · {{ a.qsos }} contacts</span></span></li>{% endfor %}</ul>
-    {%- if pota.activatorsYear.length %}<p class="small">Top activator, last 12 months: <b>{{ pota.activatorsYear[0].call }}</b>, {{ pota.activatorsYear[0].activations }} activations.</p>{% endif %}
+    {%- if pota.activatorsYear.length %}<p class="small">Most active this year: <b>{{ pota.activatorsYear[0].call }}</b>, {{ pota.activatorsYear[0].activations }} activations. Thanks!</p>{% endif %}
     <div class="mini-stats"><div><b>{{ pota.parks.total | thousands }}</b><span>WA parks</span></div><div><b>{{ pota.parks.never | thousands }}</b><span>never activated</span></div></div>
     {%- else %}<p class="muted">POTA figures coming soon.</p>{% endif %}
-    <p class="tile-more"><a href="{{ '/portable/pota/' | url }}">POTA in WA and leaderboards</a></p>
+    <p class="tile-more"><a href="{{ '/portable/pota/' | url }}">Parks on the Air in WA</a></p>
   </section>
 
   {#- This week's NewsWest, segment by segment -#}
@@ -84,12 +84,12 @@ jsonld:
     <p><a class="button" href="{{ '/support/' | url }}">Support our work</a></p>
   </section>
 
-  {#- POTA challenge -#}
+  {#- Parks waiting for a first activation (POTA is not a contest: no challenges or rankings) -#}
   <section class="card tile" style="--bar: var(--green)">
-    <h2>This month's challenge <small>Portable</small></h2>
+    <h2>Parks waiting <small>for a first activation</small></h2>
     {%- if pota %}
-    <p>Activate one of the <b>{{ pota.parks.nearPerthNever }}</b> never-activated parks within about 40 km of Perth{% if pota.parks.nearPerthExamples.length %}, such as {% for p in pota.parks.nearPerthExamples | limit(3) %}{{ p.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}.</p>
-    <p class="small muted">First activations get a mention on NewsWest.</p>
+    <p><b>{{ pota.parks.nearPerthNever }}</b> parks within about 40 km of Perth have never been on the air{% if pota.parks.nearPerthExamples.length %}, such as {% for p in pota.parks.nearPerthExamples | limit(3) %}{{ p.name }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}.</p>
+    <p class="small muted">Parks on the Air® is not a contest: just get out and have fun.</p>
     {%- else %}<p>Find a WA park nobody has activated yet, and get on air from it.</p>{% endif %}
     <p class="tile-more"><a href="{{ '/becoming-an-amateur/' | url }}">New to radio? Get licensed</a></p>
   </section>

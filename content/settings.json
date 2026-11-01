@@ -120,7 +120,7 @@
     {"label": "NewsWest", "url": "/news/listen/", "children": [{"label": "Listen and archive", "url": "/news/listen/"}, {"label": "About the broadcast", "url": "/news/"}, {"label": "Broadcast times and relays", "url": "/news/broadcasts/"}, {"label": "Coverage map", "url": "/news/coverage/"}, {"label": "Register your callback", "url": "/callbacks/"}, {"label": "Submit your news", "url": "/news/contact/"}, {"label": "Scripts to record", "url": "/news/scripts/"}, {"label": "Relay NewsWest", "url": "/news/relay/"}]},
     {"label": "What's on", "url": "/whats-on/"},
     {"label": "Get on air", "url": "/becoming-an-amateur/", "children": [{"label": "Get licensed", "url": "/becoming-an-amateur/"}, {"label": "Nets this week", "url": "/get-on-air/nets/"}, {"label": "VK6 clubs", "url": "/clubs/"}, {"label": "Helpline", "url": "/helpline/"}]},
-    {"label": "Portable", "url": "/portable/pota/", "children": [{"label": "POTA in WA", "url": "/portable/pota/"}, {"label": "VK6 POTA stats", "url": "/portable/pota/stats/"}]},
+    {"label": "Portable", "url": "/portable/pota/", "children": [{"label": "POTA in WA", "url": "/portable/pota/"}, {"label": "WA park activity", "url": "/portable/pota/stats/"}]},
     {"label": "Community", "url": "/waarn/", "children": [{"label": "About WAARN", "url": "/waarn/"}, {"label": "Club news", "url": "/club-news/"}, {"label": "PerthTech", "url": "/perthtech/"}, {"label": "History since 1931", "url": "/history/"}, {"label": "VI6CRO Carnarvon", "url": "/vi6cro/"}, {"label": "Support us", "url": "/support/"}, {"label": "Governance", "url": "/governance/"}]}
   ]
 }

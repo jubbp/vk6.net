@@ -495,3 +495,5 @@ table.lb tbody tr:first-child td { font-weight: 700; }
 .chip { font: 600 0.88rem var(--sans); padding: 7px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--paper); color: var(--ink-2); cursor: pointer; }
 .chip.on { background: var(--navy); border-color: var(--navy); color: #fff; }
 @media (max-width: 560px) { .event { grid-template-columns: 5.5em minmax(0, 1fr); } .event .tag { display: none; } }
+
+.pota-note { margin: 22px 0 56px; padding: 12px 16px; border-left: 4px solid var(--green); background: var(--paper); border-radius: 0 8px 8px 0; color: var(--ink-2); }
