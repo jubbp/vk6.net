@@ -74,6 +74,8 @@
   "sources": {
     "_episodes_comment": "Demo: episodes listed from the current audio host (HTTP only, so they only play on an HTTP preview). Blank oldHost = use episodesJson/feed.",
     "oldHost": "http://audio.vk6.net/",
+    "_audioMirror_comment": "Until the cutover: the episode list comes from oldHost, but audio plays from this HTTPS copy of it (browsers won't play HTTP audio on an HTTPS page). Episodes not copied yet keep their oldHost link. Blank = play from oldHost.",
+    "audioMirror": "https://storage.googleapis.com/audio.vk6.net/",
     "_chapters_comment": "Chapter titles (date, seconds, title, presenter) from the transcription trial's full segment index, refreshed with scripts/update-chapters.mjs. Blank chaptersLocal = use content/chapters.tsv.",
     "chaptersLocal": "",
     "chapters": "chapters.tsv",

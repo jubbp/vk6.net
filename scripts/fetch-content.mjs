@@ -96,6 +96,25 @@ await step('episodes', async () => {
   let episodes;
   if (src.oldHost) {
     episodes = await fromOldHost(src.oldHost);
+    // Play from the HTTPS copy in the bucket where the file is there (same paths as the old host).
+    let mirrored = 0;
+    if (src.audioMirror) {
+      const bucket = src.audioMirror.match(/storage\.googleapis\.com\/([^/]+)\//)[1];
+      const names = new Set();
+      let page = '';
+      do {
+        const r = JSON.parse(await get(`https://storage.googleapis.com/storage/v1/b/${bucket}/o?fields=items(name),nextPageToken${page && `&pageToken=${page}`}`));
+        (r.items || []).forEach((o) => names.add(o.name));
+        page = r.nextPageToken || '';
+      } while (page);
+      for (const e of episodes) {
+        const path = e.audio.slice(src.oldHost.length);
+        if (names.has(path)) { e.audio = src.audioMirror + path; mirrored++; }
+      }
+      // A date with a copy in the bucket drops any stray old-host-only duplicate (e.g. a misfiled file).
+      const inBucket = new Set(episodes.filter((e) => e.audio.startsWith(src.audioMirror)).map((e) => e.date));
+      episodes = episodes.filter((e) => e.audio.startsWith(src.audioMirror) || !inBucket.has(e.date));
+    }
     // Chapter titles from the transcription trial's segment index (date, seconds, title, presenter):
     // the working copy next door if present, otherwise the copy kept in content/.
     const local = src.chaptersLocal && new URL(`../${src.chaptersLocal}`, root);
@@ -116,7 +135,7 @@ await step('episodes', async () => {
     } catch { /* notes are optional */ }
     episodes.sort((a, b) => b.date.localeCompare(a.date));
     await writeFile(new URL('episodes.json', live), JSON.stringify(episodes, null, 1));
-    return `${episodes.length} episodes from ${src.oldHost}`;
+    return `${episodes.length} episodes from ${src.oldHost}${src.audioMirror ? `, ${mirrored} playing from ${src.audioMirror}` : ''}`;
   }
   try {
     episodes = JSON.parse(await get(src.episodesJson));
