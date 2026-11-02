@@ -46,10 +46,10 @@ jsonld:
 
   {#- WA parks (POTA) -#}
   <section class="card tile" style="--bar: var(--green)">
-    <h2>WA parks this week <small>POTA</small></h2>
+    <h2>WA parks: recent activity <small>POTA</small></h2>
     {%- if pota %}
-    {%- set recent = pota.week if pota.week.length else (pota.month | limit(3)) %}
-    {%- if not pota.week.length %}<p class="small muted">No activations logged yet this week. Most recent:</p>{% endif %}
+    {%- set recent = pota.recent if pota.recent.length else (pota.month | limit(3)) %}
+    {%- if not pota.recent.length %}<p class="small muted">Nothing newly logged in the last 7 days. Most recent:</p>{% endif %}
     <ul class="feed">{% for a in recent | limit(3) %}<li><span class="when">{{ a.date | shortDate }}</span><span><b>{{ a.call }}</b> · {{ a.park }}<span class="sub">{{ a.ref }} · {{ a.qsos }} contacts</span></span></li>{% endfor %}</ul>
     {%- if pota.activatorsYear.length %}<p class="small">Most active this year: <b>{{ pota.activatorsYear[0].call }}</b>, {{ pota.activatorsYear[0].activations }} activations. Thanks!</p>{% endif %}
     <div class="mini-stats"><div><b>{{ pota.parks.total | thousands }}</b><span>WA parks</span></div><div><b>{{ pota.parks.never | thousands }}</b><span>never activated</span></div></div>

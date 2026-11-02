@@ -415,6 +415,7 @@ td.freq { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
 .feed .when { white-space: nowrap; }
 .feed .when { font: 600 0.76rem var(--mono); color: var(--accent); padding-top: 3px; }
 .feed .sub { display: block; color: var(--muted); font-size: 0.82rem; }
+.feed .late { color: var(--coral); font-weight: 600; }
 .ref { font: 600 0.8rem var(--mono); color: var(--accent); }
 .table-scroll.plain { border: 0; background: none; border-radius: 0; }
 table.lb { font-size: 0.88rem; }

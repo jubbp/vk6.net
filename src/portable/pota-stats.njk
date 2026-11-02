@@ -41,7 +41,7 @@ permalink: /portable/pota/stats/
     {%- for m in pota.months %}<tr><td>{{ m.month | monthName }}</td><td class="r">{{ m.activations }}</td><td class="r">{{ m.parks }}</td><td class="r">{{ m.firstEver }}</td><td class="r">{{ m.qsos | thousands }}</td><td>{% if m.top %}<b>{{ m.top.call }}</b> <span class="muted">({{ m.top.activations }})</span>{% endif %}</td></tr>{% endfor %}
     </tbody></table></div>
   </section>
-  <p class="pota-note small">Figures from <a href="https://pota.app/" rel="noopener">Parks on the Air®</a>, updated weekly (last {{ pota.generated | perthTime }} Perth time). vk6.net is not affiliated with POTA. POTA is not a contest: get out and have fun. Callsigns shown are public on POTA; ask us to add or leave off yours.</p>
+  <p class="pota-note small">Figures from <a href="https://pota.app/" rel="noopener">Parks on the Air®</a>, updated daily (last {{ pota.generated | perthTime }} Perth time). vk6.net is not affiliated with POTA. POTA is not a contest: get out and have fun. Callsigns shown are public on POTA; ask us to add or leave off yours.</p>
 {%- else %}
   <p class="notice">POTA figures aren't available yet.</p>
 {%- endif %}

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T22:10:22.017Z",
+ "generated": "2026-11-02T00:54:20.874Z",
  "parks": {
   "total": 1463,
   "activated": 474,
@@ -30,9 +30,11 @@
   "vk6Activators": 31,
   "huntersChecked": 41
  },
- "week": [
+ "recent": [],
+ "month": [
   {
    "date": "2026-10-25",
+   "seen": "2026-10-25",
    "call": "VK6MFP",
    "ref": "AU-3600",
    "qsos": 17,
@@ -40,11 +42,10 @@
    "data": 8,
    "phone": 9,
    "park": "Lake Joondalup Nature Reserve"
-  }
- ],
- "month": [
+  },
   {
    "date": "2026-10-18",
+   "seen": "2026-10-18",
    "call": "VK6ALE",
    "ref": "AU-2955",
    "qsos": 57,
@@ -55,6 +56,7 @@
   },
   {
    "date": "2026-10-18",
+   "seen": "2026-10-18",
    "call": "VK6ALE",
    "ref": "AU-3144",
    "qsos": 29,
@@ -65,6 +67,7 @@
   },
   {
    "date": "2026-10-18",
+   "seen": "2026-10-18",
    "call": "VK6LK",
    "ref": "AU-3132",
    "qsos": 17,
@@ -75,6 +78,7 @@
   },
   {
    "date": "2026-10-18",
+   "seen": "2026-10-18",
    "call": "VK6LK",
    "ref": "AU-3608",
    "qsos": 7,
@@ -85,6 +89,7 @@
   },
   {
    "date": "2026-10-17",
+   "seen": "2026-10-17",
    "call": "VK6ALE",
    "ref": "AU-2949",
    "qsos": 34,
@@ -95,6 +100,7 @@
   },
   {
    "date": "2026-10-17",
+   "seen": "2026-10-17",
    "call": "VK6ALE",
    "ref": "AU-0167",
    "qsos": 22,
@@ -105,6 +111,7 @@
   },
   {
    "date": "2026-10-17",
+   "seen": "2026-10-17",
    "call": "VK6LK",
    "ref": "AU-3608",
    "qsos": 20,
@@ -115,6 +122,7 @@
   },
   {
    "date": "2026-10-17",
+   "seen": "2026-10-17",
    "call": "VK6ALE",
    "ref": "AU-0083",
    "qsos": 17,
@@ -125,6 +133,7 @@
   },
   {
    "date": "2026-10-17",
+   "seen": "2026-10-17",
    "call": "VK6LK",
    "ref": "AU-3148",
    "qsos": 13,
@@ -135,6 +144,7 @@
   },
   {
    "date": "2026-10-17",
+   "seen": "2026-10-17",
    "call": "VK6LK",
    "ref": "AU-3692",
    "qsos": 10,
@@ -145,6 +155,7 @@
   },
   {
    "date": "2026-10-17",
+   "seen": "2026-10-17",
    "call": "VK6THW",
    "ref": "AU-7603",
    "qsos": 10,
@@ -152,16 +163,6 @@
    "data": 10,
    "phone": 0,
    "park": "Warren State Forest"
-  },
-  {
-   "date": "2026-10-10",
-   "call": "VK6NU",
-   "ref": "AU-3738",
-   "qsos": 24,
-   "cw": 0,
-   "data": 0,
-   "phone": 24,
-   "park": "Pantapin Nature Reserve"
   }
  ],
  "monthCount": 25,
@@ -174,9 +175,9 @@
   },
   {
    "call": "VK6MFP",
-   "activations": 90,
-   "parks": 54,
-   "qsos": 2006
+   "activations": 88,
+   "parks": 53,
+   "qsos": 1972
   },
   {
    "call": "VK6KN",
@@ -186,9 +187,9 @@
   },
   {
    "call": "VK6ALE",
-   "activations": 64,
-   "parks": 45,
-   "qsos": 2666
+   "activations": 62,
+   "parks": 44,
+   "qsos": 2599
   },
   {
    "call": "VK6WTF",
@@ -204,9 +205,9 @@
   },
   {
    "call": "VK6LK",
-   "activations": 29,
-   "parks": 25,
-   "qsos": 578
+   "activations": 28,
+   "parks": 24,
+   "qsos": 571
   },
   {
    "call": "VK6LDX",

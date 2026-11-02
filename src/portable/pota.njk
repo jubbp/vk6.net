@@ -7,7 +7,7 @@ permalink: /portable/pota/
 <header class="page-head">
   <div class="wrap">
     <p class="eyebrow">Portable · Parks on the Air</p>
-    <h1>WA parks this week</h1>
+    <h1>WA parks: recent activity</h1>
     <p class="lede">Who's been out activating Western Australia's parks lately, and a thank-you to the VK6 operators putting WA parks on the air. For live spots, see POTA itself.</p>
     <p class="actions"><a class="button" href="https://pota.app/#/" rel="noopener">Who's on air now? Live spots on pota.app ↗</a> <a class="button ghost" href="{{ '/portable/pota/stats/' | url }}">WA park activity and archive</a></p>
   </div>
@@ -16,14 +16,14 @@ permalink: /portable/pota/
 {%- if pota %}
   <div class="pota-grid">
     <section class="card pota-panel" style="--bar: var(--green)">
-      <h2>This week</h2>
-      {%- if pota.week.length %}<ul class="feed">{% for a in pota.week %}{% include "partials/pota-act.njk" %}{% endfor %}</ul>
-      {%- else %}<p class="muted">No WA activations logged yet this week.</p>{% endif %}
+      <h2>Newly logged <small>last 7 days</small></h2>
+      {%- if pota.recent.length %}<ul class="feed">{% for a in pota.recent %}{% include "partials/pota-act.njk" %}{% endfor %}</ul>
+      {%- else %}<p class="muted">No new WA activations logged in the last 7 days.</p>{% endif %}
       {%- if pota.month.length %}
       <h3>Earlier this month</h3>
       <ul class="feed">{% for a in pota.month | limit(8) %}{% include "partials/pota-act.njk" %}{% endfor %}</ul>
       {%- endif %}
-      <p class="small muted">{{ pota.monthCount }} WA activations in the last 30 days. Logs reach POTA when activators upload them, so the week fills in over a few days.</p>
+      <p class="small muted">{{ pota.monthCount }} WA activations in the last 30 days. Logs reach POTA when activators upload them, sometimes weeks later; late uploads show here when they arrive, marked "logged" with the upload date.</p>
     </section>
     <section class="card pota-panel" style="--bar: var(--accent)">
       <h2>Thank you, VK6 activators <small>most active, last 12 months</small></h2>
@@ -43,7 +43,7 @@ permalink: /portable/pota/
     <h2>Parks waiting for a first activation</h2>
     <p><b>{{ pota.parks.never | thousands }}</b> of WA's <b>{{ pota.parks.total | thousands }}</b> parks have never been activated, {{ pota.parks.nearPerthNever }} of them within about 40 km of Perth{% if pota.parks.nearPerthExamples.length %}, such as {% for p in pota.parks.nearPerthExamples %}{{ p.name }} ({{ p.ref }}){% if not loop.last %}, {% endif %}{% endfor %}{% endif %}. NewsWest is always glad to hear about a first activation.</p>
   </section>
-  <p class="pota-note small">Figures from <a href="https://pota.app/" rel="noopener">Parks on the Air®</a>, updated weekly (last {{ pota.generated | perthTime }} Perth time). vk6.net is not affiliated with POTA. POTA is not a contest: get out and have fun. Callsigns shown are public on POTA; ask us to add or leave off yours.</p>
+  <p class="pota-note small">Figures from <a href="https://pota.app/" rel="noopener">Parks on the Air®</a>, updated daily (last {{ pota.generated | perthTime }} Perth time). vk6.net is not affiliated with POTA. POTA is not a contest: get out and have fun. Callsigns shown are public on POTA; ask us to add or leave off yours.</p>
 {%- else %}
   <p class="notice">POTA figures aren't available yet. In the meantime, see <a href="https://pota.app/">pota.app</a>.</p>
 {%- endif %}
