@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T22:04:48.316Z",
+ "generated": "2026-11-03T22:03:47.605Z",
  "parks": {
   "total": 1463,
   "activated": 474,
@@ -165,7 +165,7 @@
    "park": "Warren State Forest"
   }
  ],
- "monthCount": 22,
+ "monthCount": 18,
  "activatorsYear": [
   {
    "call": "VK6DS",
@@ -216,16 +216,16 @@
    "qsos": 352
   },
   {
-   "call": "VK6AGT",
-   "activations": 11,
-   "parks": 4,
-   "qsos": 295
-  },
-  {
    "call": "VK6XNP",
    "activations": 11,
    "parks": 10,
    "qsos": 144
+  },
+  {
+   "call": "VK6AGT",
+   "activations": 10,
+   "parks": 4,
+   "qsos": 260
   }
  ],
  "activatorsAll": [
