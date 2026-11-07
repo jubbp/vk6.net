@@ -2,15 +2,18 @@ import { readCsv } from '../_lib/content.js';
 // Infrastructure status board (demonstration; sample data apart from real entries such as VK6RB):
 // repeaters, wireless and internet links, digipeaters, beacons, gateways, receivers, power and sites,
 // from content/infrastructure.csv. Items are titled by Callsign (Name underneath; Name alone if no
-// callsign). Site: the Id of the site an item is on; a site lists what's on it. Issues from
+// callsign). Site: the Id of the site an item is on; a site lists what's on it. AllStar: the item's
+// AllStar node number; Hub: the Id of the hub it normally connects to (checked live on the page
+// against AllStarLink's public stats). Sample: "yes" for made-up demonstration rows. Issues from
 // content/infrastructure-issues.csv, linked to an item by Id (Item), plus any items it takes down
 // (Affects: space-separated Ids, e.g. everything on a site that has lost power).
 const ORDER = { down: 0, degraded: 1, maintenance: 2, unknown: 3, up: 4 };
-const TYPES = ['Repeater', 'Link', 'Internet link', 'Digipeater', 'Beacon', 'Gateway', 'Receiver', 'Power', 'Site'];
+const TYPES = ['Hub', 'Repeater', 'Gateway', 'Link', 'Internet link', 'Digipeater', 'Beacon', 'Receiver', 'Power', 'Site'];
 export default () => {
   const items = readCsv('infrastructure.csv').map((r) => ({ ...r, Title: r.Callsign || r.Name, Sub: r.Callsign ? r.Name : '' }));
   for (const r of items) {
     r.site = items.find((x) => x.Id === r.Site && x.Id !== r.Id);
+    r.hub = items.find((x) => x.Id === r.Hub);
     r.onSite = items.filter((x) => x.Site === r.Id && x.Id !== r.Id).map((x) => x.Callsign && x.Callsign !== r.Callsign ? x.Callsign : x.Name);
   }
   const byId = Object.fromEntries(items.map((r) => [r.Id, r]));
@@ -28,5 +31,9 @@ export default () => {
     resolved: issues.filter((i) => i.State === 'Resolved').sort((a, b) => b.Updated.localeCompare(a.Updated)),
     counts: { up: count('up'), degraded: count('degraded'), down: count('down'), maintenance: count('maintenance'), unknown: count('unknown') },
     total: items.length,
-      };
+    // For the live AllStar view (assets/js/infrastructure.js): hubs to poll, and node -> item.
+    hubs: items.filter((r) => r.Type === 'Hub' && r.AllStar).map((r) => ({ id: r.Id, node: r.AllStar, title: r.Title, sub: r.Sub })),
+    nodes: Object.fromEntries(items.filter((r) => r.AllStar).map((r) => [r.AllStar, { id: r.Id, title: r.Title, sub: r.Sub, type: r.Type, hub: r.hub ? r.hub.AllStar : '' }])),
+    hasSample: items.some((r) => r.Sample),
+  };
 };

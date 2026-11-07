@@ -1,10 +1,5 @@
 Id,Item,Opened,Severity,State,Title,Update,Updated,Affects
 1047,vk6rb,2026-10-03,outage,Restoration planned,Failed mast: VK6RBX and the site internet link off air,First reported by VK6BAD on 3 Oct: VK6RBX not replying. A site inspection found the mast had failed. Site power is fine and monitored. Partial restoration on a temporary mast is planned; no date set yet.,2026-11-07,vk6rbx vk6rb-net
-1041,mandurah-2m,2026-11-01,degraded,Investigating,Low and distorted audio on the input,Four reports from mobiles south of the river. Keeper checking the duplexer this weekend.,2026-11-06,
-1045,link-hills-peel,2026-11-02,degraded,Investigating,Link drops out in hot afternoons,Linked overs from Mandurah break up after 2 pm on warm days. Antenna alignment check planned.,2026-11-05,
-1044,busselton-2m,2026-11-05,planned,Planned work,Antenna replacement: off air 8 am to 2 pm Sun 8 Nov,New antenna going up on the tower. Use simplex 146.500 while it's down.,2026-11-05,
+1045,link-hills-peel,2026-11-02,degraded,Investigating,Link drops out in hot afternoons,Linked overs break up after 2 pm on warm days. Antenna alignment check planned.,2026-11-05,
 1046,beacon-2m,2026-10-30,planned,Planned work,Beacon off air for a new keyer,New keyer being built; back on air in about two weeks.,2026-11-01,
-1040,irlp-hills,2026-10-29,info,Monitoring,IRLP connection drops for a few minutes in the evenings,The repeater itself is fine. Router replaced on 4 Nov; watching to see if the drop-outs stop.,2026-11-04,
-1042,hedland-2m,2026-10-04,info,Need a check,No signal reports for a month,Is it still on air? Any local amateur who can key it up and report back is a great help.,2026-11-02,
-1038,geraldton-2m,2026-10-21,degraded,Resolved,Timeout timer cutting overs at 60 seconds,Timer reset to 3 minutes on 30 Oct. Thanks to everyone who reported it.,2026-10-30,
 1036,link-hills-city,2026-10-14,outage,Resolved,Link down after a firmware update,Rolled back to the previous firmware on 16 Oct.,2026-10-16,

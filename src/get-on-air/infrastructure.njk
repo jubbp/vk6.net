@@ -1,19 +1,19 @@
 ---
 layout: layouts/base.njk
 title: Infrastructure status
-description: Status of WA amateur radio infrastructure (repeaters, wireless links, digipeaters, beacons, gateways, receivers and sites), current issues, and how to report a fault. Demonstration with sample data.
+description: Status of WA amateur radio infrastructure (AllStar hubs, repeaters, wireless links, digipeaters, beacons, gateways, receivers and sites), live AllStar linking, current issues, and how to report a fault. Demonstration.
 permalink: /get-on-air/infrastructure/
 scripts: [/assets/js/infrastructure.js]
 ---
 {%- set I = infrastructure %}
 {%- set LABEL = { up: "On air", degraded: "Degraded", down: "Off air", maintenance: "Maintenance", unknown: "Unknown" } %}
-{%- set PLURAL = { Repeater: "Repeaters", Link: "Wireless links", "Internet link": "Internet links", Digipeater: "APRS digipeaters", Beacon: "Beacons", Gateway: "Internet gateways", Receiver: "Online receivers", Power: "Site power", Site: "Sites" } %}
+{%- set PLURAL = { Hub: "AllStar hubs", Repeater: "Repeaters", Link: "Wireless links", "Internet link": "Internet links", Digipeater: "APRS digipeaters", Beacon: "Beacons", Gateway: "Internet gateways", Receiver: "Online receivers", Power: "Site power", Site: "Sites" } %}
 <header class="page-head">
   <div class="wrap">
     <p class="eyebrow">Get on air · Infrastructure</p>
     <h1>Infrastructure status</h1>
-    <p class="lede">The repeaters, wireless links, digipeaters, beacons, gateways and sites that keep WA on the air: what's working, what's being worked on, and how to tell the keeper when something's wrong.</p>
-    <p class="notice demo-note"><b>Demonstration.</b> Apart from the VK6RB Shenton Ridge entries, everything on this page (items, frequencies, issues) is sample data, made up to show how a status board could work. Don't use it on air.</p>
+    <p class="lede">The repeaters, linking hubs, wireless links, digipeaters, beacons, gateways and sites that keep WA on the air: what's working, what's being worked on, and how to tell the keeper when something's wrong.</p>
+    <p class="notice demo-note"><b>Demonstration.</b> The AllStar hubs and the repeaters on them are real, with live linking status from AllStarLink. VK6RB Shenton Ridge is real. Rows tagged <span class="tag tag-sample">sample</span> are made up to show how the board could work. Check details with the keeper before relying on them.</p>
   </div>
 </header>
 
@@ -31,7 +31,7 @@ scripts: [/assets/js/infrastructure.js]
       <li class="issue sev-{{ i.Severity }}" id="issue-{{ i.Id }}">
         <div class="issue-head">
           <span class="state">{{ i.State }}</span>
-          <b>{{ i.item.Title }}</b>
+          <b>{{ i.item.Title }}</b>{% if i.item.Sample %} <span class="tag tag-sample">sample</span>{% endif %}
           <span class="muted small">{% if i.item.Sub %}{{ i.item.Sub }} · {% endif %}{{ i.item.Type }} · #{{ i.Id }} · opened {{ i.Opened | shortDate }}</span>
         </div>
         <p class="issue-title">{{ i.Title }}</p>
@@ -41,6 +41,21 @@ scripts: [/assets/js/infrastructure.js]
       <li class="muted">No open issues. Everything's on air.</li>
       {%- endfor %}
     </ul>
+  </section>
+
+  <section class="card" style="--bar: var(--accent)" aria-labelledby="links-h" id="allstar">
+    <h2 id="links-h">Linked networks <small>AllStar, live</small></h2>
+    <p class="allstar-summary" aria-live="polite"><span class="muted">Checking the AllStar hubs…</span></p>
+    <div class="hub-grid">
+      {%- for h in I.hubs %}
+      <article class="hub-card" data-hub="{{ h.node }}">
+        <header><b>{{ h.title }}</b><span class="muted small">{% if h.sub %}{{ h.sub }} · {% endif %}AllStar {{ h.node }}</span><span class="hub-state muted small">…</span></header>
+        <div class="hub-body"><p class="small muted">Live status loads from AllStarLink.</p></div>
+      </article>
+      {%- endfor %}
+    </div>
+    <p class="small muted">Live from <a href="https://stats.allstarlink.org/" rel="noopener">AllStarLink</a>, refreshed every minute while this page is open. Personal hotspots are counted, not named. <a href="{{ '/get-on-air/infrastructure/allstar-live/' | url }}">Open the full live dashboard (Allmon3)</a>.</p>
+    <script type="application/json" id="allstar-data">{{ { hubs: I.hubs, nodes: I.nodes } | dump | safe }}</script>
   </section>
 
   <section class="card infra-card" style="--bar: var(--navy)" aria-labelledby="list-h">
@@ -54,9 +69,9 @@ scripts: [/assets/js/infrastructure.js]
         {%- for r in g.items %}
         <tr class="st-{{ r.Status }}">
           <td data-label="Status"><span class="status"><i class="dot"></i>{{ LABEL[r.Status] }}</span></td>
-          <td data-label="Item"><b>{{ r.Title }}</b><span class="sub">{% if r.Sub %}{{ r.Sub }} · {% endif %}{% if r.site %}at {{ r.site.Name }}{% else %}{{ r.Region }}{% endif %}{% for i in r.issues %} · <a href="#issue-{{ i.Id }}">issue #{{ i.Id }}</a>{% endfor %}</span></td>
+          <td data-label="Item"><b>{{ r.Title }}</b>{% if r.Sample %} <span class="tag tag-sample">sample</span>{% endif %}<span class="sub">{% if r.Sub %}{{ r.Sub }} · {% endif %}{% if r.site %}at {{ r.site.Name }}{% else %}{{ r.Region }}{% endif %}{% for i in r.issues %} · <a href="#issue-{{ i.Id }}">issue #{{ i.Id }}</a>{% endfor %}</span></td>
           <td data-label="Details" class="detail">{{ r.Detail }}</td>
-          <td data-label="Connects">{% if r.onSite.length %}On site: {{ r.onSite | join(", ") }}{% else %}{{ r.Connects or "–" }}{% endif %}</td>
+          <td data-label="Connects">{% if r.AllStar %}AllStar {{ r.AllStar }}{% if r.hub %}<span class="sub">usually on {{ r.hub.Title }}</span>{% endif %}<span class="live-link" data-node="{{ r.AllStar }}"{% if r.hub %} data-expect="{{ r.hub.AllStar }}"{% endif %}{% if r.Type == "Hub" %} data-is-hub{% endif %}></span>{% elif r.onSite.length %}On site: {{ r.onSite | join(", ") }}{% else %}{{ r.Connects or "–" }}{% endif %}</td>
           <td data-label="Checked" class="small nowrap">{{ r.Checked | shortDate }}</td>
           <td><button class="button ghost small-btn" type="button" data-report="{{ r.Id }}">Report</button></td>
         </tr>
@@ -65,7 +80,7 @@ scripts: [/assets/js/infrastructure.js]
       {%- endfor %}
     </table>
     </div>
-    <p class="small muted">"Checked" is the last time someone confirmed the status. A fault at a site takes down everything on it, so sites are listed too.</p>
+    <p class="small muted">"Checked" is the last time someone confirmed the status. A fault at a site takes down everything on it, so sites are listed too. AllStar links are checked live: "Not linked" means the node isn't connected to any of the hubs right now.</p>
   </section>
 
   <div class="infra-two">
@@ -90,6 +105,7 @@ scripts: [/assets/js/infrastructure.js]
     <ul>
       <li><b>Keepers update their own items</b>, from a simple form or a shared Sheet. The page rebuilds itself with the rest of vk6.net.</li>
       <li><b>Reports go straight to the keeper</b> of that item, with a copy kept so the next person can see it's already known.</li>
+      <li><b>Linking is checked live.</b> Each repeater records the hub it normally sits on, and the board flags it the moment it drops off.</li>
       <li><b>Sites know what's on them</b>, so a power failure at a hilltop shows every repeater and link it takes down.</li>
       <li><b>Anyone can confirm something is working</b>, which keeps "Checked" fresh for remote sites nobody hears often.</li>
       <li>Later: alerts for the items you use, and planned work shown on <a href="{{ '/whats-on/' | url }}">What's on</a>.</li>

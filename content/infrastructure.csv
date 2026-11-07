@@ -1,23 +1,28 @@
-Id,Type,Callsign,Name,Site,Region,Detail,Connects,Status,Checked
-hills-2m,Repeater,,Perth Hills 2 m,site-hills,Perth,146.700 MHz −0.6 · CTCSS 123.0 · FM,IRLP node,up,2026-11-07
-city-70,Repeater,,Perth City 70 cm,,Perth,438.525 MHz −7 · CTCSS 91.5 · FM,,up,2026-11-07
-north-dmr,Repeater,,Perth North DMR,,Perth,439.150 MHz −7 · CC1 · DMR,BrandMeister,up,2026-11-06
-mandurah-2m,Repeater,,Mandurah 2 m,,Peel,147.050 MHz +0.6 · CTCSS 123.0 · FM,,degraded,2026-11-06
-vk6rbx,Repeater,VK6RBX,Bunbury 70 cm repeater,vk6rb,South West,439.850 MHz −7 · CTCSS 123.0 · FM,,down,2026-11-03
-busselton-2m,Repeater,,Busselton 2 m,,South West,146.850 MHz −0.6 · CTCSS 123.0 · FM,EchoLink,maintenance,2026-11-07
-albany-2m,Repeater,,Albany 2 m,,Great Southern,146.950 MHz −0.6 · CTCSS 123.0 · FM,,up,2026-11-05
-northam-c4fm,Repeater,,Northam 70 cm,,Wheatbelt,438.375 MHz −7 · C4FM,WIRES-X,up,2026-11-04
-geraldton-2m,Repeater,,Geraldton 2 m,,Mid West,146.775 MHz −0.6 · CTCSS 123.0 · FM,,up,2026-11-02
-hedland-2m,Repeater,,Port Hedland 2 m,,Pilbara,146.900 MHz −0.6 · CTCSS 123.0 · FM,,unknown,2026-10-04
-link-hills-city,Link,,Hills to City link,site-hills,Perth,5.8 GHz point-to-point · 22 km,Perth Hills 2 m ↔ Perth City 70 cm,up,2026-11-07
-link-hills-peel,Link,,Hills to Peel link,,Peel,UHF linking radio · 58 km,Perth Hills 2 m ↔ Mandurah 2 m,degraded,2026-11-06
-aprs-perth,Digipeater,,Perth APRS digipeater,,Perth,145.175 MHz · 1200 baud,APRS-IS gateway,up,2026-11-07
-aprs-york,Digipeater,,York APRS digipeater,,Wheatbelt,145.175 MHz · 1200 baud,,up,2026-11-05
-beacon-6m,Beacon,,Perth 6 m beacon,,Perth,50.300 MHz · CW · 10 W,,up,2026-11-06
-beacon-2m,Beacon,,Perth 2 m beacon,,Perth,144.450 MHz · CW · 10 W,,maintenance,2026-11-01
-irlp-hills,Gateway,,Hills IRLP node,site-hills,Perth,Internet link for Perth Hills 2 m,IRLP reflector,degraded,2026-11-04
-websdr-hills,Receiver,,Perth Hills WebSDR,site-hills,Perth,HF 0–30 MHz · listen online,,up,2026-11-07
-site-hills,Site,,Perth Hills tower site,,Perth,Mains + 48 V battery backup · shared tower,,up,2026-11-07
-vk6rb-power,Power,VK6RB,Site power (monitored),vk6rb,South West,Monitored,,up,2026-11-07
-vk6rb-net,Internet link,VK6RB,Site internet,vk6rb,South West,Via wireless link,,down,2026-11-03
-vk6rb,Site,VK6RB,Shenton Ridge site,,South West,Mast failed; temporary mast planned,,down,2026-11-07
+Id,Type,Callsign,Name,Site,Region,Detail,Connects,AllStar,Hub,Status,Checked,Sample
+hub-51077,Hub,,VK6 Regional hub A,,Great Southern,AllStar hub · Albany,,51077,,up,2026-11-07,
+hub-42482,Hub,,VK6 Regional hub B,,Great Southern,AllStar hub · Mt Barker,,42482,,up,2026-11-07,
+hub-42732,Hub,VK6RX,VK6-HUB,,Perth,AllStar hub · EchoLink 9610 (VK6HUB),,42732,,up,2026-11-07,
+hub-41133,Hub,VK6SEG,SEG backup hub,,Great Southern,AllStar hub · Albany,,41133,,up,2026-11-07,
+vk6raa,Repeater,VK6RAA,Mt Barker 70 cm repeater,,Great Southern,439.950 MHz (−) · CTCSS 123.0 · FM,,42478,hub-51077,up,2026-11-07,
+vk6ral,Repeater,VK6RAL,Albany 70 cm repeater,,Great Southern,438.025 MHz (−) · FM,,42481,hub-42482,up,2026-11-07,
+vk6rec,Repeater,VK6REC,Wooroloo 2 m repeater,,Perth Hills,147.175 MHz (+) · FM,,471737,hub-51077,up,2026-11-07,
+vk6rgn,Repeater,VK6RGN,Geraldton 70 cm repeater,,Mid West,"438.500 MHz, input 431.500 · CTCSS 146.2 · FM",,61452,hub-51077,up,2026-11-07,
+vk6rmh,Repeater,VK6RMH,Mandurah 2 m repeater,,Peel,146.850 MHz · CTCSS 91.5 · FM,,57463,hub-42482,up,2026-11-07,
+vk6rlm,Repeater,VK6RLM,Perth 2 m repeater,,Perth,146.750 MHz (−) · FM · AllStar node run by VK6ZGN,,28608,hub-42732,up,2026-11-07,
+vk6rav,Repeater,VK6RAV,Hoddywell 2 m repeater,,Wheatbelt,147.275 MHz (+) · FM,,45472,hub-42732,up,2026-11-07,
+vk6rkn,Repeater,VK6RKN,Kellerberrin 2 m repeater,,Wheatbelt,147.325 MHz (+) · FM,,45473,hub-42732,up,2026-11-07,
+vk6rby,Repeater,VK6RBY,Harvey 2 m repeater,,South West,146.650 MHz (−) · FM,,471735,hub-42732,up,2026-11-07,
+vk6rbx,Repeater,VK6RBX,Bunbury 70 cm repeater,vk6rb,South West,439.850 MHz −7 · CTCSS 123.0 · FM,,,,down,2026-11-03,
+vk6rb-net,Internet link,VK6RB,Site internet,vk6rb,South West,Via wireless link,,,,down,2026-11-03,
+vk6rb-power,Power,VK6RB,Site power (monitored),vk6rb,South West,Monitored,,,,up,2026-11-07,
+vk6rb,Site,VK6RB,Shenton Ridge site,,South West,Mast failed; temporary mast planned,,,,down,2026-11-07,
+vk6rrg,Gateway,VK6RRG,D-STAR gateway,,Perth,Reflector URF306 A,,67269,hub-42732,up,2026-11-07,
+vk6cro,Gateway,VK6CRO,Carnarvon Space Museum node,,Gascoyne,439.175 MHz · CTCSS 123.0 · simplex node,,471731,hub-51077,up,2026-11-07,
+link-hills-city,Link,,Hills to City link,site-hills,Perth,5.8 GHz point-to-point · 22 km,Hills site ↔ City site,,,up,2026-11-07,yes
+link-hills-peel,Link,,Hills to Peel link,site-hills,Peel,UHF linking radio · 58 km,Hills site ↔ Peel site,,,degraded,2026-11-06,yes
+aprs-perth,Digipeater,,Perth APRS digipeater,,Perth,145.175 MHz · 1200 baud,APRS-IS gateway,,,up,2026-11-07,yes
+aprs-york,Digipeater,,York APRS digipeater,,Wheatbelt,145.175 MHz · 1200 baud,,,,up,2026-11-05,yes
+beacon-6m,Beacon,,Perth 6 m beacon,,Perth,50.300 MHz · CW · 10 W,,,,up,2026-11-06,yes
+beacon-2m,Beacon,,Perth 2 m beacon,,Perth,144.450 MHz · CW · 10 W,,,,maintenance,2026-11-01,yes
+websdr-hills,Receiver,,Perth Hills WebSDR,site-hills,Perth,HF 0–30 MHz · listen online,,,,up,2026-11-07,yes
+site-hills,Site,,Perth Hills tower site,,Perth,Mains + 48 V battery backup · shared tower,,,,up,2026-11-07,yes
