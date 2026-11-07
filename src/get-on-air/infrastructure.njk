@@ -8,16 +8,10 @@ scripts: [/assets/js/infrastructure.js]
 {%- set I = infrastructure %}
 {%- set LABEL = { up: "On air", degraded: "Degraded", down: "Off air", maintenance: "Maintenance", unknown: "Unknown" } %}
 {%- set PLURAL = { Hub: "AllStar hubs", Repeater: "Repeaters", Link: "Wireless links", "Internet link": "Internet links", Digipeater: "APRS digipeaters", Beacon: "Beacons", Gateway: "Internet gateways", Receiver: "Online receivers", Power: "Site power", Site: "Sites" } %}
-<header class="page-head">
-  <div class="wrap">
-    <p class="eyebrow">Get on air · Infrastructure</p>
-    <h1>Infrastructure status</h1>
-    <p class="lede">The repeaters, linking hubs, wireless links, digipeaters, beacons, gateways and sites that keep WA on the air: what's working, what's being worked on, and how to tell the keeper when something's wrong.</p>
-    <p class="notice demo-note"><b>Demonstration.</b> The AllStar hubs and the repeaters on them are real, with live linking status from AllStarLink. VK6RB Shenton Ridge is real. Rows tagged <span class="tag tag-sample">sample</span> are made up to show how the board could work. Check details with the keeper before relying on them.</p>
-  </div>
-</header>
 
 <div class="wrap infra-page">
+  <h1 class="sr-only">Infrastructure status</h1>
+  <p class="notice demo-note infra-demo"><b>Demonstration.</b> The AllStar hubs and the repeaters on them are real, with live linking status from AllStarLink. VK6RB Shenton Ridge is real. Rows tagged <span class="tag tag-sample">sample</span> are made up to show how the board could work. Check details with the keeper before relying on them.</p>
   <ul class="infra-summary" aria-label="Status summary">
     {%- for s in ["up", "degraded", "down", "maintenance", "unknown"] %}
     <li class="st-{{ s }}"><b>{{ I.counts[s] }}</b><span><i class="dot"></i>{{ LABEL[s] }}</span></li>

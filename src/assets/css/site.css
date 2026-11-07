@@ -502,6 +502,7 @@ table.lb tbody tr:first-child td { font-weight: 700; }
 /* Infrastructure status board (demonstration) */
 .demo-note { margin-top: 16px; max-width: 70ch; font-size: 0.92rem; border-left: 4px solid var(--gold); }
 .infra-page { display: grid; gap: 20px; padding-block: 28px 56px; }
+.infra-demo { margin: 0; max-width: none; }
 .st-up { --st: var(--green); } .st-degraded { --st: var(--gold); } .st-down { --st: var(--coral); }
 .st-maintenance { --st: var(--accent); } .st-unknown { --st: var(--muted); }
 .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--st); margin-right: 7px; flex: none; }
