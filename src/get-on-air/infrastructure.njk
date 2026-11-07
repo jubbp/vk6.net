@@ -7,13 +7,13 @@ scripts: [/assets/js/infrastructure.js]
 ---
 {%- set I = infrastructure %}
 {%- set LABEL = { up: "On air", degraded: "Degraded", down: "Off air", maintenance: "Maintenance", unknown: "Unknown" } %}
-{%- set PLURAL = { Repeater: "Repeaters", Link: "Wireless links", Digipeater: "APRS digipeaters", Beacon: "Beacons", Gateway: "Internet gateways", Receiver: "Online receivers", Site: "Sites and power" } %}
+{%- set PLURAL = { Repeater: "Repeaters", Link: "Wireless links", "Internet link": "Internet links", Digipeater: "APRS digipeaters", Beacon: "Beacons", Gateway: "Internet gateways", Receiver: "Online receivers", Power: "Site power", Site: "Sites" } %}
 <header class="page-head">
   <div class="wrap">
     <p class="eyebrow">Get on air · Infrastructure</p>
     <h1>Infrastructure status</h1>
     <p class="lede">The repeaters, wireless links, digipeaters, beacons, gateways and sites that keep WA on the air: what's working, what's being worked on, and how to tell the keeper when something's wrong.</p>
-    <p class="notice demo-note"><b>Demonstration.</b> Everything on this page (items, frequencies, issues) is sample data, made up to show how a status board could work. Don't use it on air.</p>
+    <p class="notice demo-note"><b>Demonstration.</b> Apart from the VK6RB Shenton Ridge entries, everything on this page (items, frequencies, issues) is sample data, made up to show how a status board could work. Don't use it on air.</p>
   </div>
 </header>
 
@@ -31,8 +31,8 @@ scripts: [/assets/js/infrastructure.js]
       <li class="issue sev-{{ i.Severity }}" id="issue-{{ i.Id }}">
         <div class="issue-head">
           <span class="state">{{ i.State }}</span>
-          <b>{{ i.item.Name }}</b>
-          <span class="muted small">{{ i.item.Type }} · #{{ i.Id }} · opened {{ i.Opened | shortDate }}</span>
+          <b>{{ i.item.Title }}</b>
+          <span class="muted small">{% if i.item.Sub %}{{ i.item.Sub }} · {% endif %}{{ i.item.Type }} · #{{ i.Id }} · opened {{ i.Opened | shortDate }}</span>
         </div>
         <p class="issue-title">{{ i.Title }}</p>
         <p class="issue-update"><span class="muted">Latest, {{ i.Updated | shortDate }}:</span> {{ i.Update }}</p>
@@ -50,13 +50,13 @@ scripts: [/assets/js/infrastructure.js]
       <thead><tr><th>Status</th><th>Item</th><th>Details</th><th>Connects / serves</th><th>Checked</th><th><span class="sr-only">Report</span></th></tr></thead>
       {%- for g in I.groups %}
       <tbody>
-        <tr class="group"><th colspan="6" scope="rowgroup">{{ PLURAL[g.type] }} <span>{{ g.items.length }}</span></th></tr>
+        <tr class="group"><th colspan="6" scope="rowgroup">{{ PLURAL[g.type] or g.type }} <span>{{ g.items.length }}</span></th></tr>
         {%- for r in g.items %}
         <tr class="st-{{ r.Status }}">
           <td data-label="Status"><span class="status"><i class="dot"></i>{{ LABEL[r.Status] }}</span></td>
-          <td data-label="Item"><b>{{ r.Name }}</b><span class="sub">{{ r.Region }}{% for i in r.issues %} · <a href="#issue-{{ i.Id }}">issue #{{ i.Id }}</a>{% endfor %}</span></td>
+          <td data-label="Item"><b>{{ r.Title }}</b><span class="sub">{% if r.Sub %}{{ r.Sub }} · {% endif %}{% if r.site %}at {{ r.site.Name }}{% else %}{{ r.Region }}{% endif %}{% for i in r.issues %} · <a href="#issue-{{ i.Id }}">issue #{{ i.Id }}</a>{% endfor %}</span></td>
           <td data-label="Details" class="detail">{{ r.Detail }}</td>
-          <td data-label="Connects">{{ r.Connects or "–" }}</td>
+          <td data-label="Connects">{% if r.onSite.length %}On site: {{ r.onSite | join(", ") }}{% else %}{{ r.Connects or "–" }}{% endif %}</td>
           <td data-label="Checked" class="small nowrap">{{ r.Checked | shortDate }}</td>
           <td><button class="button ghost small-btn" type="button" data-report="{{ r.Id }}">Report</button></td>
         </tr>
@@ -79,7 +79,7 @@ scripts: [/assets/js/infrastructure.js]
       <h2 id="resolved-h">Recently fixed</h2>
       <ul class="issue-list compact">
         {%- for i in I.resolved %}
-        <li><b>{{ i.item.Name }}</b> <span class="muted small">{{ i.Updated | shortDate }}</span><br><span class="small">{{ i.Title }}. {{ i.Update }}</span></li>
+        <li><b>{{ i.item.Title }}</b> <span class="muted small">{{ i.Updated | shortDate }}</span><br><span class="small">{{ i.Title }}. {{ i.Update }}</span></li>
         {%- endfor %}
       </ul>
     </section>
@@ -103,7 +103,7 @@ scripts: [/assets/js/infrastructure.js]
     <label>Which item?
       <select name="item" required>
         <option value="">Choose a repeater, link, beacon…</option>
-        {%- for g in I.groups %}<optgroup label="{{ PLURAL[g.type] }}">{% for r in g.items | sort(false, false, "Name") %}<option value="{{ r.Id }}">{{ r.Name }}</option>{% endfor %}</optgroup>{% endfor %}
+        {%- for g in I.groups %}<optgroup label="{{ PLURAL[g.type] or g.type }}">{% for r in g.items | sort(false, false, "Title") %}<option value="{{ r.Id }}">{{ r.Title }}{% if r.Sub %} ({{ r.Sub }}){% endif %}</option>{% endfor %}</optgroup>{% endfor %}
       </select>
     </label>
     <fieldset>

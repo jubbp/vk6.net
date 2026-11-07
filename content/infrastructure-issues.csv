@@ -1,5 +1,5 @@
 Id,Item,Opened,Severity,State,Title,Update,Updated,Affects
-1043,site-bunbury,2026-11-03,outage,Fix booked,Site power supply failed in the storm,"Takes down Bunbury 70 cm and the Peel to South West link. Replacement supply on hand; site visit booked for Thu 12 Nov.",2026-11-06,bunbury-70 link-peel-sw
+1047,vk6rb,2026-10-03,outage,Restoration planned,Failed mast: VK6RBX and the site internet link off air,First reported by VK6BAD on 3 Oct: VK6RBX not replying. A site inspection found the mast had failed. Site power is fine and monitored. Partial restoration on a temporary mast is planned; no date set yet.,2026-11-07,vk6rbx vk6rb-net
 1041,mandurah-2m,2026-11-01,degraded,Investigating,Low and distorted audio on the input,Four reports from mobiles south of the river. Keeper checking the duplexer this weekend.,2026-11-06,
 1045,link-hills-peel,2026-11-02,degraded,Investigating,Link drops out in hot afternoons,Linked overs from Mandurah break up after 2 pm on warm days. Antenna alignment check planned.,2026-11-05,
 1044,busselton-2m,2026-11-05,planned,Planned work,Antenna replacement: off air 8 am to 2 pm Sun 8 Nov,New antenna going up on the tower. Use simplex 146.500 while it's down.,2026-11-05,
