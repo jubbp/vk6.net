@@ -1,0 +1,131 @@
+---
+layout: layouts/base.njk
+title: Infrastructure status
+description: Status of WA amateur radio infrastructure (repeaters, wireless links, digipeaters, beacons, gateways, receivers and sites), current issues, and how to report a fault. Demonstration with sample data.
+permalink: /get-on-air/infrastructure/
+scripts: [/assets/js/infrastructure.js]
+---
+{%- set I = infrastructure %}
+{%- set LABEL = { up: "On air", degraded: "Degraded", down: "Off air", maintenance: "Maintenance", unknown: "Unknown" } %}
+{%- set PLURAL = { Repeater: "Repeaters", Link: "Wireless links", Digipeater: "APRS digipeaters", Beacon: "Beacons", Gateway: "Internet gateways", Receiver: "Online receivers", Site: "Sites and power" } %}
+<header class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Get on air · Infrastructure</p>
+    <h1>Infrastructure status</h1>
+    <p class="lede">The repeaters, wireless links, digipeaters, beacons, gateways and sites that keep WA on the air: what's working, what's being worked on, and how to tell the keeper when something's wrong.</p>
+    <p class="notice demo-note"><b>Demonstration.</b> Everything on this page (items, frequencies, issues) is sample data, made up to show how a status board could work. Don't use it on air.</p>
+  </div>
+</header>
+
+<div class="wrap infra-page">
+  <ul class="infra-summary" aria-label="Status summary">
+    {%- for s in ["up", "degraded", "down", "maintenance", "unknown"] %}
+    <li class="st-{{ s }}"><b>{{ I.counts[s] }}</b><span><i class="dot"></i>{{ LABEL[s] }}</span></li>
+    {%- endfor %}
+  </ul>
+
+  <section class="card" style="--bar: var(--coral)" aria-labelledby="issues-h">
+    <h2 id="issues-h">Current issues <small>{{ I.open.length }} open</small></h2>
+    <ul class="issue-list">
+      {%- for i in I.open %}
+      <li class="issue sev-{{ i.Severity }}" id="issue-{{ i.Id }}">
+        <div class="issue-head">
+          <span class="state">{{ i.State }}</span>
+          <b>{{ i.item.Name }}</b>
+          <span class="muted small">{{ i.item.Type }} · #{{ i.Id }} · opened {{ i.Opened | shortDate }}</span>
+        </div>
+        <p class="issue-title">{{ i.Title }}</p>
+        <p class="issue-update"><span class="muted">Latest, {{ i.Updated | shortDate }}:</span> {{ i.Update }}</p>
+      </li>
+      {%- else %}
+      <li class="muted">No open issues. Everything's on air.</li>
+      {%- endfor %}
+    </ul>
+  </section>
+
+  <section class="card infra-card" style="--bar: var(--navy)" aria-labelledby="list-h">
+    <h2 id="list-h">Everything we track <small>{{ I.total }} items</small></h2>
+    <div class="table-scroll">
+    <table class="infra-table">
+      <thead><tr><th>Status</th><th>Item</th><th>Details</th><th>Connects / serves</th><th>Checked</th><th><span class="sr-only">Report</span></th></tr></thead>
+      {%- for g in I.groups %}
+      <tbody>
+        <tr class="group"><th colspan="6" scope="rowgroup">{{ PLURAL[g.type] }} <span>{{ g.items.length }}</span></th></tr>
+        {%- for r in g.items %}
+        <tr class="st-{{ r.Status }}">
+          <td data-label="Status"><span class="status"><i class="dot"></i>{{ LABEL[r.Status] }}</span></td>
+          <td data-label="Item"><b>{{ r.Name }}</b><span class="sub">{{ r.Region }}{% for i in r.issues %} · <a href="#issue-{{ i.Id }}">issue #{{ i.Id }}</a>{% endfor %}</span></td>
+          <td data-label="Details" class="detail">{{ r.Detail }}</td>
+          <td data-label="Connects">{{ r.Connects or "–" }}</td>
+          <td data-label="Checked" class="small nowrap">{{ r.Checked | shortDate }}</td>
+          <td><button class="button ghost small-btn" type="button" data-report="{{ r.Id }}">Report</button></td>
+        </tr>
+        {%- endfor %}
+      </tbody>
+      {%- endfor %}
+    </table>
+    </div>
+    <p class="small muted">"Checked" is the last time someone confirmed the status. A fault at a site takes down everything on it, so sites are listed too.</p>
+  </section>
+
+  <div class="infra-two">
+    <section class="card" style="--bar: var(--accent)" aria-labelledby="report-h">
+      <h2 id="report-h">Report a problem</h2>
+      <p>A repeater that won't open, a link that's dropping out, a silent beacon, or something working again after a quiet spell? Tell its keeper. Reports from several stations help pin a fault down.</p>
+      <p><button class="button" type="button" data-report="">Report an issue</button></p>
+      <p class="small muted">Say where you were and what you were running: "Handheld, Rockingham, can't open it" is more useful than "it's broken".</p>
+    </section>
+    <section class="card" style="--bar: var(--green)" aria-labelledby="resolved-h">
+      <h2 id="resolved-h">Recently fixed</h2>
+      <ul class="issue-list compact">
+        {%- for i in I.resolved %}
+        <li><b>{{ i.item.Name }}</b> <span class="muted small">{{ i.Updated | shortDate }}</span><br><span class="small">{{ i.Title }}. {{ i.Update }}</span></li>
+        {%- endfor %}
+      </ul>
+    </section>
+  </div>
+
+  <section class="card" style="--bar: var(--gold)" aria-labelledby="how-h">
+    <h2 id="how-h" class="on-gold">How it would work</h2>
+    <ul>
+      <li><b>Keepers update their own items</b>, from a simple form or a shared Sheet. The page rebuilds itself with the rest of vk6.net.</li>
+      <li><b>Reports go straight to the keeper</b> of that item, with a copy kept so the next person can see it's already known.</li>
+      <li><b>Sites know what's on them</b>, so a power failure at a hilltop shows every repeater and link it takes down.</li>
+      <li><b>Anyone can confirm something is working</b>, which keeps "Checked" fresh for remote sites nobody hears often.</li>
+      <li>Later: alerts for the items you use, and planned work shown on <a href="{{ '/whats-on/' | url }}">What's on</a>.</li>
+    </ul>
+  </section>
+</div>
+
+<dialog class="infra-dialog" id="report-dialog" aria-labelledby="rd-title">
+  <form method="dialog">
+    <h2 id="rd-title">Report an issue</h2>
+    <label>Which item?
+      <select name="item" required>
+        <option value="">Choose a repeater, link, beacon…</option>
+        {%- for g in I.groups %}<optgroup label="{{ PLURAL[g.type] }}">{% for r in g.items | sort(false, false, "Name") %}<option value="{{ r.Id }}">{{ r.Name }}</option>{% endfor %}</optgroup>{% endfor %}
+      </select>
+    </label>
+    <fieldset>
+      <legend>What's happening?</legend>
+      <label class="opt"><input type="radio" name="kind" value="off" required> Off air / no response</label>
+      <label class="opt"><input type="radio" name="kind" value="quality"> Poor audio, weak or dropping out</label>
+      <label class="opt"><input type="radio" name="kind" value="link"> Link or internet connection not working</label>
+      <label class="opt"><input type="radio" name="kind" value="interference"> Interference or a stuck carrier</label>
+      <label class="opt"><input type="radio" name="kind" value="working"> It's working fine (confirm status)</label>
+      <label class="opt"><input type="radio" name="kind" value="other"> Something else</label>
+    </fieldset>
+    <label>Details <span class="muted small">where you were, radio and antenna, when</span>
+      <textarea name="details" rows="3"></textarea>
+    </label>
+    <div class="rd-row">
+      <label>Your callsign <input name="call" autocomplete="off" placeholder="VK6…"></label>
+      <label>Email <span class="muted small">optional, for a reply</span> <input name="email" type="email" autocomplete="email"></label>
+    </div>
+    <p class="rd-done notice" hidden><b>Thanks! This is a demonstration,</b> so nothing was sent. On the real board this would go to the item's keeper.</p>
+    <div class="rd-actions">
+      <button class="button ghost" type="button" data-close>Close</button>
+      <button class="button" type="submit">Send report</button>
+    </div>
+  </form>
+</dialog>
