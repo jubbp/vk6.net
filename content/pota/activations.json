@@ -8451,10 +8451,23 @@
   }
  },
  "AU-2975": {
-  "activations": 1,
-  "attempts": 1,
-  "fetched": "2026-11-01T09:26:21.553Z",
+  "activations": 2,
+  "attempts": 2,
+  "fetched": "2026-11-08T22:03:47.486Z",
+  "seen": {
+   "20240117|VK6LK": "2024-01-17",
+   "20261107|VK6ALE": "2026-11-09"
+  },
   "history": [
+   {
+    "activeCallsign": "VK6ALE",
+    "qso_date": "20261107",
+    "totalQSOs": 56,
+    "qsosCW": 0,
+    "qsosDATA": 22,
+    "qsosPHONE": 34,
+    "locationDesc": "AU-WA"
+   },
    {
     "activeCallsign": "VK6LK",
     "qso_date": "20240117",
@@ -8464,10 +8477,7 @@
     "qsosPHONE": 0,
     "locationDesc": "AU-WA"
    }
-  ],
-  "seen": {
-   "20240117|VK6LK": "2024-01-17"
-  }
+  ]
  },
  "AU-2985": {
   "activations": 1,
@@ -21407,10 +21417,33 @@
   }
  },
  "AU-11414": {
-  "activations": 1,
-  "attempts": 1,
-  "fetched": "2026-11-01T09:26:21.553Z",
+  "activations": 3,
+  "attempts": 3,
+  "fetched": "2026-11-08T22:03:47.486Z",
+  "seen": {
+   "20261009|VK6WTF": "2026-10-09",
+   "20261108|VK6WTF": "2026-11-09",
+   "20261107|VK6WTF": "2026-11-09"
+  },
   "history": [
+   {
+    "activeCallsign": "VK6WTF",
+    "qso_date": "20261108",
+    "totalQSOs": 12,
+    "qsosCW": 0,
+    "qsosDATA": 12,
+    "qsosPHONE": 0,
+    "locationDesc": "AU-WA"
+   },
+   {
+    "activeCallsign": "VK6WTF",
+    "qso_date": "20261107",
+    "totalQSOs": 208,
+    "qsosCW": 0,
+    "qsosDATA": 197,
+    "qsosPHONE": 11,
+    "locationDesc": "AU-WA"
+   },
    {
     "activeCallsign": "VK6WTF",
     "qso_date": "20261009",
@@ -21420,9 +21453,25 @@
     "qsosPHONE": 0,
     "locationDesc": "AU-WA"
    }
-  ],
+  ]
+ },
+ "AU-3258": {
+  "activations": 1,
+  "attempts": 1,
+  "fetched": "2026-11-08T22:03:47.486Z",
   "seen": {
-   "20261009|VK6WTF": "2026-10-09"
-  }
+   "20261107|VK6ALE": "2026-11-09"
+  },
+  "history": [
+   {
+    "activeCallsign": "VK6ALE",
+    "qso_date": "20261107",
+    "totalQSOs": 19,
+    "qsosCW": 0,
+    "qsosDATA": 14,
+    "qsosPHONE": 5,
+    "locationDesc": "AU-WA"
+   }
+  ]
  }
 }

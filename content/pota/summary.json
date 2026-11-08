@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-07T22:03:28.521Z",
+ "generated": "2026-11-08T22:03:47.486Z",
  "parks": {
   "total": 1463,
-  "activated": 474,
-  "never": 989,
+  "activated": 475,
+  "never": 988,
   "nearPerthNever": 45,
   "nearPerthExamples": [
    {
@@ -25,12 +25,61 @@
   ]
  },
  "totals": {
-  "activations": 1716,
-  "qsos": 40285,
+  "activations": 1720,
+  "qsos": 40580,
   "vk6Activators": 31,
   "huntersChecked": 41
  },
- "recent": [],
+ "recent": [
+  {
+   "date": "2026-11-08",
+   "seen": "2026-11-09",
+   "call": "VK6WTF",
+   "ref": "AU-11414",
+   "qsos": 12,
+   "cw": 0,
+   "data": 12,
+   "phone": 0,
+   "park": "Wilbinga Nature Reserve",
+   "late": false
+  },
+  {
+   "date": "2026-11-07",
+   "seen": "2026-11-09",
+   "call": "VK6WTF",
+   "ref": "AU-11414",
+   "qsos": 208,
+   "cw": 0,
+   "data": 197,
+   "phone": 11,
+   "park": "Wilbinga Nature Reserve",
+   "late": false
+  },
+  {
+   "date": "2026-11-07",
+   "seen": "2026-11-09",
+   "call": "VK6ALE",
+   "ref": "AU-2975",
+   "qsos": 56,
+   "cw": 0,
+   "data": 22,
+   "phone": 34,
+   "park": "Cardup Nature Park",
+   "late": false
+  },
+  {
+   "date": "2026-11-07",
+   "seen": "2026-11-09",
+   "call": "VK6ALE",
+   "ref": "AU-3258",
+   "qsos": 19,
+   "cw": 0,
+   "data": 14,
+   "phone": 5,
+   "park": "Karnet Nature Reserve",
+   "late": false
+  }
+ ],
  "month": [
   {
    "date": "2026-10-25",
@@ -165,7 +214,7 @@
    "park": "Warren State Forest"
   }
  ],
- "monthCount": 17,
+ "monthCount": 19,
  "activatorsYear": [
   {
    "call": "VK6DS",
@@ -180,22 +229,22 @@
    "qsos": 1901
   },
   {
-   "call": "VK6KN",
-   "activations": 65,
-   "parks": 23,
-   "qsos": 2241
+   "call": "VK6ALE",
+   "activations": 64,
+   "parks": 46,
+   "qsos": 2674
   },
   {
-   "call": "VK6ALE",
-   "activations": 62,
-   "parks": 44,
-   "qsos": 2599
+   "call": "VK6KN",
+   "activations": 64,
+   "parks": 22,
+   "qsos": 2214
   },
   {
    "call": "VK6WTF",
-   "activations": 40,
+   "activations": 42,
    "parks": 30,
-   "qsos": 931
+   "qsos": 1151
   },
   {
    "call": "VK6ASK",
@@ -249,9 +298,9 @@
   },
   {
    "call": "VK6ALE",
-   "activations": 93,
-   "parks": 62,
-   "qsos": 3689
+   "activations": 95,
+   "parks": 64,
+   "qsos": 3764
   },
   {
    "call": "VK6LK",
@@ -266,16 +315,16 @@
    "qsos": 1068
   },
   {
+   "call": "VK6WTF",
+   "activations": 42,
+   "parks": 30,
+   "qsos": 1151
+  },
+  {
    "call": "VK6EK",
    "activations": 42,
    "parks": 31,
    "qsos": 631
-  },
-  {
-   "call": "VK6WTF",
-   "activations": 40,
-   "parks": 30,
-   "qsos": 931
   },
   {
    "call": "VK6DEV",
@@ -409,9 +458,20 @@
   "2023": 162,
   "2024": 484,
   "2025": 565,
-  "2026": 420
+  "2026": 424
  },
  "months": [
+  {
+   "month": "2026-11",
+   "activations": 4,
+   "parks": 3,
+   "firstEver": 1,
+   "qsos": 295,
+   "top": {
+    "call": "VK6WTF",
+    "activations": 2
+   }
+  },
   {
    "month": "2026-10",
    "activations": 25,
@@ -663,17 +723,6 @@
    "top": {
     "call": "VK6DS",
     "activations": 15
-   }
-  },
-  {
-   "month": "2024-11",
-   "activations": 36,
-   "parks": 29,
-   "firstEver": 15,
-   "qsos": 1139,
-   "top": {
-    "call": "VK6MFP",
-    "activations": 14
    }
   }
  ]

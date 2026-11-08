@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-07T22:03:28.521Z",
+ "fetched": "2026-11-08T22:03:47.486Z",
  "parks": [
   {
    "reference": "AU-0003",
@@ -3479,9 +3479,9 @@
    "longitude": 115.989,
    "grid": "OF77xs",
    "locationDesc": "AU-WA",
-   "attempts": 1,
-   "activations": 1,
-   "qsos": 17,
+   "attempts": 2,
+   "activations": 2,
+   "qsos": 73,
    "website": null,
    "notes": null
   },
@@ -5312,9 +5312,9 @@
    "longitude": 116.012,
    "grid": "OF87ao",
    "locationDesc": "AU-WA",
-   "attempts": 0,
-   "activations": 0,
-   "qsos": 0,
+   "attempts": 1,
+   "activations": 1,
+   "qsos": 19,
    "website": "https://wego.here.com/australia/perth/recreation/karnet-nature-reserve--036jx7ps-09374e9e52ce049efd76aaf284cc3ee6?x=ep&map=-32.39936,116.0158,15,normal",
    "notes": "Managed by the Department of Parks and Wildlife."
   },
@@ -19014,9 +19014,9 @@
    "longitude": 115.554,
    "grid": "OF78sn",
    "locationDesc": "AU-WA",
-   "attempts": 1,
-   "activations": 1,
-   "qsos": 27,
+   "attempts": 3,
+   "activations": 3,
+   "qsos": 247,
    "website": "https://wilbingashackscrew.com.au/wilbinga-map",
    "notes": "4x4 vehicle access only."
   }
