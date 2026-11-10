@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T22:03:55.177Z",
+ "generated": "2026-11-10T22:03:55.145Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -25,8 +25,8 @@
   ]
  },
  "totals": {
-  "activations": 1720,
-  "qsos": 40580,
+  "activations": 1722,
+  "qsos": 40616,
   "vk6Activators": 31,
   "huntersChecked": 41
  },
@@ -41,6 +41,18 @@
    "data": 12,
    "phone": 0,
    "park": "Wilbinga Nature Reserve",
+   "late": false
+  },
+  {
+   "date": "2026-11-08",
+   "seen": "2026-11-11",
+   "call": "VK6MFP",
+   "ref": "AU-9683",
+   "qsos": 11,
+   "cw": 0,
+   "data": 9,
+   "phone": 2,
+   "park": "Ledge Point State Beach",
    "late": false
   },
   {
@@ -66,6 +78,18 @@
    "phone": 34,
    "park": "Cardup Nature Park",
    "late": false
+  },
+  {
+   "date": "2026-11-07",
+   "seen": "2026-11-11",
+   "call": "VK6MFP",
+   "ref": "AU-9683",
+   "qsos": 25,
+   "cw": 0,
+   "data": 17,
+   "phone": 8,
+   "park": "Ledge Point State Beach",
+   "late": true
   },
   {
    "date": "2026-11-07",
@@ -214,7 +238,7 @@
    "park": "Warren State Forest"
   }
  ],
- "monthCount": 16,
+ "monthCount": 18,
  "activatorsYear": [
   {
    "call": "VK6DS",
@@ -224,9 +248,9 @@
   },
   {
    "call": "VK6MFP",
-   "activations": 84,
+   "activations": 86,
    "parks": 52,
-   "qsos": 1901
+   "qsos": 1937
   },
   {
    "call": "VK6KN",
@@ -280,9 +304,9 @@
  "activatorsAll": [
   {
    "call": "VK6MFP",
-   "activations": 462,
+   "activations": 464,
    "parks": 196,
-   "qsos": 9255
+   "qsos": 9291
   },
   {
    "call": "VK6DS",
@@ -458,15 +482,15 @@
   "2023": 162,
   "2024": 484,
   "2025": 565,
-  "2026": 424
+  "2026": 426
  },
  "months": [
   {
    "month": "2026-11",
-   "activations": 4,
-   "parks": 3,
+   "activations": 6,
+   "parks": 4,
    "firstEver": 1,
-   "qsos": 295,
+   "qsos": 331,
    "top": {
     "call": "VK6WTF",
     "activations": 2
