@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T22:03:49.956Z",
+ "generated": "2026-11-13T22:03:22.286Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -242,15 +242,15 @@
  "activatorsYear": [
   {
    "call": "VK6DS",
-   "activations": 97,
+   "activations": 95,
    "parks": 32,
-   "qsos": 2279
+   "qsos": 2255
   },
   {
    "call": "VK6MFP",
-   "activations": 86,
+   "activations": 85,
    "parks": 52,
-   "qsos": 1937
+   "qsos": 1923
   },
   {
    "call": "VK6KN",
