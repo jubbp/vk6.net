@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T22:03:22.286Z",
+ "generated": "2026-11-14T22:03:35.789Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -25,12 +25,60 @@
   ]
  },
  "totals": {
-  "activations": 1722,
-  "qsos": 40616,
+  "activations": 1726,
+  "qsos": 40672,
   "vk6Activators": 31,
   "huntersChecked": 41
  },
  "recent": [
+  {
+   "date": "2026-11-13",
+   "seen": "2026-11-15",
+   "call": "VK6KN",
+   "ref": "AU-0034",
+   "qsos": 14,
+   "cw": 4,
+   "data": 0,
+   "phone": 10,
+   "park": "Swan Estuary Marine Park",
+   "late": false
+  },
+  {
+   "date": "2026-11-13",
+   "seen": "2026-11-15",
+   "call": "VK6KN",
+   "ref": "AU-3025",
+   "qsos": 14,
+   "cw": 4,
+   "data": 0,
+   "phone": 10,
+   "park": "Swan River Management Area",
+   "late": false
+  },
+  {
+   "date": "2026-11-13",
+   "seen": "2026-11-15",
+   "call": "VK6KN",
+   "ref": "AU-3294",
+   "qsos": 14,
+   "cw": 4,
+   "data": 0,
+   "phone": 10,
+   "park": "Swan Estuary-Pelican Point Nature Reserve",
+   "late": false
+  },
+  {
+   "date": "2026-11-13",
+   "seen": "2026-11-15",
+   "call": "VK6KN",
+   "ref": "AU-10565",
+   "qsos": 14,
+   "cw": 4,
+   "data": 0,
+   "phone": 10,
+   "park": "Swan National Wild and Scenic River",
+   "late": false
+  },
   {
    "date": "2026-11-08",
    "seen": "2026-11-09",
@@ -238,7 +286,7 @@
    "park": "Warren State Forest"
   }
  ],
- "monthCount": 18,
+ "monthCount": 22,
  "activatorsYear": [
   {
    "call": "VK6DS",
@@ -254,9 +302,9 @@
   },
   {
    "call": "VK6KN",
-   "activations": 62,
+   "activations": 66,
    "parks": 21,
-   "qsos": 2197
+   "qsos": 2253
   },
   {
    "call": "VK6ALE",
@@ -316,9 +364,9 @@
   },
   {
    "call": "VK6KN",
-   "activations": 180,
+   "activations": 184,
    "parks": 38,
-   "qsos": 5706
+   "qsos": 5762
   },
   {
    "call": "VK6ALE",
@@ -482,18 +530,18 @@
   "2023": 162,
   "2024": 484,
   "2025": 565,
-  "2026": 426
+  "2026": 430
  },
  "months": [
   {
    "month": "2026-11",
-   "activations": 6,
-   "parks": 4,
+   "activations": 10,
+   "parks": 8,
    "firstEver": 1,
-   "qsos": 331,
+   "qsos": 387,
    "top": {
-    "call": "VK6WTF",
-    "activations": 2
+    "call": "VK6KN",
+    "activations": 4
    }
   },
   {
