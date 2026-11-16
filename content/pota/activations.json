@@ -1310,9 +1310,9 @@
   }
  },
  "AU-0034": {
-  "activations": 24,
-  "attempts": 25,
-  "fetched": "2026-11-14T22:03:35.789Z",
+  "activations": 25,
+  "attempts": 26,
+  "fetched": "2026-11-16T22:03:41.680Z",
   "seen": {
    "20260811|VK6MFP": "2026-08-11",
    "20260602|VK6KN": "2026-06-02",
@@ -1338,9 +1338,19 @@
    "20250405|VK6KN": "2025-04-05",
    "20231212|VK6MFP": "2023-12-12",
    "20231115|VK6DS": "2023-11-15",
-   "20261113|VK6KN": "2026-11-15"
+   "20261113|VK6KN": "2026-11-15",
+   "20261114|VK6KN": "2026-11-17"
   },
   "history": [
+   {
+    "activeCallsign": "VK6KN",
+    "qso_date": "20261114",
+    "totalQSOs": 17,
+    "qsosCW": 11,
+    "qsosDATA": 0,
+    "qsosPHONE": 6,
+    "locationDesc": "AU-WA"
+   },
    {
     "activeCallsign": "VK6KN",
     "qso_date": "20261113",
@@ -9213,9 +9223,9 @@
   }
  },
  "AU-3025": {
-  "activations": 43,
-  "attempts": 43,
-  "fetched": "2026-11-14T22:03:35.789Z",
+  "activations": 44,
+  "attempts": 44,
+  "fetched": "2026-11-16T22:03:41.680Z",
   "seen": {
    "20260731|VK6WTF": "2026-07-31",
    "20260719|VK6WTF": "2026-07-19",
@@ -9259,9 +9269,19 @@
    "20250628|VK6KN": "2025-06-28",
    "20231212|VK6MFP": "2023-12-12",
    "20220901|VK3YV": "2022-09-01",
-   "20261113|VK6KN": "2026-11-15"
+   "20261113|VK6KN": "2026-11-15",
+   "20261114|VK6KN": "2026-11-17"
   },
   "history": [
+   {
+    "activeCallsign": "VK6KN",
+    "qso_date": "20261114",
+    "totalQSOs": 17,
+    "qsosCW": 11,
+    "qsosDATA": 0,
+    "qsosPHONE": 6,
+    "locationDesc": "AU-WA"
+   },
    {
     "activeCallsign": "VK6KN",
     "qso_date": "20261113",
@@ -9587,12 +9607,12 @@
     "locationDesc": "AU-WA"
    },
    {
-    "activeCallsign": "VK6KN",
+    "activeCallsign": "VK4MGL",
     "qso_date": "20250719",
-    "totalQSOs": 77,
-    "qsosCW": 3,
-    "qsosDATA": 11,
-    "qsosPHONE": 63,
+    "totalQSOs": 42,
+    "qsosCW": 0,
+    "qsosDATA": 0,
+    "qsosPHONE": 42,
     "locationDesc": "AU-WA"
    },
    {
@@ -9605,12 +9625,12 @@
     "locationDesc": "AU-WA"
    },
    {
-    "activeCallsign": "VK4MGL",
+    "activeCallsign": "VK6KN",
     "qso_date": "20250719",
-    "totalQSOs": 42,
-    "qsosCW": 0,
-    "qsosDATA": 0,
-    "qsosPHONE": 42,
+    "totalQSOs": 77,
+    "qsosCW": 3,
+    "qsosDATA": 11,
+    "qsosPHONE": 63,
     "locationDesc": "AU-WA"
    },
    {
@@ -10463,9 +10483,9 @@
   }
  },
  "AU-3294": {
-  "activations": 22,
-  "attempts": 22,
-  "fetched": "2026-11-14T22:03:35.789Z",
+  "activations": 23,
+  "attempts": 23,
+  "fetched": "2026-11-16T22:03:41.680Z",
   "seen": {
    "20260602|VK6KN": "2026-06-02",
    "20260525|VK6KN": "2026-05-25",
@@ -10488,9 +10508,19 @@
    "20250629|VK6KN": "2025-06-29",
    "20250405|VK6KN": "2025-04-05",
    "20231212|VK6MFP": "2023-12-12",
-   "20261113|VK6KN": "2026-11-15"
+   "20261113|VK6KN": "2026-11-15",
+   "20261114|VK6KN": "2026-11-17"
   },
   "history": [
+   {
+    "activeCallsign": "VK6KN",
+    "qso_date": "20261114",
+    "totalQSOs": 17,
+    "qsosCW": 11,
+    "qsosDATA": 0,
+    "qsosPHONE": 6,
+    "locationDesc": "AU-WA"
+   },
    {
     "activeCallsign": "VK6KN",
     "qso_date": "20261113",
@@ -19943,9 +19973,9 @@
   }
  },
  "AU-10565": {
-  "activations": 39,
-  "attempts": 41,
-  "fetched": "2026-11-14T22:03:35.789Z",
+  "activations": 40,
+  "attempts": 42,
+  "fetched": "2026-11-16T22:03:41.680Z",
   "seen": {
    "20260811|VK6MFP": "2026-08-11",
    "20260731|VK6WTF": "2026-07-31",
@@ -19987,9 +20017,19 @@
    "20250719|VK4MGL": "2025-07-19",
    "20250719|VK6KN": "2025-07-19",
    "20250719|VK6JK": "2025-07-19",
-   "20261113|VK6KN": "2026-11-15"
+   "20261113|VK6KN": "2026-11-15",
+   "20261114|VK6KN": "2026-11-17"
   },
   "history": [
+   {
+    "activeCallsign": "VK6KN",
+    "qso_date": "20261114",
+    "totalQSOs": 17,
+    "qsosCW": 11,
+    "qsosDATA": 0,
+    "qsosPHONE": 6,
+    "locationDesc": "AU-WA"
+   },
    {
     "activeCallsign": "VK6KN",
     "qso_date": "20261113",
@@ -20126,7 +20166,7 @@
     "locationDesc": "AU-WA"
    },
    {
-    "activeCallsign": "VK6PRF",
+    "activeCallsign": "VK6ALE",
     "qso_date": "20260125",
     "totalQSOs": 34,
     "qsosCW": 0,
@@ -20135,7 +20175,7 @@
     "locationDesc": "AU-WA"
    },
    {
-    "activeCallsign": "VK6ALE",
+    "activeCallsign": "VK6PRF",
     "qso_date": "20260125",
     "totalQSOs": 34,
     "qsosCW": 0,
@@ -20225,21 +20265,21 @@
     "locationDesc": "AU-WA"
    },
    {
-    "activeCallsign": "VK6KN",
-    "qso_date": "20251026",
-    "totalQSOs": 18,
-    "qsosCW": 14,
-    "qsosDATA": 0,
-    "qsosPHONE": 4,
-    "locationDesc": "AU-WA"
-   },
-   {
     "activeCallsign": "VK6XM",
     "qso_date": "20251026",
     "totalQSOs": 6,
     "qsosCW": 0,
     "qsosDATA": 0,
     "qsosPHONE": 6,
+    "locationDesc": "AU-WA"
+   },
+   {
+    "activeCallsign": "VK6KN",
+    "qso_date": "20251026",
+    "totalQSOs": 18,
+    "qsosCW": 14,
+    "qsosDATA": 0,
+    "qsosPHONE": 4,
     "locationDesc": "AU-WA"
    },
    {
@@ -20333,15 +20373,6 @@
     "locationDesc": "AU-WA"
    },
    {
-    "activeCallsign": "VK4MGL",
-    "qso_date": "20250719",
-    "totalQSOs": 42,
-    "qsosCW": 0,
-    "qsosDATA": 0,
-    "qsosPHONE": 42,
-    "locationDesc": "AU-WA"
-   },
-   {
     "activeCallsign": "VK6KN",
     "qso_date": "20250719",
     "totalQSOs": 77,
@@ -20357,6 +20388,15 @@
     "qsosCW": 2,
     "qsosDATA": 0,
     "qsosPHONE": 49,
+    "locationDesc": "AU-WA"
+   },
+   {
+    "activeCallsign": "VK4MGL",
+    "qso_date": "20250719",
+    "totalQSOs": 42,
+    "qsosCW": 0,
+    "qsosDATA": 0,
+    "qsosPHONE": 42,
     "locationDesc": "AU-WA"
    }
   ]

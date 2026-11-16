@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-15T22:03:36.072Z",
+ "fetched": "2026-11-16T22:03:41.680Z",
  "parks": [
   {
    "reference": "AU-0003",
@@ -411,9 +411,9 @@
    "longitude": 115.826,
    "grid": "OF78va",
    "locationDesc": "AU-WA",
-   "attempts": 25,
-   "activations": 24,
-   "qsos": 921,
+   "attempts": 26,
+   "activations": 25,
+   "qsos": 938,
    "website": null,
    "notes": "This park is specific to three areas. They are 1. Pelican Point. 2. Alfred Cove and 3. Milyu which is adjacent to the Kwinana freeway roughly from Mill point road to South Terrace."
   },
@@ -4129,9 +4129,9 @@
    "longitude": 115.822,
    "grid": "OF77vx",
    "locationDesc": "AU-WA",
-   "attempts": 43,
-   "activations": 43,
-   "qsos": 1462,
+   "attempts": 44,
+   "activations": 44,
+   "qsos": 1479,
    "website": null,
    "notes": null
   },
@@ -5767,9 +5767,9 @@
    "longitude": 115.825,
    "grid": "OF78va",
    "locationDesc": "AU-WA",
-   "attempts": 22,
-   "activations": 22,
-   "qsos": 859,
+   "attempts": 23,
+   "activations": 23,
+   "qsos": 876,
    "website": "https://mapcarta.com/16472932",
    "notes": "Managed by the Department of Parks and Wildlife."
   },
@@ -18065,9 +18065,9 @@
    "longitude": 115.835,
    "grid": "OF78wa",
    "locationDesc": "AU-WA",
-   "attempts": 41,
-   "activations": 39,
-   "qsos": 1265,
+   "attempts": 42,
+   "activations": 40,
+   "qsos": 1282,
    "website": "https://en.wikipedia.org/wiki/Swan_River_Trust",
    "notes": "Activation zone is within 30 metres of the rivers edge, for the entire length of the river."
   },

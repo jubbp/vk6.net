@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T22:03:36.072Z",
+ "generated": "2026-11-16T22:03:41.680Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -25,12 +25,60 @@
   ]
  },
  "totals": {
-  "activations": 1727,
-  "qsos": 40683,
+  "activations": 1731,
+  "qsos": 40751,
   "vk6Activators": 31,
   "huntersChecked": 41
  },
  "recent": [
+  {
+   "date": "2026-11-14",
+   "seen": "2026-11-17",
+   "call": "VK6KN",
+   "ref": "AU-0034",
+   "qsos": 17,
+   "cw": 11,
+   "data": 0,
+   "phone": 6,
+   "park": "Swan Estuary Marine Park",
+   "late": false
+  },
+  {
+   "date": "2026-11-14",
+   "seen": "2026-11-17",
+   "call": "VK6KN",
+   "ref": "AU-3025",
+   "qsos": 17,
+   "cw": 11,
+   "data": 0,
+   "phone": 6,
+   "park": "Swan River Management Area",
+   "late": false
+  },
+  {
+   "date": "2026-11-14",
+   "seen": "2026-11-17",
+   "call": "VK6KN",
+   "ref": "AU-3294",
+   "qsos": 17,
+   "cw": 11,
+   "data": 0,
+   "phone": 6,
+   "park": "Swan Estuary-Pelican Point Nature Reserve",
+   "late": false
+  },
+  {
+   "date": "2026-11-14",
+   "seen": "2026-11-17",
+   "call": "VK6KN",
+   "ref": "AU-10565",
+   "qsos": 17,
+   "cw": 11,
+   "data": 0,
+   "phone": 6,
+   "park": "Swan National Wild and Scenic River",
+   "late": false
+  },
   {
    "date": "2026-11-14",
    "seen": "2026-11-16",
@@ -93,18 +141,6 @@
   },
   {
    "date": "2026-11-08",
-   "seen": "2026-11-09",
-   "call": "VK6WTF",
-   "ref": "AU-11414",
-   "qsos": 12,
-   "cw": 0,
-   "data": 12,
-   "phone": 0,
-   "park": "Wilbinga Nature Reserve",
-   "late": false
-  },
-  {
-   "date": "2026-11-08",
    "seen": "2026-11-11",
    "call": "VK6MFP",
    "ref": "AU-9683",
@@ -113,30 +149,6 @@
    "data": 9,
    "phone": 2,
    "park": "Ledge Point State Beach",
-   "late": false
-  },
-  {
-   "date": "2026-11-07",
-   "seen": "2026-11-09",
-   "call": "VK6WTF",
-   "ref": "AU-11414",
-   "qsos": 208,
-   "cw": 0,
-   "data": 197,
-   "phone": 11,
-   "park": "Wilbinga Nature Reserve",
-   "late": false
-  },
-  {
-   "date": "2026-11-07",
-   "seen": "2026-11-09",
-   "call": "VK6ALE",
-   "ref": "AU-2975",
-   "qsos": 56,
-   "cw": 0,
-   "data": 22,
-   "phone": 34,
-   "park": "Cardup Nature Park",
    "late": false
   },
   {
@@ -150,6 +162,41 @@
    "phone": 8,
    "park": "Ledge Point State Beach",
    "late": true
+  }
+ ],
+ "month": [
+  {
+   "date": "2026-11-08",
+   "seen": "2026-11-09",
+   "call": "VK6WTF",
+   "ref": "AU-11414",
+   "qsos": 12,
+   "cw": 0,
+   "data": 12,
+   "phone": 0,
+   "park": "Wilbinga Nature Reserve"
+  },
+  {
+   "date": "2026-11-07",
+   "seen": "2026-11-09",
+   "call": "VK6WTF",
+   "ref": "AU-11414",
+   "qsos": 208,
+   "cw": 0,
+   "data": 197,
+   "phone": 11,
+   "park": "Wilbinga Nature Reserve"
+  },
+  {
+   "date": "2026-11-07",
+   "seen": "2026-11-09",
+   "call": "VK6ALE",
+   "ref": "AU-2975",
+   "qsos": 56,
+   "cw": 0,
+   "data": 22,
+   "phone": 34,
+   "park": "Cardup Nature Park"
   },
   {
    "date": "2026-11-07",
@@ -160,11 +207,8 @@
    "cw": 0,
    "data": 14,
    "phone": 5,
-   "park": "Karnet Nature Reserve",
-   "late": false
-  }
- ],
- "month": [
+   "park": "Karnet Nature Reserve"
+  },
   {
    "date": "2026-10-25",
    "seen": "2026-10-25",
@@ -219,92 +263,15 @@
    "data": 7,
    "phone": 0,
    "park": "Lake Ninan Nature Reserve"
-  },
-  {
-   "date": "2026-10-17",
-   "seen": "2026-10-17",
-   "call": "VK6ALE",
-   "ref": "AU-2949",
-   "qsos": 34,
-   "cw": 0,
-   "data": 0,
-   "phone": 34,
-   "park": "Strange Road Nature Park"
-  },
-  {
-   "date": "2026-10-17",
-   "seen": "2026-10-17",
-   "call": "VK6ALE",
-   "ref": "AU-0167",
-   "qsos": 22,
-   "cw": 0,
-   "data": 0,
-   "phone": 22,
-   "park": "Boyagarring Conservation Park"
-  },
-  {
-   "date": "2026-10-17",
-   "seen": "2026-10-17",
-   "call": "VK6LK",
-   "ref": "AU-3608",
-   "qsos": 20,
-   "cw": 0,
-   "data": 11,
-   "phone": 9,
-   "park": "Lake Ninan Nature Reserve"
-  },
-  {
-   "date": "2026-10-17",
-   "seen": "2026-10-17",
-   "call": "VK6ALE",
-   "ref": "AU-0083",
-   "qsos": 17,
-   "cw": 0,
-   "data": 0,
-   "phone": 17,
-   "park": "Lupton Conservation Park"
-  },
-  {
-   "date": "2026-10-17",
-   "seen": "2026-10-17",
-   "call": "VK6LK",
-   "ref": "AU-3148",
-   "qsos": 13,
-   "cw": 0,
-   "data": 0,
-   "phone": 13,
-   "park": "Wongamine Nature Park"
-  },
-  {
-   "date": "2026-10-17",
-   "seen": "2026-10-17",
-   "call": "VK6LK",
-   "ref": "AU-3692",
-   "qsos": 10,
-   "cw": 0,
-   "data": 0,
-   "phone": 10,
-   "park": "Namelcatchem Nature Reserve"
-  },
-  {
-   "date": "2026-10-17",
-   "seen": "2026-10-17",
-   "call": "VK6THW",
-   "ref": "AU-7603",
-   "qsos": 10,
-   "cw": 0,
-   "data": 10,
-   "phone": 0,
-   "park": "Warren State Forest"
   }
  ],
- "monthCount": 23,
+ "monthCount": 20,
  "activatorsYear": [
   {
    "call": "VK6DS",
-   "activations": 95,
+   "activations": 93,
    "parks": 32,
-   "qsos": 2255
+   "qsos": 2231
   },
   {
    "call": "VK6MFP",
@@ -314,9 +281,9 @@
   },
   {
    "call": "VK6KN",
-   "activations": 65,
+   "activations": 69,
    "parks": 20,
-   "qsos": 2219
+   "qsos": 2287
   },
   {
    "call": "VK6ALE",
@@ -376,9 +343,9 @@
   },
   {
    "call": "VK6KN",
-   "activations": 184,
+   "activations": 188,
    "parks": 38,
-   "qsos": 5762
+   "qsos": 5830
   },
   {
    "call": "VK6ALE",
@@ -542,18 +509,18 @@
   "2023": 162,
   "2024": 484,
   "2025": 565,
-  "2026": 431
+  "2026": 435
  },
  "months": [
   {
    "month": "2026-11",
-   "activations": 11,
+   "activations": 15,
    "parks": 9,
    "firstEver": 1,
-   "qsos": 398,
+   "qsos": 466,
    "top": {
     "call": "VK6KN",
-    "activations": 4
+    "activations": 8
    }
   },
   {
