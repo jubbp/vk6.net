@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T22:03:41.680Z",
+ "generated": "2026-11-17T22:03:48.803Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -25,12 +25,24 @@
   ]
  },
  "totals": {
-  "activations": 1731,
-  "qsos": 40751,
+  "activations": 1732,
+  "qsos": 40907,
   "vk6Activators": 31,
   "huntersChecked": 41
  },
  "recent": [
+  {
+   "date": "2026-11-15",
+   "seen": "2026-11-18",
+   "call": "VK6ALE",
+   "ref": "AU-0107",
+   "qsos": 156,
+   "cw": 0,
+   "data": 142,
+   "phone": 14,
+   "park": "John Forrest National Park",
+   "late": false
+  },
   {
    "date": "2026-11-14",
    "seen": "2026-11-17",
@@ -219,59 +231,15 @@
    "data": 8,
    "phone": 9,
    "park": "Lake Joondalup Nature Reserve"
-  },
-  {
-   "date": "2026-10-18",
-   "seen": "2026-10-18",
-   "call": "VK6ALE",
-   "ref": "AU-2955",
-   "qsos": 57,
-   "cw": 0,
-   "data": 0,
-   "phone": 57,
-   "park": "Wills Nature Park"
-  },
-  {
-   "date": "2026-10-18",
-   "seen": "2026-10-18",
-   "call": "VK6ALE",
-   "ref": "AU-3144",
-   "qsos": 29,
-   "cw": 0,
-   "data": 0,
-   "phone": 29,
-   "park": "Weam Nature Park"
-  },
-  {
-   "date": "2026-10-18",
-   "seen": "2026-10-18",
-   "call": "VK6LK",
-   "ref": "AU-3132",
-   "qsos": 17,
-   "cw": 0,
-   "data": 13,
-   "phone": 4,
-   "park": "Rica Erickson Nature Park"
-  },
-  {
-   "date": "2026-10-18",
-   "seen": "2026-10-18",
-   "call": "VK6LK",
-   "ref": "AU-3608",
-   "qsos": 7,
-   "cw": 0,
-   "data": 7,
-   "phone": 0,
-   "park": "Lake Ninan Nature Reserve"
   }
  ],
- "monthCount": 20,
+ "monthCount": 17,
  "activatorsYear": [
   {
    "call": "VK6DS",
-   "activations": 93,
+   "activations": 91,
    "parks": 32,
-   "qsos": 2231
+   "qsos": 2207
   },
   {
    "call": "VK6MFP",
@@ -287,9 +255,9 @@
   },
   {
    "call": "VK6ALE",
-   "activations": 61,
+   "activations": 62,
    "parks": 46,
-   "qsos": 2641
+   "qsos": 2797
   },
   {
    "call": "VK6WTF",
@@ -349,9 +317,9 @@
   },
   {
    "call": "VK6ALE",
-   "activations": 95,
+   "activations": 96,
    "parks": 64,
-   "qsos": 3764
+   "qsos": 3920
   },
   {
    "call": "VK6LK",
@@ -509,15 +477,15 @@
   "2023": 162,
   "2024": 484,
   "2025": 565,
-  "2026": 435
+  "2026": 436
  },
  "months": [
   {
    "month": "2026-11",
-   "activations": 15,
-   "parks": 9,
+   "activations": 16,
+   "parks": 10,
    "firstEver": 1,
-   "qsos": 466,
+   "qsos": 622,
    "top": {
     "call": "VK6KN",
     "activations": 8

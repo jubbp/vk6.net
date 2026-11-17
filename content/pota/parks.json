@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-16T22:03:41.680Z",
+ "fetched": "2026-11-17T22:03:48.803Z",
  "parks": [
   {
    "reference": "AU-0003",
@@ -1334,9 +1334,9 @@
    "longitude": 116.086,
    "grid": "OF88bd",
    "locationDesc": "AU-WA",
-   "attempts": 15,
-   "activations": 13,
-   "qsos": 637,
+   "attempts": 16,
+   "activations": 14,
+   "qsos": 793,
    "website": null,
    "notes": null
   },
