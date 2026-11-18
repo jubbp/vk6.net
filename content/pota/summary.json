@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T22:03:48.803Z",
+ "generated": "2026-11-18T22:03:40.268Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -150,30 +150,6 @@
    "phone": 10,
    "park": "Swan National Wild and Scenic River",
    "late": false
-  },
-  {
-   "date": "2026-11-08",
-   "seen": "2026-11-11",
-   "call": "VK6MFP",
-   "ref": "AU-9683",
-   "qsos": 11,
-   "cw": 0,
-   "data": 9,
-   "phone": 2,
-   "park": "Ledge Point State Beach",
-   "late": false
-  },
-  {
-   "date": "2026-11-07",
-   "seen": "2026-11-11",
-   "call": "VK6MFP",
-   "ref": "AU-9683",
-   "qsos": 25,
-   "cw": 0,
-   "data": 17,
-   "phone": 8,
-   "park": "Ledge Point State Beach",
-   "late": true
   }
  ],
  "month": [
@@ -187,6 +163,17 @@
    "data": 12,
    "phone": 0,
    "park": "Wilbinga Nature Reserve"
+  },
+  {
+   "date": "2026-11-08",
+   "seen": "2026-11-11",
+   "call": "VK6MFP",
+   "ref": "AU-9683",
+   "qsos": 11,
+   "cw": 0,
+   "data": 9,
+   "phone": 2,
+   "park": "Ledge Point State Beach"
   },
   {
    "date": "2026-11-07",
@@ -209,6 +196,17 @@
    "data": 22,
    "phone": 34,
    "park": "Cardup Nature Park"
+  },
+  {
+   "date": "2026-11-07",
+   "seen": "2026-11-11",
+   "call": "VK6MFP",
+   "ref": "AU-9683",
+   "qsos": 25,
+   "cw": 0,
+   "data": 17,
+   "phone": 8,
+   "park": "Ledge Point State Beach"
   },
   {
    "date": "2026-11-07",
@@ -237,9 +235,9 @@
  "activatorsYear": [
   {
    "call": "VK6DS",
-   "activations": 91,
+   "activations": 89,
    "parks": 32,
-   "qsos": 2207
+   "qsos": 2181
   },
   {
    "call": "VK6MFP",
