@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T22:03:29.092Z",
+ "generated": "2026-11-22T22:03:35.522Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -25,12 +25,24 @@
   ]
  },
  "totals": {
-  "activations": 1732,
-  "qsos": 40907,
+  "activations": 1733,
+  "qsos": 40969,
   "vk6Activators": 31,
   "huntersChecked": 41
  },
  "recent": [
+  {
+   "date": "2026-11-21",
+   "seen": "2026-11-23",
+   "call": "VK6WTF",
+   "ref": "AU-3600",
+   "qsos": 62,
+   "cw": 0,
+   "data": 62,
+   "phone": 0,
+   "park": "Lake Joondalup Nature Reserve",
+   "late": false
+  },
   {
    "date": "2026-11-15",
    "seen": "2026-11-18",
@@ -102,7 +114,9 @@
    "phone": 10,
    "park": "Helena National Park",
    "late": false
-  },
+  }
+ ],
+ "month": [
   {
    "date": "2026-11-13",
    "seen": "2026-11-15",
@@ -112,8 +126,7 @@
    "cw": 4,
    "data": 0,
    "phone": 10,
-   "park": "Swan Estuary Marine Park",
-   "late": false
+   "park": "Swan Estuary Marine Park"
   },
   {
    "date": "2026-11-13",
@@ -124,8 +137,7 @@
    "cw": 4,
    "data": 0,
    "phone": 10,
-   "park": "Swan River Management Area",
-   "late": false
+   "park": "Swan River Management Area"
   },
   {
    "date": "2026-11-13",
@@ -136,8 +148,7 @@
    "cw": 4,
    "data": 0,
    "phone": 10,
-   "park": "Swan Estuary-Pelican Point Nature Reserve",
-   "late": false
+   "park": "Swan Estuary-Pelican Point Nature Reserve"
   },
   {
    "date": "2026-11-13",
@@ -148,11 +159,8 @@
    "cw": 4,
    "data": 0,
    "phone": 10,
-   "park": "Swan National Wild and Scenic River",
-   "late": false
-  }
- ],
- "month": [
+   "park": "Swan National Wild and Scenic River"
+  },
   {
    "date": "2026-11-08",
    "seen": "2026-11-09",
@@ -231,7 +239,7 @@
    "park": "Lake Joondalup Nature Reserve"
   }
  ],
- "monthCount": 17,
+ "monthCount": 18,
  "activatorsYear": [
   {
    "call": "VK6DS",
@@ -247,21 +255,21 @@
   },
   {
    "call": "VK6KN",
-   "activations": 69,
-   "parks": 20,
-   "qsos": 2287
+   "activations": 68,
+   "parks": 19,
+   "qsos": 2270
   },
   {
    "call": "VK6ALE",
-   "activations": 62,
-   "parks": 46,
-   "qsos": 2797
+   "activations": 61,
+   "parks": 45,
+   "qsos": 2772
   },
   {
    "call": "VK6WTF",
-   "activations": 42,
-   "parks": 30,
-   "qsos": 1151
+   "activations": 43,
+   "parks": 31,
+   "qsos": 1213
   },
   {
    "call": "VK6ASK",
@@ -333,9 +341,9 @@
   },
   {
    "call": "VK6WTF",
-   "activations": 42,
-   "parks": 30,
-   "qsos": 1151
+   "activations": 43,
+   "parks": 31,
+   "qsos": 1213
   },
   {
    "call": "VK6EK",
@@ -475,15 +483,15 @@
   "2023": 162,
   "2024": 484,
   "2025": 565,
-  "2026": 436
+  "2026": 437
  },
  "months": [
   {
    "month": "2026-11",
-   "activations": 16,
-   "parks": 10,
+   "activations": 17,
+   "parks": 11,
    "firstEver": 1,
-   "qsos": 622,
+   "qsos": 684,
    "top": {
     "call": "VK6KN",
     "activations": 8

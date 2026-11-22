@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-21T22:03:29.092Z",
+ "fetched": "2026-11-22T22:03:35.522Z",
  "parks": [
   {
    "reference": "AU-0003",
@@ -9290,9 +9290,9 @@
    "longitude": 115.785,
    "grid": "OF78vg",
    "locationDesc": "AU-WA",
-   "attempts": 125,
-   "activations": 100,
-   "qsos": 2419,
+   "attempts": 126,
+   "activations": 101,
+   "qsos": 2481,
    "website": "",
    "notes": "Easy access from numerous locations, Neil Hawkins Park has benches and toilets"
   },
