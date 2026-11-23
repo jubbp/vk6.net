@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-22T22:03:35.522Z",
+ "fetched": "2026-11-23T22:03:32.752Z",
  "parks": [
   {
    "reference": "AU-0003",
@@ -16258,9 +16258,9 @@
    "longitude": 115.755,
    "grid": "OF78vb",
    "locationDesc": "AU-WA",
-   "attempts": 4,
-   "activations": 4,
-   "qsos": 173,
+   "attempts": 5,
+   "activations": 5,
+   "qsos": 183,
    "website": "",
    "notes": "Vehicles are not be permitted on beach"
   },

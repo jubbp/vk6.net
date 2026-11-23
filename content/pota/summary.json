@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T22:03:35.522Z",
+ "generated": "2026-11-23T22:03:32.752Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -25,12 +25,24 @@
   ]
  },
  "totals": {
-  "activations": 1733,
-  "qsos": 40969,
+  "activations": 1734,
+  "qsos": 40979,
   "vk6Activators": 31,
   "huntersChecked": 41
  },
  "recent": [
+  {
+   "date": "2026-11-22",
+   "seen": "2026-11-24",
+   "call": "VK6KN",
+   "ref": "AU-8731",
+   "qsos": 10,
+   "cw": 0,
+   "data": 0,
+   "phone": 10,
+   "park": "City Beach State Beach",
+   "late": false
+  },
   {
    "date": "2026-11-21",
    "seen": "2026-11-23",
@@ -102,7 +114,9 @@
    "phone": 6,
    "park": "Swan National Wild and Scenic River",
    "late": false
-  },
+  }
+ ],
+ "month": [
   {
    "date": "2026-11-14",
    "seen": "2026-11-16",
@@ -112,11 +126,8 @@
    "cw": 1,
    "data": 0,
    "phone": 10,
-   "park": "Helena National Park",
-   "late": false
-  }
- ],
- "month": [
+   "park": "Helena National Park"
+  },
   {
    "date": "2026-11-13",
    "seen": "2026-11-15",
@@ -239,7 +250,7 @@
    "park": "Lake Joondalup Nature Reserve"
   }
  ],
- "monthCount": 18,
+ "monthCount": 19,
  "activatorsYear": [
   {
    "call": "VK6DS",
@@ -255,9 +266,9 @@
   },
   {
    "call": "VK6KN",
-   "activations": 68,
+   "activations": 69,
    "parks": 19,
-   "qsos": 2270
+   "qsos": 2280
   },
   {
    "call": "VK6ALE",
@@ -317,9 +328,9 @@
   },
   {
    "call": "VK6KN",
-   "activations": 188,
+   "activations": 189,
    "parks": 38,
-   "qsos": 5830
+   "qsos": 5840
   },
   {
    "call": "VK6ALE",
@@ -483,18 +494,18 @@
   "2023": 162,
   "2024": 484,
   "2025": 565,
-  "2026": 437
+  "2026": 438
  },
  "months": [
   {
    "month": "2026-11",
-   "activations": 17,
-   "parks": 11,
+   "activations": 18,
+   "parks": 12,
    "firstEver": 1,
-   "qsos": 684,
+   "qsos": 694,
    "top": {
     "call": "VK6KN",
-    "activations": 8
+    "activations": 9
    }
   },
   {
