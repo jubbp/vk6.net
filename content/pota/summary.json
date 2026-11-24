@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T22:03:32.752Z",
+ "generated": "2026-11-24T22:03:40.117Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -66,7 +66,9 @@
    "phone": 14,
    "park": "John Forrest National Park",
    "late": false
-  },
+  }
+ ],
+ "month": [
   {
    "date": "2026-11-14",
    "seen": "2026-11-17",
@@ -76,8 +78,7 @@
    "cw": 11,
    "data": 0,
    "phone": 6,
-   "park": "Swan Estuary Marine Park",
-   "late": false
+   "park": "Swan Estuary Marine Park"
   },
   {
    "date": "2026-11-14",
@@ -88,8 +89,7 @@
    "cw": 11,
    "data": 0,
    "phone": 6,
-   "park": "Swan River Management Area",
-   "late": false
+   "park": "Swan River Management Area"
   },
   {
    "date": "2026-11-14",
@@ -100,8 +100,7 @@
    "cw": 11,
    "data": 0,
    "phone": 6,
-   "park": "Swan Estuary-Pelican Point Nature Reserve",
-   "late": false
+   "park": "Swan Estuary-Pelican Point Nature Reserve"
   },
   {
    "date": "2026-11-14",
@@ -112,11 +111,8 @@
    "cw": 11,
    "data": 0,
    "phone": 6,
-   "park": "Swan National Wild and Scenic River",
-   "late": false
-  }
- ],
- "month": [
+   "park": "Swan National Wild and Scenic River"
+  },
   {
    "date": "2026-11-14",
    "seen": "2026-11-16",
@@ -204,53 +200,9 @@
    "data": 197,
    "phone": 11,
    "park": "Wilbinga Nature Reserve"
-  },
-  {
-   "date": "2026-11-07",
-   "seen": "2026-11-09",
-   "call": "VK6ALE",
-   "ref": "AU-2975",
-   "qsos": 56,
-   "cw": 0,
-   "data": 22,
-   "phone": 34,
-   "park": "Cardup Nature Park"
-  },
-  {
-   "date": "2026-11-07",
-   "seen": "2026-11-11",
-   "call": "VK6MFP",
-   "ref": "AU-9683",
-   "qsos": 25,
-   "cw": 0,
-   "data": 17,
-   "phone": 8,
-   "park": "Ledge Point State Beach"
-  },
-  {
-   "date": "2026-11-07",
-   "seen": "2026-11-09",
-   "call": "VK6ALE",
-   "ref": "AU-3258",
-   "qsos": 19,
-   "cw": 0,
-   "data": 14,
-   "phone": 5,
-   "park": "Karnet Nature Reserve"
-  },
-  {
-   "date": "2026-10-25",
-   "seen": "2026-10-25",
-   "call": "VK6MFP",
-   "ref": "AU-3600",
-   "qsos": 17,
-   "cw": 0,
-   "data": 8,
-   "phone": 9,
-   "park": "Lake Joondalup Nature Reserve"
   }
  ],
- "monthCount": 19,
+ "monthCount": 18,
  "activatorsYear": [
   {
    "call": "VK6DS",
