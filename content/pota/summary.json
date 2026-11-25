@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T22:03:40.117Z",
+ "generated": "2026-11-25T22:03:47.349Z",
  "parks": {
   "total": 1463,
   "activated": 475,
@@ -54,7 +54,9 @@
    "phone": 0,
    "park": "Lake Joondalup Nature Reserve",
    "late": false
-  },
+  }
+ ],
+ "month": [
   {
    "date": "2026-11-15",
    "seen": "2026-11-18",
@@ -64,11 +66,8 @@
    "cw": 0,
    "data": 142,
    "phone": 14,
-   "park": "John Forrest National Park",
-   "late": false
-  }
- ],
- "month": [
+   "park": "John Forrest National Park"
+  },
   {
    "date": "2026-11-14",
    "seen": "2026-11-17",
@@ -189,17 +188,6 @@
    "data": 9,
    "phone": 2,
    "park": "Ledge Point State Beach"
-  },
-  {
-   "date": "2026-11-07",
-   "seen": "2026-11-09",
-   "call": "VK6WTF",
-   "ref": "AU-11414",
-   "qsos": 208,
-   "cw": 0,
-   "data": 197,
-   "phone": 11,
-   "park": "Wilbinga Nature Reserve"
   }
  ],
  "monthCount": 18,
